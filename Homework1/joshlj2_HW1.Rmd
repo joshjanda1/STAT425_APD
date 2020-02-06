@@ -1,0 +1,227 @@
+---
+title: "HW1 - Josh Janda"
+author: "Josh Janda"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+## Problem 1
+
+The data set prostate from the faraway library, is from a study on 97 men with
+who were due to receive a radical prostatectomy. Make a numerical and graphical summary
+of the data.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#import libraries
+library(faraway)
+library(tidyverse)
+library(GGally)
+```
+```{r}
+prostate_data = prostate
+
+#numerical summary
+summary(prostate_data)
+```
+
+The data above provides the summary statistics of the `prostate` dataset provided by faraway. We are able to see the mean and the 0th, 25th, 50th, 75th, and 100th percentile for each column. With the use of summary statistics, we are able to get a better understanding of the data we are working with and any potential outliers. For the log variables, we are able to see that minimum values are negative which means their true minimum values are less than one. Looking at age, we can see the age range for this dataset was between 41 and 79 years old. This makes sense as males become more susceptible to prostate cancer at around age 40. One potential outlier can be seen in the `pgg45` variable, which has a min of 0 and a max of 100. The mean and median for this variable are 24.38 and 15, respectively. This is indicating that the 100 maximum value is an outlier in the data.
+
+```{r}
+par(mfrow = c(3, 3))
+
+for (i in 1:ncol(prostate_data)){
+  
+  data = prostate_data[, i]
+  column_name = colnames(prostate_data)[i]
+  hist(data, col = "blue",
+       xlab = paste(column_name), ylab = "Count",
+       main = paste("Histogram of ", column_name))
+  
+}
+```
+
+The plot grid above displays the histogram of each column. Column names starting with `l` are seen to have a more normally shaped distribution, which is due to the values of the columns being logarithms of the true values. For the other variables, they do not seem to take on any unique distribution. They, however, are mostly skewed to the right due to most of the density being at the minimum point of the data for that variable. Using histograms, we are also able to see outliers in the data by looking at skewedness. 
+
+```{r}
+ggpairs(prostate_data, progress = FALSE)
+```
+
+Looking at the plot matrix above, we are actually able to see scatter plots, density plots, and correlation between each of the variable interactions. The variables with a linear relationship can be seen to have a higher correlation coefficient. An example of variables with a strong linear relationship are `pgg45` and `gleason`, with a correlation of ~.752. An example of variables with almost no linear relationship are `gleason` and `lweight`, with a correlation coefficient of ~-.0013. Obviously, with the scatter matrix, we are able to gain a great deal of information regarding linear relationships between each feature in the dataset. We are also able to achieve the same style of plot created above, through the use of density plots on the diagonal.
+
+## Problem 2
+
+### a. Show that for the SLR model, the coefficient of determination $R^2$ is equal to the square of the correlation coefficient $r^2_{xy}$
+
+This can be shown through demonstration of modeling in R. I will create a simple regression of `lcavol` on `age`. Referencing the previous plot above, the scatter matrix, the correlation between these variables is .225. This should be the same value obtained for $R^2$ on the regression model.
+
+```{r}
+prob_2_model = lm(lcavol ~ age, data = prostate_data)
+corr_lcavol_age = cor(prostate_data$lcavol, prostate_data$age)
+r2_lcavol_age = 1 - sum(prob_2_model$residuals^2) / sum((prostate_data$lcavol 
+                                                         - mean(prostate_data$lcavol))^2)
+```
+
+The $R^2$ value obtained by this model is `r summary(prob_2_model)$r.sq`.
+
+The calculated $R^2$ model using the formula $R^2 = 1 - \frac{RSS}{TSS}$ is `r r2_lcavol_age`. This is the same output as above.
+
+The correlation between `lcavol` and `age` is `r corr_lcavol_age`. Since this number is equal to $r_{xy}$, if you take the square of it you will get the same value as the $R^2$ of this model since it is a simple linear regression.
+
+Doing so, we get a value of $r^2_{xy}$ being $.225^2 \approx$ `r corr_lcavol_age^2` = `r2_lcavol_age`.
+
+This proves that for a simple linear regression with an intercept term we get the same value of $R^2$ and $r^2_{xy}$
+
+## Problem 3
+
+The manager of the purchasing department of a large company would like to develop a regression model to predict the average amount of time it takes to process a given number of invoices. Over a 30-day period, data are collected on the number of invoices processed and the total time taken (in hours). The data are available in the file invoices.txt. The following model was fit to the data: $Y = \beta_0 + \beta_1x + e$, where Y is the processing time and x is the number of invoices.
+
+### a. Plot the data and comment on the results
+
+```{r}
+invoices = read_tsv("invoices.txt", col_names = TRUE)
+
+ggpairs(invoices, progress = FALSE)
+```
+
+Looking at the scatter matrix above, I can see the scatter plots between each variable, the density plots of each variable, and lastly the correlation between each variable. The variables with the strongest linear relationship are `time` and `invoices` with a correlation of *.934*. The density plots show us similar information to a histogram, although it is assuming the data is continuous over the interval. For the `time` variable, the data is right skewed. This means that the time it takes for invoices to be processed is more frequently shorter than longer. For the number of invoices, the data is also right skewed with a slight dip in frequency in the middle.
+
+Overall, with the scatter matrix I am able to see the two variables with the strongest linear relationship as well as understand the distribution of each variable.
+
+```{r}
+ggplot(data = invoices, aes(x = Invoices, y = Time)) +
+  geom_point(color = "blue") + 
+  geom_smooth(method = "lm", formula = y ~ x, color = "orange") +
+  labs(x = "Number of Invoices Processed", y = "Processing Time")
+```
+
+Looking at the scatter plot above, I focus on the relationship between `Invoices` and `Time`. I have included a regression line which is fit to the following formula: $Time = \beta_0 + \beta_1Invoices + e$. Overall, this plot demonstrates the strong linear relationship between these two variables by the fitting regression line going through the data points without any obvious outliers (in fact, most of the data stays within the 95% confidence interval provided).
+
+### b. Find a 95% confidence interval for the start-up time, $\beta_0$
+
+```{r}
+prob_3_model = lm(Time ~ Invoices, data = invoices)
+b0_95_ci = confint(prob_3_model, "(Intercept)", level = .95)
+```
+
+The estimated value for $\beta_0$ $(\hat\beta_0)$ is `r coef(prob_3_model)[1]`
+
+Using the formula to find a 95% confidence interval for $\beta_0$ ($\hat\beta_0 \pm t_{.025, 28}*SE_{\hat\beta_0}$) we get the following values:
+
+- 95% Lower bound for $\hat\beta_0$: `r b0_95_ci[1]`
+- 95% Upper bound for $\hat\beta_0$: `r b0_95_ci[2]`
+
+### c. Suppose that a best practice benchmark for the average processing time for an additional invoice is 0.01 hours (pr. 0.6 minutes). Test the null hypothesis $H_0 : \beta_1 = 0.01$ against a two-sided alternative. Interpret your result.
+
+```{r}
+beta_1_hat = coef(prob_3_model)[2]
+se_beta_1_hat = summary(prob_3_model)$coefficients[2, 2]
+```
+
+
+First, let's setup the null and alternative hypothesis. $$H_0 : \beta_1 = .01 \;\; H_1 : \beta_1 \neq .01$$
+
+The obtained value for $\hat\beta_1$ is `r coef(prob_3_model)[2]`. For testing this claim, I will be using values of $\alpha = .01, .05, .10$.
+
+To find the t-score for testing our claim, we use the following formula: $$t = \frac{\hat\beta_1 - .01}{SE_{\hat\beta_1}}$$
+
+Using that formula, we can directly solve for t.
+
+$$t = \frac{`r beta_1_hat` - .01}{`r se_beta_1_hat`}$$
+
+```{r}
+beta_1_t_score = (beta_1_hat - .01 ) / se_beta_1_hat
+prob_t = pt(beta_1_t_score, df = 28, lower.tail = FALSE)
+```
+
+Once t is solved for, we obtain a value of `r beta_1_t_score`.
+
+Now, we can solve for the probability of this t score using the t distribution CDF. Once the probability is solved for, we must multiply by two since it is a two sided test.
+
+$$P(t \geq `r beta_1_t_score`) = 2 * `r prob_t` = `r 2*prob_t`$$
+
+So, we have a p-value of `r 2*prob_t`. I can reject the null hypothesis that $\beta_1 = .01$ at $\alpha = .01,\; .05, \;and\; .10$.
+
+### d.  Find a point estimate and a 95% prediction interval for the time taken to process 130 invoices.
+
+```{r}
+pt_est_130_invoices = predict(prob_3_model,
+                              newdata = data.frame(Invoices = 130),
+                              interval = "none")
+
+invoices_130_95_pred_interval = predict(prob_3_model,
+                                        newdata = data.frame(Invoices = 130),
+                                        interval = "prediction",
+                                        level = .95)
+```
+
+The formula used to find a point estimate of the time taken to process 130 invoices is: $\hat Time = \hat\beta_0 + \hat\beta_1*130$
+
+The point estimate for the time taken to process 130 invoices is `r pt_est_130_invoices`.
+
+The formula used to find a prediction interval is similar to a confidence interval. However, it provides a wider prediction due to the interval being confident on a single observation, rather than a mean observation. (95% on average it will take x time to do 130 invoices (confidence) vs 95% it will take x time to do these 130 invoices (prediction))
+
+The formula for the prediction interval is: $$\hat Time \pm t_{.025, 28}*\hat\sigma*\sqrt{1 + \frac{1}{30} + \frac{130 - \bar x}{S_{xx}}}$$
+
+Where $\hat\sigma = \sqrt{\frac{RSS}{28}}$ and $S_{xx}$ is the standard deviation of x (invoices).
+
+With that said, here is the 95% prediction interval for processing time of 130 invoices.
+
+The 95% lower bound for this interval is: `r invoices_130_95_pred_interval[2]`
+
+The 95% upper bound for this interval is: `r invoices_130_95_pred_interval[3]`
+
+## Problem 5
+
+Fit the following model to the data: $PriceChange = \beta_0 + \beta_1LoanPaymentsOverdue + e$.
+
+### a. Calculate the R2 and adjusted R2 for the SLR model. Provide an interpretation of both
+quantities.
+
+```{r}
+indicators = read_csv("indicators.csv")
+indicators_model = lm(PriceChange ~ LoanPaymentsOverdue, data = indicators)
+
+indicators_r2 = summary(indicators_model)$r.sq
+indicators_adj_r2 = summary(indicators_model)$adj.r.sq
+```
+
+The $R^2$ for this model is `r indicators_r2`. This means that ~27.9% of the variance in the *PriceChange* variable is explained by *LoanPaymentsOverdue*.
+
+The $Adj. R^2$ for this model is `r indicators_adj_r2`. Note that it is lower than the value obtained for $R^2$. While similar to $R^2$, $Adj. R^2$ adjusts for the number of variables being fit in the model. If you include more features in the model, $Adj. R^2$ will put a penalty on the model for that. If the added variable adds greater performance to the model, $Adj. R^2$ will increase. If the added variable does not improve the model, $Adj. R^2$ will decrease. In this case, this value of $Adj. R^2$ shows that this one feature improves our model greater than chance (~23.4% greater, since without any features we should have an $Adj. R^2$ of zero).
+
+### b. Find a 95% confidence interval for the slope of the regression model, $\beta_1$. On the basis of this confidence interval decide whether there is evidence of a significant negative linear association.
+
+```{r}
+indicators_slope_95_ci = confint(indicators_model, "LoanPaymentsOverdue", level = .95)
+```
+
+The 95% lower bound for the slope of this model is `r indicators_slope_95_ci[1]`
+
+The 95% upper bound for the slope of this model is `r indicators_slope_95_ci[2]`
+
+With these values both being negative, as well as being 95% confident the true value of $\beta_1$ is contained in this interval, this confidence interval shows evidence of a significant negative linear association at a significance level of $\alpha = .05$
+
+### c. Use the fitted regression model to estimate E(Y|X = 4). Find a 95% confidence interval for E(Y|X = 4). Is 0% a feasible value for E(Y|X = 4)? Give a reason to support your answer.
+
+```{r}
+expected_y_given_x = predict(indicators_model,
+                             newdata = data.frame(LoanPaymentsOverdue = 4),
+                             interval = "confidence", level = .95)
+```
+
+Using the regression model to estimate E(Y|X = 4) is the same as computing the point estimate when X is equal to 4. The confidence interval, as mentioned in the previous problem, is saying that we are 95% confidenct that when X is 4 we will on average get that associated value of Y. In a prediction interval, we are focused on that specific observation and it's associated estimate and prediction interval.
+
+For this question, E(Y|X = 4) = `r expected_y_given_x[1]`
+
+The 95% lower bound for E(Y|X = 4) is `r expected_y_given_x[2]`
+
+The 95% upper bound for E(Y|X = 4) is `r expected_y_given_x[3]`
+
+With that estimated mean value and associated 95% lower and upper bounds, 0% is not a feasible value for E(Y|X = 4) because it is not contained within the 95% confidence interval. Since 0 is not in the interval, we can reject the hypothesis that E(Y|X = 4) = 0 at $\alpha = .05$. 
+
+
+
+
+
