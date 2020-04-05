@@ -1,0 +1,187 @@
+---
+title: "STAT 425 - HW4"
+author: "Josh Janda"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document: default
+---
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(faraway)
+```
+
+## Problem 1.
+
+For the salmonella data set fit a linear model with colonies as the response, and log(dose + 1) as predictor. Check for lack of fit.
+
+```{r}
+salmonella_mod = lm(colonies ~ I(log(dose + 1)),
+                    data = salmonella)
+
+r2_salmonella = summary(salmonella_mod)$r.sq
+summary(salmonella_mod)
+```
+
+Looking at the summary output above, we see that the predictor is significant at $\alpha = .05$. Since it is a simple linear regression model, we get the same p-value with our associated F-Statistic. We get an R-Squared of `r round(summary(salmonella_mod)$r.sq, 2)`, which is okay.
+
+Overall, our model is significant and judging by the $R^2$ value there is somewhat of a fit. Let's look at the model visually and check the fit.
+
+```{r}
+ggplot(data = salmonella, aes(x = dose, y = colonies)) +
+  geom_point(color = 'red', size = 2) +
+  geom_smooth(formula = y ~ I(log(x + 1)), method = 'lm', aes(color = 'Colonies ~ log(Dose + 1))')) +
+  geom_text(x = 775, y = 55, label = paste('R-Squared:',round(r2_salmonella, 4))) +
+  labs(x = 'Dose', y = 'Colonies', color = 'Fitted Model',
+       title = 'Colonies vs Dose and\nAssociated Model') +
+  scale_color_manual(values = c('blue')) +
+  theme(legend.position = 'bottom',
+        plot.title = element_text(hjust = 0.5))
+```
+
+Judging by the visualization above, we see there is definitely a good fit for this model using the variable $log(Dose + 1)$ to predict colonies. Most observations (95%), are within 2 standard errors of the fitted line, which demonstrates a good fit.
+
+In order to fully check for a lack of fit, we must compare this model to a model using dose as a factor variable.
+
+```{r}
+salmonella_mod2 = lm(colonies ~ factor(I(log(dose + 1))),
+                    data = salmonella)
+
+anova(salmonella_mod, salmonella_mod2)
+```
+
+With a p-value > .05, we can further claim that there is not a lack of fit in this model. This model is useful and does not seem to break constant variance assumptions.
+
+## Problem 2.
+
+The gammaray dataset shows the x-ray decay light curve of gamma ray burst. Build a model to predict the flux as a function of time that uses appropriate weights.
+
+For this, I will be using the following procedure to obtain the appropriate weights:
+
+1. Fit model flux ~ time
+2. Obtain absolute residuals from this model
+3. Fit absolute residuals ~ flux model
+4. Obtain fitted values from model
+5. Create weights equal to $\frac{1}{fitted^2}$
+
+```{r}
+gammaray_model = lm(flux ~ time,
+                    data = gammaray) #1
+
+absolute_resids = abs(gammaray_model$residuals) #2
+
+resid_mod = lm(absolute_resids ~ flux, data = gammaray) #3
+
+fitted = resid_mod$fitted.values #4
+
+weights = 1 / fitted^2
+
+gammaray_model_w = lm(flux ~ time,
+                      data = gammaray, weights = weights)
+
+summary(gammaray_model)
+```
+
+Without weights, we see an $R^2$ value of ~ .09 on the model with a p-value of ~.0167. Therefore, this model is significant at $\alpha=.05$ but with a low $R^2$ value the fit is questionable.
+
+```{r}
+summary(gammaray_model_w)
+```
+
+Using the created weights, we now see an $R^2$ value of ~.104 with a p-value of ~.0099. Therefore, this model is significant at $\alpha=.01$ with a slightly higher $R^2$ value than before.
+
+```{r}
+ggplot(data = gammaray, aes(x = time, y = flux)) +
+  geom_abline(aes(intercept = gammaray_model_w$coefficients[1],
+                  slope = gammaray_model_w$coefficients[2], color = 'WLS'),
+              lwd = 2) +
+  geom_smooth(formula = y ~ x, method = 'lm', se = FALSE, aes(color = 'OLS'),
+              lwd = 2) +
+  geom_point(color = 'black', pch = 18, size = 2) +
+  labs(x = 'Time', y = 'Flux', color = 'Models')
+```
+
+Judging by the plot above, we see that the OLS model is a much worse approximate fit of the data. With WLS, we such a much more generalized fit that better passes through potential influence observations.
+
+Overall, I have created a model using appropriate weights to predict flux given time.
+
+## Problem 3.
+
+For the longley data, fit a model with Employed as the response and the other variables as predictors.
+
+```{r}
+longley_mod = lm(Employed ~ ., data = longley)
+```
+
+### A.
+
+Compute and comment on the Condition numbers
+
+```{r}
+model_mtx = model.matrix(longley_mod)[, -1] # get design matrix
+
+model_mtx_scaled = scale(model_mtx) #scale variables to have mean 0 and variance 1
+
+apply(model_mtx_scaled, 2, mean)
+```
+
+using the output above, we can see that all predictors now have a mean of zero (or extremely close to zero).
+
+```{r}
+apply(model_mtx_scaled, 2, var)
+```
+
+using the output above, we can see that all predictors now have a variance of one.
+
+We can now use the scaled design matrix to calculate the conditon numbers.
+
+```{r}
+eigen_vals = eigen(t(model_mtx_scaled) %*% model_mtx_scaled)
+sqrt(eigen_vals$values[1] / eigen_vals$values)
+```
+
+Using the output above, we see that we have condition numbers greater than or equal to 30. This tells me that we have a collinearity problem in this model. To further look into this issue, I will look at the correlation matrix.
+
+### B.
+
+Compute and comment on the correlation between predictors
+
+```{r}
+round(cor(longley[, -7]), dig=2)
+```
+
+Looking at the correlation matrix above we are able to see the correlation between each predictor.
+
+There are some immediate issues that arise when observing this matrix:
+
+- The correlation between GNP Deflator and GNP is .99, meaning these variables are almost an exact linear combination of each other.
+- The correlation between GNP Deflator and Population is .98, meaning these variables are almost an exact linear combination of each other.
+- The correlation between GNP Deflator and Year is .99, meaning these variables are almost an exact linear combination of each other.
+- The correlation between GNP and Population is .99, meaning these variables are almost an exact linear combination of each other.
+- The correlation between GNP and Year is 1.00, meaning these variables are almost an exact linear combination of each other.
+- The correlation between Population and Year is .99, meaning these variables are almost an exact linear combination of each other.
+
+Outside of these three variables, there does not seem to be any extreme multicollinearity problems (correlation greater than .80 between predictors). I know that GNP and the GNP deflator are directly influenced by time as they change year by year, which explains both of these variables direct correlation with time. I also understand that GNP and GNP deflator are directly tied to population, as GNP changes by population (population change is directly related to GNP change). Population is directly tied to year as population changes over time. Lastly, GNP is used to calculate the GNP deflator so that explains that correlation.
+
+Overall, looking at the correlation matrix it may be best to remove **Population**, **Year**, and **GNP Deflator** as they all are extremely correlated with GNP. Being that this dataset is time series, this is understandable to see these variables correlated by time.
+
+### C.
+
+Compute and comment on the variance inflation factors.
+
+```{r}
+round(vif(model_mtx_scaled), 2)
+
+sqrt_vif = sqrt(round(vif(model_mtx_scaled), 2))
+```
+
+Looking at the Variance Inflation Factors above, we see that:
+
+- The SE for **GNP Deflator** is `r sqrt_vif[1]` larger than it would have been without collinearity.
+- The SE for **GNP** is `r sqrt_vif[2]` larger than it would have been without collinearity.
+- The SE for **Unemployed** is `r sqrt_vif[3]` larger than it would have been without collinearity.
+- The SE for **Armed Forces** is `r sqrt_vif[4]` larger than it would have been without collinearity.
+- The SE for **Population** is `r sqrt_vif[5]` larger than it would have been without collinearity.
+- The SE for **Year** is `r sqrt_vif[6]` larger than it would have been without collinearity.
+
+Using the variance inflation factors, I can further confirm the large collinearity issues between GNP Deflator, GNP, Population, and Year. This can be remedied by removing possible causal variables such as Population, and GNP Deflator. These issues arise due to the time series nature of this dataset. Possibly adding a lag will remedy this collinearity problem.

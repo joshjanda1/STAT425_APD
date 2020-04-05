@@ -1,0 +1,298 @@
+---
+title: "STAT 425 - HW5"
+author: "Josh Janda"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document: default
+---
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(faraway)
+library(nlme)
+library(lmtest)
+library(splines)
+library(MASS)
+```
+
+## Problem 1.
+
+The aatemp data come from the U.S. Historical Climatological Network. They are the annual mean temperatures (in degrees F) in Ann Arbor Michigan, going back about 150 years.
+
+### A.
+
+Is there a linear trend?
+
+```{r}
+linear_mod = lm(temp ~ year, data = aatemp)
+linear_cor = cor(aatemp$year, aatemp$temp)
+cor_label = paste('Correlation:', round(linear_cor, 3), sep = ' ')
+
+ggplot(data = aatemp, aes(x = year, y = temp)) +
+  geom_point() +
+  geom_text(label = cor_label, x = 1930, y = 52) +
+  geom_smooth(method = 'lm', formula = y ~ x) +
+  labs(x = 'Year', y = 'Temperature (F)') +
+  theme(axis.line = element_line(color = 'black')) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 20))
+```
+
+Looking at the plot above, there seems to be somewhat of a linear trend. We can see that there is a correlation of .292 which demonstrates a linear trend of the data. Being time series data, this linear trend I am somewhat skeptical of due to possible correlation between error over time.
+
+### B.
+
+Observations in successive years may be correlated. Fit the model that estimates this correlation. Does this change your opinion about the trend?
+
+```{r}
+dwtest(lm(temp ~ year, data = aatemp))
+```
+
+Looking at the output above, we can reject the null hypothesis that there errors are not correlated. Therefore, there is autocorrelation in our model which further signifies that there is a linear trend in the data. Let's create a new model with an AR term of 2.
+
+```{r}
+ar2 = gls(temp ~ year, correlation = corARMA(p=2), data=aatemp)
+summary(ar2)
+```
+
+```{r}
+intervals(ar2)
+```
+
+We do see that both the Phi Coefficients are not significant, so there is somewhat of a contradiction. However, I do believe there is somewhat of a linear trend in the data. 
+
+Overall, with the AR(2) model, my opinion stays that there is a linear trend in the data. There is an obvious linear trend where as time increases so does the temperature on average. 
+
+### C.
+
+Fit a polynomial model with degree 10 and use backward elimination to reduce the degree of the model. Plot the fitted model on the top of the data. Use this model to predict the temperature in 2020.
+
+```{r}
+degree_10_mod = lm(temp ~ I(year) + I(year^2) + I(year^3) +
+                     I(year^4) + I(year^5) + I(year^6) + I(year^7) +
+                     I(year^8) + I(year^9) + I(year^10), data=aatemp)
+
+
+back_mod = step(degree_10_mod, direction = 'backward', trace=10)
+back_r2 = summary(back_mod)$r.sq
+
+summary(back_mod)
+```
+
+Using backward regression, we end up only with polynomial variables of 1, 2, 3, 4, and 8. Let's go ahead and plot this fit on top of the data.
+
+```{r}
+ggplot(data = aatemp, aes(x = year, y = temp)) +
+  geom_point() +
+  geom_text(label = paste("R-Squared:", round(back_r2, 3), sep=' '), x = 1930, y = 52) +
+  geom_smooth(method = 'lm',
+              formula = y ~ x + I(x^2) + I(x^3) + I(x^4) + I(x^8)) +
+  labs(x = 'Year', y = 'Temperature (F)') +
+  theme(axis.line = element_line(color = 'black')) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 20))
+```
+
+Looking at the plot above, this model seems to fit the data similar to the linear model but with higher order terms. To fully compare, let's predict on this model and the original and compare RMSE's.
+
+```{r}
+rmse = function(actual, fitted) {
+  
+  sqrt(sum((actual - fitted)^2) / length(actual))
+  
+}
+
+rmse_linear = rmse(aatemp$temp, linear_mod$fitted.values)
+rmse_d10 = rmse(aatemp$temp, back_mod$fitted.values)
+
+data.frame(RMSE = c(Linear = rmse_linear, Backward = rmse_d10))
+```
+
+Looking at the table above, the backward model obtains a slightly lower root mean square error. This tells me that this model fits the data better and provides more accurate predicted values.
+
+### D.
+
+Make a cubic spline fit with six basis functions evenly spaced on the range. Plot the fit in comparison with the previous fit. Does this model fit better than the selected polynomial model?
+
+```{r}
+spl = bs(aatemp$year, df = 6)
+
+mydf =  6
+n = dim(spl)[1]
+tmpdata = data.frame(t = rep(1:n, mydf),
+                     basisfunc=as.vector(spl), 
+                     type=as.factor(rep(1:mydf, each=n)))
+ggplot(tmpdata, aes(x=t, y=basisfunc, color=type)) + 
+  geom_path()
+```
+
+The plot above shows each basis function at each observation and it's respective value. Let's go ahead and fit the model.
+
+```{r}
+spl_fit = lm(temp ~ bs(year, df = 6), data = aatemp)
+spl_r2 = summary(spl_fit)$r.sq
+summary(spl_fit)
+```
+
+Looking at the output above, we see an $R^2$ value of ~.2017. This is slightly higher than the polynomial model, but lower than the linear model. Let's plot the model to see how it fits.
+
+```{r}
+ggplot(data = aatemp, aes(x = year, y = temp)) +
+  geom_point() +
+  geom_text(label = paste("R-Squared:", round(spl_r2, 3), sep=' '), x = 1930, y = 52) +
+  geom_smooth(method = 'lm',
+              formula = y ~ bs(x, df = 6)) +
+  labs(x = 'Year', y = 'Temperature (F)') +
+  theme(axis.line = element_line(color = 'black')) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 20))
+```
+
+Looking at the plot above, this model seems to fit slightly better than the polynomial model judging by the $R^2$ as well as the fitted line. Let's plot both together to see where they differ as they look extremely similar.
+
+```{r}
+ggplot(data = aatemp, aes(x = year, y = temp)) +
+  geom_point() +
+  geom_smooth(method = 'lm',
+              formula = y ~ bs(x, df = 6),
+              se = FALSE, lwd = 1.5, aes(color = 'Spline')) +
+  geom_smooth(method = 'lm', linetype = 'dashed',
+              formula = y ~ x + I(x^2) + I(x^3) + I(x^4) + I(x^8),
+              se = FALSE, lwd = 1.5, aes(color = ('Polynomial'))) +
+  labs(x = 'Year', y = 'Temperature (F)', color = 'Fitted Models') +
+  theme(axis.line = element_line(color = 'black')) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 20)) +
+  scale_color_manual(values = c('blue', 'orange'))
+```
+
+Looking at the plot above, we see that the fitted lines are almost identical outside of the first few years of data. Once the data is at ~1880, the fitted lines become identical. This tells me that the polynomial terms used work well to model the data, as well as using six basis functions.
+
+Overall, I still believe this data follows a linear trend due to autocorrelation but can also be accurately modeled using splines or polynomial terms.
+
+## Problem 2.
+
+Using the infmort data, find a model for the infant mortality in terms of the other variables. Be alert for transformations and unusual points. Interpret your model by explaining what the regression parameter estimates mean.
+
+Let's first look at the data.
+
+```{r}
+pairs(infmort)
+```
+
+All predictors except income are categorical. There is no real interpretation of those plots. For income, there seems to be a -log(income) relationship between mortality. Let's try the first linear model.
+
+```{r}
+inf_mod1 = lm(mortality ~ ., data = infmort)
+summary(inf_mod1)
+```
+
+The first model is a completely linear model using all variables. All predictors are significant outside of income. Let's try transforming the income variable by visualizing the relationship between mortality and income.
+
+```{r}
+ggplot(data = infmort, aes(x = income, y = mortality)) +
+  geom_point(color = 'orange') +
+  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE) +
+  labs(x = 'Income', y = 'Morality')
+```
+
+Looking at the graph above and the fitted line, I can see that using income itself is not a good predictor. I do believe that possibly adding the term -log(income) will fit the data better.
+
+```{r}
+log_income = lm(mortality ~ I(-log(income)), data = infmort)
+ggplot(data = infmort, aes(x = -log(income), y = mortality)) +
+  geom_point(color = 'orange') +
+  geom_abline(intercept = coef(log_income)[1], slope = coef(log_income)[2], color = 'blue') +
+  labs(x = '-log(income)', y = 'Morality')
+```
+
+Looking at the plot above, transforming income to -log(income) creates a much better fit between mortality and income. Let's add this term rather than income to the model and see if our model improves.
+
+```{r}
+inf_mod2 = lm(mortality ~ region + oil + I(-log(income)), data = infmort)
+summary(inf_mod2)
+```
+
+Looking at the summary above, I can see that my transformation of income still results in income being insignificant. However, I have improved both the $R^2$ and $Adj. R^2$ by ~.1 each which is great.
+
+It is possible that the $y$ variable itself needs to be transformed. I will perform a box-cox transformation to see if that is the case.
+
+```{r}
+inf_mod3 = boxcox(inf_mod1)
+```
+
+Let's attempt to transform Y using a logarithm transformation.
+
+```{r}
+inf_mod4 = lm(log(mortality) ~ ., data = infmort)
+summary(inf_mod4)
+```
+
+With that transformation, we see a large increase in both $R^2$ and $Adj. R^2$ compared to the previous two models. Also, all variables are now significant at least at $\alpha = .05$ which is great. One last model to try is with a log transformation on Y and a -log transformation on income.
+
+```{r}
+inf_mod5 = lm(log(mortality) ~ region + oil + I(-log(income)), data = infmort)
+summary(inf_mod5)
+```
+
+Once again, we see an increase in $R^2$ and $Adj. R^2$ compared to the previous model. All variables are now significant at $\alpha = .01$ which is also awesome. This will be the last model created for modeling this data, as it performs well. It should be noted that outliers were not thought of to be considered for removal due to the nature of this problem. Having high mortality may seem to as an outlier theoretically, but in reality it is just a case of a high death area due to the war on oil.
+
+An interpretation of this model and it's coefficients:
+
+- If the region is in Africa, we see a `r coef(inf_mod5)[1]` increase in mortality.
+- If the region is in Europe, we see a `r coef(inf_mod5)[2]` decrease in mortality.
+- If the region is in Asia, we see a `r coef(inf_mod5)[3]` decrease in mortality.
+- If the region is in Americas, we see a `r coef(inf_mod5)[4]` decrease in mortality.
+- If there are no oil exports, we see a `r coef(inf_mod5)[5]` decrease in mortality.
+- A one percent increase in income is associated with a `r coef(inf_mod5)[6]` decrease in mortality.
+
+
+## Problem 3.
+
+Using the pulp data, determine whether there are any differences between the operators. What is the nature of these differences?
+
+```{r}
+pulp %>% group_by(operator) %>%
+  summarise(mean_bright = mean(bright), median_bright = median(bright), sd_bright = sd(bright))
+```
+
+Looking at the group summary above, my initial thoughts is there is not a difference between the operators. The mean brightness for all operators are about the same, as well as the median and the standard deviations. It should be noted that operator **a** and **b** have slightly lower mean and medians than **c** and **d**. It should also be noted that **a** has a slightly higher standard deviation.
+
+```{r}
+mean(pulp$bright)
+```
+
+The overall mean for **bright** between all operators is 60.4.
+
+Let's perform an ANOVA test to test the differences between operators.
+
+```{r}
+pulp_mod = lm(bright ~ operator, data = pulp)
+anova(pulp_mod)
+```
+
+Looking at the ANOVA output above, we can reject $H_0$ that the groups are different at $\alpha = .05$. This goes against my belief that the groups do not have differences between each other. Let's create a model without an intercept.
+
+```{r}
+pulp_mod2 = lm(bright ~ operator - 1, data = pulp)
+summary(pulp_mod2)
+```
+
+Looking at the output above, we see that all operators have very similar coefficients as well as identical standard errors and almost identical t-values. 
+
+Let's try using a different contrast matrix to further test for differences.
+
+```{r}
+operator = pulp$operator
+bright = pulp$bright
+contrasts(operator) = contr.sum(4)
+
+pulp_mod3 = lm(bright ~ operator)
+summary(pulp_mod3)
+```
+
+With changing the contrast matrix, the intercept is now the overall mean between all operators and the coefficients for operators a-c now represent the distance between their mean and the overall mean.
+
+```{r}
+anova(pulp_mod3)
+```
+
+We once again reject $H_0$ that the operators have no differences at $\alpha = .05$. 
+
+I can conclude that albeit small differences, there are differences between the operators in the pulp dataset.
