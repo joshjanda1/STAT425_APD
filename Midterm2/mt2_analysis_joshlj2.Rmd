@@ -36,7 +36,9 @@ ggplot(res_df, aes(x = time, y = res)) +
   geom_point(color = 'orange') +
   geom_line(color = 'blue') +
   geom_hline(yintercept = 0, color = 'red') +
-  labs(x = 'Time', y = 'Model Residuals') 
+  labs(x = 'Time', y = 'Model Residuals') +
+  theme(panel.background = element_blank(),
+        axis.line = element_line(color = 'black'))
 ```
 
 Looking at the plot above, I can see that there is definitely some correlation between the residuals. There is not a lot of randomness in the points, and there are multiple instances of multiple residuals being positive or multiple being negative in a row. This multiple positive/negative values in a row indicate autocorrelation in the residuals.
@@ -84,7 +86,7 @@ Looking at the output above, time is significant at $/alpha = .05$ with a p-valu
 
 The last two models have both allowed for an effect of time. Explain how they do this differently.
 
-In the GLS model, we are assuming that the correlation structure of the errors are AR1. This assumes that the errors do not have constant variance, and therefore we are actually minimizing the weighted least squares equation. This equation is:
+In the GLS model, we are assuming that the correlation structure of the errors are AR1 and therefore the errors are correlated. This assumes that the errors do not have constant variance, and therefore we are actually minimizing the weighted least squares equation. This equation is:
 
 $$(y - X\beta)^T\Sigma^{-1}(y-X\beta) = \sum_{i=1}^{N}\frac{(y-x_i^T\beta)}{\sigma_i^2}$$
 
@@ -92,7 +94,7 @@ In the second linear model, we are assuming that the errors are uncorrelated and
 
 $$\beta = (X^TX)^{-1}X^Ty$$
 
-Overall, both models have included an effect for time but both take a different approach to handle it. The differences can be boiled down to model assumptions, where the GLS model assumes non-constant error variance and correlated errors, and the linear model assumes constant error variance and non-correlated errors.
+Overall, both models have included an effect for time but both take a different approach to handle it. The differences can be boiled down to model assumptions, where the GLS model assumes correlated errors, and the linear model assumes non-correlated errors.
 
 ## Problem 2.
 
@@ -138,7 +140,7 @@ Show a quadratic fit to the data on the plot.
 ```{r}
 ggplot(data = cars, aes(x = speed, y = dist)) +
   geom_point(color = 'blue', pch = 1) +
-  geom_smooth(method = 'lm', formula = y ~ poly(x, 4, raw = TRUE),
+  geom_smooth(method = 'lm', formula = y ~ poly(x, 2, raw = TRUE),
               se = FALSE, aes(linetype = 'Quadratic', color = 'Quadratic')) +
   geom_smooth(method = 'lm', formula = y ~ x, se = FALSE,
               aes(linetype = 'Linear', color = 'Linear')) +
@@ -157,7 +159,7 @@ Now use sqrt(dist) as the response and fit a linear model. Show the fit on the s
 ```{r}
 ggplot(data = cars, aes(x = speed, y = dist)) +
   geom_point(color = 'blue', pch = 1) +
-  geom_smooth(method = 'lm', formula = y ~ poly(x, 4, raw = TRUE),
+  geom_smooth(method = 'lm', formula = y ~ poly(x, 2, raw = TRUE),
               se = FALSE, aes(linetype = 'Quadratic', color = 'Quadratic')) +
   geom_smooth(method = 'lm', formula = y ~ x, se = FALSE,
               aes(linetype = 'Linear', color = 'Linear')) +
