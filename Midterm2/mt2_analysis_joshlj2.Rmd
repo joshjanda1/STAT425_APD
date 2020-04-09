@@ -1,0 +1,191 @@
+---
+title: "STAT 425 - Midterm 2 - Data Analysis"
+author: "Josh Janda"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document: default
+---
+
+```{r message=FALSE, warning=FALSE}
+library(faraway)
+library(tidyverse)
+library(lmtest)
+library(nlme)
+```
+
+## Problem 1.
+
+Using the cheddar data, fit a linear model with taste as a response and the other three variables as a predictors.
+
+```{r}
+lin_ched = lm(taste ~ ., data = cheddar)
+```
+
+### A.
+
+Suppose that the observations were taken in time order. Create a time variable. Plot the residuals of the model against time and comment on what can be seen.
+
+```{r}
+ched_res = lin_ched$residuals
+time = 1:length(ched_res)
+
+res_df = data.frame(res = ched_res,
+                    time = time)
+
+ggplot(res_df, aes(x = time, y = res)) +
+  geom_point(color = 'orange') +
+  geom_line(color = 'blue') +
+  geom_hline(yintercept = 0, color = 'red') +
+  labs(x = 'Time', y = 'Model Residuals') 
+```
+
+Looking at the plot above, I can see that there is definitely some correlation between the residuals. There is not a lot of randomness in the points, and there are multiple instances of multiple residuals being positive or multiple being negative in a row. This multiple positive/negative values in a row indicate autocorrelation in the residuals.
+
+### B.
+
+Fit a GLS model with the same form as above, but now allow for an AR(1) correlation among the errors. Is there evidence of such a correlation?
+
+```{r}
+gls_ched = gls(taste ~ ., correlation = corARMA(p = 1), data = cheddar)
+summary(gls_ched)
+```
+
+We see a Phi coefficient (AR1 coefficient) is ~.264. This is near zero, I want to look at a confidence interval to see if it is significant.
+
+```{r}
+intervals(gls_ched)
+```
+
+Looking at the output above, we see that the Phi coefficient is not significant at $/alpha = .05$
+
+Lastly, I want to compare this to the output of a Durbin-Watson test. The null hypothesis for this test is that the residuals are not correlated.
+
+```{r}
+dwtest(lin_ched)
+```
+
+I can say that I fail to reject the DW test at $/alpha = .05$. This does not contradict what is seen in the 95% confidence interval for the Phi coefficient.
+
+Overall, there is not strong enough evidence to say there is a correlation between the residuals.
+
+### C.
+
+Fit a LS model but with time now as an additional predictor. Investigate the significance of the time in the model.
+
+```{r}
+cheddar_df = cheddar %>% mutate(time = time)
+lin_ched2 = lm(taste ~ ., data = cheddar_df)
+summary(lin_ched2)
+```
+
+Looking at the output above, time is significant at $/alpha = .05$ with a p-value of ~.0131.
+
+### D.
+
+The last two models have both allowed for an effect of time. Explain how they do this differently.
+
+In the GLS model, we are assuming that the correlation structure of the errors are AR1. This assumes that the errors do not have constant variance, and therefore we are actually minimizing the weighted least squares equation. This equation is:
+
+$$(y - X\beta)^T\Sigma^{-1}(y-X\beta) = \sum_{i=1}^{N}\frac{(y-x_i^T\beta)}{\sigma_i^2}$$
+
+In the second linear model, we are assuming that the errors are uncorrelated and have a constant variance. However, we have added an effect for time by including a time variable so our model takes time into account when computing fitted values. In this model, we are still minimizing the ordinary least squares equation of:
+
+$$\beta = (X^TX)^{-1}X^Ty$$
+
+Overall, both models have included an effect for time but both take a different approach to handle it. The differences can be boiled down to model assumptions, where the GLS model assumes non-constant error variance and correlated errors, and the linear model assumes constant error variance and non-correlated errors.
+
+## Problem 2.
+
+Use cars data with distance as the response and speed as predictor.
+
+```{r}
+lin_cars = lm(dist ~ speed, data = cars)
+```
+
+### A.
+
+Plot distance against speed.
+
+```{r}
+cars_cor = paste('Correlation: ', round(cor(cars$speed, cars$dist), 3))
+ggplot(data = cars, aes(x = speed, y = dist)) +
+  geom_point(color = 'blue') +
+  geom_text(x = 15, y = 110, label = cars_cor) +
+  labs(x = 'Speed', y = 'Distance') +
+  theme(panel.background = element_blank(),
+        axis.line = element_line(color = 'black'))
+```
+
+### B.
+
+Show a linear fit to the data on the plot.
+
+```{r}
+cars_r2 = paste('R-Squared: ', round(summary(lin_cars)$r.sq, 3))
+ggplot(data = cars, aes(x = speed, y = dist)) +
+  geom_point(color = 'blue', pch = 1) +
+  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE, color = 'orange') +
+  geom_text(x = 15, y = 110, label = cars_r2) +
+  labs(x = 'Speed', y = 'Distance') +
+  theme(panel.background = element_blank(),
+        axis.line = element_line(color = 'black'))
+```
+
+### C.
+
+Show a quadratic fit to the data on the plot.
+
+```{r}
+ggplot(data = cars, aes(x = speed, y = dist)) +
+  geom_point(color = 'blue', pch = 1) +
+  geom_smooth(method = 'lm', formula = y ~ poly(x, 4, raw = TRUE),
+              se = FALSE, aes(linetype = 'Quadratic', color = 'Quadratic')) +
+  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE,
+              aes(linetype = 'Linear', color = 'Linear')) +
+  labs(x = 'Speed', y = 'Distance', color = 'Fit', linetype = 'Fit') +
+  theme(panel.background = element_blank(),
+        axis.line = element_line(color = 'black')) +
+  scale_linetype_manual(values = c('dashed', 'solid')) +
+  scale_color_manual(values = c('orange', 'red'))
+```
+
+
+### D.
+
+Now use sqrt(dist) as the response and fit a linear model. Show the fit on the same plot.
+
+```{r}
+ggplot(data = cars, aes(x = speed, y = dist)) +
+  geom_point(color = 'blue', pch = 1) +
+  geom_smooth(method = 'lm', formula = y ~ poly(x, 4, raw = TRUE),
+              se = FALSE, aes(linetype = 'Quadratic', color = 'Quadratic')) +
+  geom_smooth(method = 'lm', formula = y ~ x, se = FALSE,
+              aes(linetype = 'Linear', color = 'Linear')) +
+  geom_smooth(method = 'lm', formula = sqrt(y) ~ x, se = FALSE,
+              aes(linetype = 'Linear - Sqrt(y)', color = 'Linear - Sqrt(y)')) +
+  labs(x = 'Speed', y = 'Distance', color = 'Fit', linetype = 'Fit') +
+  theme(panel.background = element_blank(),
+        axis.line = element_line(color = 'black')) +
+  scale_linetype_manual(values = c('dashed', 'dotdash', 'solid')) +
+  scale_color_manual(values = c('orange', 'forestgreen', 'red'))
+```
+
+### E.
+
+Compute the default smoothing spline fit to the plot and display on a fresh plot of the data. How does this compares with the previous fit?
+
+```{r}
+plot(dist ~ speed, data = cars, pch = 1,
+     xlab = 'Speed', ylab = 'Distance', col = 'blue')
+lines(smooth.spline(cars$speed, cars$dist), lwd = 2, col = 'red')
+```
+
+Looking at the plot above, the default smoothing spline seems to fit the data quite well without any obvious overfitting.
+
+Compared to the linear fit, the smoothing spline seems to go through the lower distance points which demonstrate an overall better fit. 
+
+Compared to the quadratic fit, the smoothing spline seems to fit the lower and mid speed points better. It also fits the high speed points as well as the quadratic.
+
+Compared to the $\sqrt dist$ fit, the smoothing spline (as well as the other two fits) obviously fits much better. The square root model only passes through 1-2 data points, which is terrible.
+
+Overall, the default smoothing spline seems to generate an overall better fit than previous models and should be considered for further testing of usefullness. It also indicates that our data may be of a non-parametric form.
