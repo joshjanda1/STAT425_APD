@@ -1,0 +1,256 @@
+---
+title: "STAT 425 - HW6"
+author: "Josh Janda"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(faraway)
+library(lmtest)
+```
+
+## Problem 1.
+
+Data on the content of milk from Canadian cows of five different breeds and two different ages can be found in the butterfat dataset.
+
+### A.
+
+Make appropriate plots of the data
+
+```{r}
+butterfat1 = butterfat %>% group_by(Breed) %>% summarise(MeanButterfat = mean(Butterfat))
+ggplot(data = butterfat1, aes(x = Breed, y = MeanButterfat)) +
+  geom_bar(stat = 'identity', fill = 'salmon') +
+  geom_label(aes(label = paste(round(MeanButterfat, 2), '%')), vjust = 2) +
+  labs(x = 'Breed', y = 'Mean Butterfat Content (%)', title = 'Mean Butterfat Content Percentage\nBy Breed') +
+  theme(panel.background = element_blank(),
+        axis.line = element_line(color = 'black'),
+        plot.title = element_text(hjust = 0.5)) +
+  scale_y_continuous(limits = c(0, 6))
+```
+
+The plot above shows the mean butterfat content percentage between each breed of Canadian cows. We can see that the Jersey breed has the highest mean butterfat content percentage at 5.29%. The breed with the lowest mean butterfat content percentage is the Holstein-Fresian breed at 3.67%
+
+From this plot, we can gain information such as which breed outputs the highest amount of butterfat on average.
+
+```{r}
+butterfat1 = butterfat %>% group_by(Age) %>% summarise(MeanButterfat = mean(Butterfat))
+ggplot(data = butterfat1, aes(x = Age, y = MeanButterfat)) +
+  geom_bar(stat = 'identity', fill = 'salmon') +
+  geom_label(aes(label = paste(round(MeanButterfat, 2), '%')), vjust = 2) +
+  labs(x = 'Age', y = 'Mean Butterfat Content (%)', title = 'Mean Butterfat Content Percentage\nBy Age') +
+  theme(panel.background = element_blank(),
+        axis.line = element_line(color = 'black'),
+        plot.title = element_text(hjust = 0.5)) +
+  scale_y_continuous(limits = c(0, 6))
+```
+
+The plot above shows the mean butterfat content percentage between each breed of Canadian cows. We can see that Mature cows have the highest mean butterfat content percentage at 4.53%. Cows that are age 2year have the lowest mean butterfat content percentage at 4.43%. These content percentages do not differ by much, possibly telling us that this factor is not very useful for predicting butterfat content.
+
+```{r}
+butterfat1 = butterfat %>% group_by(Breed, Age) %>% summarise(MeanButterfat = mean(Butterfat))
+ggplot(data = butterfat1, aes(x = Breed, y = MeanButterfat, fill = Age)) +
+  geom_bar(stat = 'identity', position = 'dodge') +
+  geom_text(aes(label = paste(round(MeanButterfat, 2), '%')),
+            vjust = -1, position = position_dodge(width = 1)) +
+  labs(x = 'Breed', y = 'Mean Butterfat Content (%)',
+       title = 'Mean Butterfat Content Percentage by Breed\nGrouped by Age') +
+  theme(panel.background = element_blank(),
+        axis.line = element_line(color = 'black'),
+        plot.title = element_text(hjust = 0.5)) +
+  scale_y_continuous(limits = c(0, 6))
+```
+
+The plot above let's us see the mean butterfat content percentage between ages in each breed. The breed with the largest difference of mean butterfat content percentage between ages is the Jersey breed, which also was the breed with the highest mean butterfat content percentage. The breed with the smallest difference of mean butterfat content percentage between ages is the Holstein-Fresian breed, which also was the breed with the lowest mean butterfat content percentage.
+
+From this plot we are able to gain insight on how the the variables **breed** and **age** interact between each other. While this plot does suggest differences between content percentages between each age for each age, the differences are not large possibly indicating that there is not an interaction between these variables.
+
+### B.
+
+Determine whether there is an interaction between breed and age.
+
+```{r}
+butter_no_int = lm(Butterfat ~ ., data = butterfat)
+butter_int = lm(Butterfat ~ Breed*Age, data = butterfat)
+anova(butter_no_int, butter_int)
+```
+
+The ANOVA table above gives us an F-Statistic of .7421 and an associated p-value of .5658. Therefore, we fail to reject the null hypothesis and conclude that the smaller model without the interaction terms is the better model. 
+
+I can conclude that there is not interaction between breed and age.
+
+### C.
+
+Determine whether there is statistically significant difference between breeds and also ages.
+
+```{r}
+anova(lm(Butterfat ~ Breed, data=butterfat))
+```
+
+From the ANOVA output above, we can reject $H_0$ at $\alpha=.05$ and conclude that there is a statistically significant difference between breeds and their Butterfat content percentage.
+
+```{r}
+anova(lm(Butterfat ~ Age, data=butterfat))
+```
+
+From the ANOVA output above, we fail to reject $H_0$ at $\alpha=.05$ and conclude that there is not a statistically significant difference between ages and their Butterfat content percentage.
+
+### D.
+
+Present regression diagnostics for your chosen model and comment whether the assumptions have been met.
+
+First, I will check the model for heteroskedasticity.
+
+```{r}
+ggplot() +
+  geom_point(aes(x = butter_no_int$fitted.values,
+                 y = butter_no_int$residuals)) +
+  geom_hline(aes(yintercept = 0, linetype = "X = 0"), color = 'red') +
+  labs(linetype = "Residual Center",
+       x = "Fitted Values", y = "Residuals") +
+  scale_linetype_manual(values = c(2))
+```
+
+The residual plot above on my chosen model suggests that the model is not homoskedastic. The variance of the residuals seems to get larger as the fitted value increases.
+
+```{r}
+bptest(butter_no_int)
+```
+
+To further confirm heteroskedasticity, I performed the Breusch-Pagan test and got a p-value of .01154. Therefore, I can reject $H_0$ at $\alpha=.05$ and conclude that this model is not homoskedastic.
+
+Next, I will check the model to see if the residuals are normally distributed.
+
+```{r}
+qqnorm(butter_no_int$residuals, main = 'Q-Q Plot for Model Residuals')
+qqline(butter_no_int$residuals)
+```
+
+Looking at the Q-Q Plot above, I believe that the residuals are mostly normally distributed. The residuals seem to follow a linear trend around the true Q-Q normal line, with some deviation at the lowest and highest theoretical quantiles. This may be due to the heteroskedasticity in the model.
+
+To confirm normality in the residuals, I will perform a Shapiro-Wilk test. The null hypothesis for this test is that the data comes from a normal distribution.
+
+```{r}
+shapiro.test(butter_no_int$residuals)
+```
+
+With a p-value of .007168, I reject $H_0$ at $\alpha=.01$ and conclude that the residuals are not normally distributed.
+
+The last model assumption I would like to check is if there is any correlation between the residuals.
+
+```{r}
+res_df = data.frame(index = 1:100, res = butter_no_int$residuals)
+ggplot(res_df, aes(x = index, y = res)) +
+  geom_point(color = 'orange') +
+  geom_line(color = 'blue') +
+  geom_hline(yintercept = 0, color = 'red') +
+  labs(x = 'Index', y = 'Model Residuals') +
+  theme(panel.background = element_blank(),
+        axis.line = element_line(color = 'black'))
+```
+
+Looking at the correlation plot above, there seems to be some autocorrelation between residuals and their indices. This is determined by looking for patterns of multiple positive residuals following one another or multiple negative residuals following one another.
+
+To confirm this correlation, I will utilize the Durbin-Watson test. The null hypothesis for this test is that there is no correlation between the models residuals.
+
+```{r}
+dwtest(butter_no_int)
+```
+
+With a p-value of .4531, I fail to reject $H_0$ and confirm that the errors are not correlated at a significant level.
+
+Overall, I have checked the model assumptions of:
+
+1. Constant Error Variance (Homoskedastity)
+2. Residuals Being Normally Distributed
+3. Errors Have a Correlation of 0
+
+Of these assumptions, our model violates assumptions 1 and 2. Therefore, this model has not met all assumptions and should not be deemed as a useful model. Some steps may be taken to remedy these assumption violations, such as a box-cox transformation to tend the residuals towards a normal distribution or by adding a weight to the model to create homoskedasticity.
+
+### E.
+
+Is the best breed in terms of butterfat content clearly superior to the second best breed?
+
+The best breed is the Jersey breed with a mean butterfat content by percentage of 5.29%. The second best breed is the Guernsey breed with a mean butterfat content by percentage of 4.95% (see plot in part a). In order to test if the Jersey breed is clearly superior, I will test to see if these means are significantly different.
+
+```{r}
+top2_breeds = butterfat %>% filter(Breed == 'Jersey' | Breed == 'Guernsey') %>% select(Butterfat, Breed)
+t.test(Butterfat ~ Breed, data = top2_breeds)
+```
+
+Looking at the output above on the Welch's Two Sample t-test, I fail to reject $H_0$ that the difference between these means is equal to zero. Therefore, I cannot say that the best breed in terms of butterfat content is clearly superior to the second best breed.
+
+## Problem 2.
+
+The morley data can be seen as a randomized block experiment with Run as the treatment factor and Expt as the blocking factor. Is there a difference between runs and what efficiency is gained by blocking?
+
+```{r}
+anova(lm(Speed ~ Run + Expt, data = morley))
+```
+
+We can see that the run variable is not significant while the experiment number is. This makes sense as the run number contains no relevant information regarding the experiment, it is just the label of the experiment.
+
+To test if there is a difference between runs, I will run an ANOVA test.
+
+```{r}
+anova(lm(Speed ~ Run, data = morley))
+```
+
+Looking at the output above, we fail to reject $H_0$ and conclude that there is not a difference between run groups.
+
+Utilizing the experiment number as a blocking factor, we gain efficiency of this experiment as we are able to accurately test the difference between the run groups by comparing between experiment numbers. If we only performed one experiment with multiple more runs, we would not be able to accurately test difference between means of the speed.
+
+## Problem 3.
+
+The alfalfa data arise from a Latin square design where the treatment factor is inculum and the blocking factors are shade and irrigation. Test the significance of the effects and determine which levels of the treatment factor are significantly different.
+
+```{r}
+anova(lm(yield ~ ., data = alfalfa))
+```
+
+Looking at the ANOVA plot above, we are able to test the significance of the effects on the yield of alfalfa. I can see that both shade and inoculum are statistically significant at $\alpha=.01$, while irrigation is not. This tells me that shade and seed incolum may be of greater importance to yield compared to the amount of irrigation.
+
+Next, I want to determine which levels of the treatment factor are statistically significant.
+
+```{r}
+AB = t.test(yield ~ inoculum, data = alfalfa %>% filter(inoculum %in% c('A', 'B')))
+AC = t.test(yield ~ inoculum, data = alfalfa %>% filter(inoculum %in% c('A', 'C')))
+AD = t.test(yield ~ inoculum, data = alfalfa %>% filter(inoculum %in% c('A', 'D')))
+AE = t.test(yield ~ inoculum, data = alfalfa %>% filter(inoculum %in% c('A', 'E')))
+BC = t.test(yield ~ inoculum, data = alfalfa %>% filter(inoculum %in% c('B', 'C')))
+BD = t.test(yield ~ inoculum, data = alfalfa %>% filter(inoculum %in% c('B', 'D')))
+BE = t.test(yield ~ inoculum, data = alfalfa %>% filter(inoculum %in% c('B', 'E')))
+CD = t.test(yield ~ inoculum, data = alfalfa %>% filter(inoculum %in% c('C', 'D')))
+CE = t.test(yield ~ inoculum, data = alfalfa %>% filter(inoculum %in% c('C', 'E')))
+DE = t.test(yield ~ inoculum, data = alfalfa %>% filter(inoculum %in% c('D', 'E')))
+
+results = data.frame(Groups = c('AB', 'AC', 'AD', 'AE',
+                                'BC', 'BD', 'BE', 'CD', 
+                                'CE', 'DE'),
+                     t.Stat = c(AB$statistic, AC$statistic, AD$statistic, AE$statistic,
+                                BC$statistic, BD$statistic, BE$statistic, CD$statistic,
+                                CE$statistic, DE$statistic),
+                     p.value = c(AB$p.value, AC$p.value, AD$p.value, AE$p.value,
+                                BC$p.value, BD$p.value, BE$p.value, CD$p.value,
+                                CE$p.value, DE$p.value))
+results
+```
+
+For treatment levels to be considered significantly different, I will use a significance level of $\alpha=.05$.
+
+- For groups A and B, the yield **is not** significantly different between groups.
+- For groups A and C, the yield **is not** significantly different between groups.
+- For groups A and D, the yield **is not** significantly different between groups.
+- For groups A and E, the yield **is**significantly different between groups.
+- For groups B and C, the yield **is not** significantly different between groups.
+- For groups B and D, the yield **is not** significantly different between groups.
+- For groups B and E, the yield **is** significantly different between groups.
+- For groups C and D, the yield **is not** significantly different between groups.
+- For groups C and E, the yield **is** significantly different between groups.
+- For groups D and E, the yield **is** significantly different between groups.
+
+Overall, groups A and E, B and E, C and E, and D and E are significantly different from one another. Note that all four seed types A-D are significantly different than group E and that group E is a constant. This tells me that possibly only one seed type is needed compared to seed E, as there are no significant differences between groups A-D. 
