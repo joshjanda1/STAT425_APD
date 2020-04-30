@@ -3,8 +3,8 @@ title: "STAT 425 - HW7"
 author: "Josh Janda"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r message=FALSE, warning=FALSE}
@@ -213,7 +213,7 @@ Plot the fit of your selected model on the top of the simulated data.
 ```{r}
 ggplot(data = data, aes(x = x, y = y)) +
   geom_point(color = 'salmon', alpha = 0.2) +
-  geom_smooth(method = 'lm', formula = y ~ bs(x, df = 20), se = FALSE,
+  geom_smooth(method = 'lm', formula = y ~ bs(x, df = 24), se = FALSE,
               color = 'blue', size = 2) +
   theme(axis.line = element_line(color = 'black'),
         panel.background = element_blank())
