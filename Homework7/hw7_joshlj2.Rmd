@@ -1,0 +1,222 @@
+---
+title: "STAT 425 - HW7"
+author: "Josh Janda"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r message=FALSE, warning=FALSE}
+library(splines)
+library(tidyverse)
+library(faraway)
+library(leaps)
+```
+
+
+## Problem 1.
+
+Use the prostate data with lpsa as the response and the other variables as predictors. Implement the following variable selection methods to determine the **best model**.
+
+### A.
+
+Backward elimination
+
+```{r}
+model = lm(lpsa ~ ., data = prostate)
+```
+```{r}
+backward = step(model, direction = 'backward')
+```
+
+With backwards selection, the best model after removal of some variables is the model with `age`, `lbph`, `lweight`, `svi`, and `lcavol`.
+
+### B.
+
+AIC and BIC
+
+```{r}
+model2 = regsubsets(lpsa ~ ., data = prostate)
+summary_mod2 = summary(model2)
+summary_mod2$which
+```
+```{r}
+n = nrow(prostate)
+psize = 2:9
+Aic = n*log(summary_mod2$rss/n) + 2*psize
+Bic = n*log(summary_mod2$rss/n) + psize*log(n)
+
+par(mfrow=c(1, 2))
+plot(psize, Aic, xlab="No. of Parameters", ylab = "AIC");
+plot(psize, Bic, xlab="No. of Parameters", ylab = "BIC");
+```
+
+Looking at the plots above, it seems that AIC selects the model with 6 parameters while BIC selects the model with 4 parameters.
+
+```{r}
+summary_mod2$which[which.min(Aic),]
+```
+```{r}
+summary_mod2$which[which.min(Bic),]
+```
+
+So, when using AIC we select a model with more parameters which is expected due to its lesser penalty on the number of predictors included. For AIC, I choose a model with variables `lcavol`, `lweight`, `age`, `lbph`, `svi`, and the included intercept. For BIC, I select a model with `lcavol`, `lweight`, `svi`, and the included intercept. I select the same model using AIC as variable selection compared to backwards elimination, which makes sense as backwards elimination chooses the model with the lowest AIC.
+
+### C.
+
+Adjusted R^2
+
+```{r}
+plot(psize, summary_mod2$adjr2, xlab="No. of Parameters", ylab = "Adj. R-Squared")
+```
+
+The higher the $Adj. R^2$ the better. Comparing $Adj. R^2$ to AIC/BIC, $Adj. R^2$ penalizes the model for including more terms but at a much lesser penalty. This can be seen through this variable selection procedure as $Adj. R^2$ chooses a model with 8 parameters versus 6 parameters for AIC and 4 parameters for BIC.
+
+```{r}
+summary_mod2$which[which.max(summary_mod2$adjr2),]
+```
+
+### D.
+
+Mallow's Cp
+
+```{r}
+plot(psize, summary_mod2$cp, xlab="No. of Parameters", ylab = "Mallow's Cp")
+```
+
+Mallow's Cp is very similar to AIC. We want to choose a model that minimizes the Mallow's Cp score. Looking at the plot above, this seems to be the model with 5 parameters.
+
+```{r}
+summary_mod2$which[which.min(summary_mod2$cp),]
+```
+
+This is a very similar model compared to the model selected with AIC, other than it does not include the `age` predictor.
+
+Overall, through all of these variable selection procedures, I believe that the model chosen through BIC with four parameters is the best performing model due to the penalty term BIC holds. With this penalty term, we can assure to get a good model that is not overfit on too many parameters.
+
+```{r}
+best_mod = lm(lpsa ~ lcavol + lweight + svi, data = prostate)
+summary(best_mod)
+```
+
+All predictors are significant at $\alpha = .01$ and there is also a high $R^2$ and $Adj. R^2$.
+
+```{r}
+lpsa_sd = sd(prostate$lpsa)
+sqrt(sum((best_mod$fitted.values - prostate$lpsa)^2))
+```
+
+I get a root mean squared error value of ~6.91 which compared to the standard deviation of the `lpsa` target variable is just okay ($\sigma = `r lpsa_sd`)$
+
+## Problem 2.
+
+Use simulated data from the model:
+
+$$y = sin^3(2\pi x^3) + \epsilon$$
+Where $\epsilon$ ~ $N(0, 0.1^2)$. Simulate at least 100 observations.
+
+```{r}
+set.seed(27)
+
+x = seq(0,1, length.out = 10000)
+epsilon = rnorm(10000, 0, 0.1)
+y = sin(2*pi*x^3)^3 + epsilon
+
+data = data.frame(x = x, y = y)
+```
+
+
+### A.
+
+Fit a regression splines with 12 evenly-spaced knots using $y ∼ bs(x, 12)$. You need to
+load the splines package. Display the fit on the top of the simulated data.
+
+```{r}
+spline_mod = lm(y ~ bs(x, df = 16), data = data)
+
+ggplot(data = data, aes(x = x, y = y)) +
+  geom_point(color = 'salmon', alpha = 0.2) +
+  geom_smooth(method = 'lm', formula = y ~ bs(x, df = 16), se = FALSE,
+              color = 'blue', size = 2) +
+  theme(axis.line = element_line(color = 'black'),
+        panel.background = element_blank())
+```
+
+
+### B.
+
+Compute the BIC and AIC for this model.
+
+```{r}
+aic_and_bic = data.frame(AIC_Score = AIC(spline_mod),
+                         BIC_Score = BIC(spline_mod))
+aic_and_bic
+```
+
+
+### C.
+
+Compute the BIC and AIC for all models with a number of knots between 3 and 20 inclusive. Plot the BIC and AIC as a function of the number of parameters. Which model is the best?
+
+```{r}
+scores = data.frame(knots = 3:20,
+                    AIC_scores = rep(0, 18),
+                    BIC_scores = rep(0, 18)
+                    )
+i = 1
+for (k in 3:20) {
+  
+  model = lm(y ~ bs(x, df = k + 4), data = data)
+  aic_score = AIC(model)
+  bic_score = BIC(model)
+  scores$AIC_scores[i] = aic_score
+  scores$BIC_scores[i] = bic_score
+  i = i + 1
+  
+}
+```
+```{r fig.width = 12}
+ggplot(data = scores, aes(x = knots, y = AIC_scores)) +
+  geom_point(color = 'blue') +
+  geom_line(color = 'black') +
+  labs(x = 'Knots', y = 'AIC Score', title = 'AIC Score Over Differing Number of Knots') +
+  scale_x_discrete(limits = c(3:20)) +
+  theme(plot.title = element_text(hjust = 0.5),
+        panel.background = element_blank(),
+        axis.line = element_line(color = 'black')) -> aic_plot
+ggplot(data = scores, aes(x = knots, y = BIC_scores)) +
+  geom_point(color = 'salmon') +
+  geom_line(color = 'black') +
+  labs(x = 'Knots', y = 'BIC Score', title = 'BIC Score Over Differing Number of Knots') +
+  scale_x_discrete(limits = c(3:20)) +
+  theme(plot.title = element_text(hjust = 0.5),
+        panel.background = element_blank(),
+        axis.line = element_line(color = 'black')) -> bic_plot
+gridExtra::grid.arrange(aic_plot, bic_plot, nrow = 1)
+```
+
+The lower the AIC/BIC score the better. I can tell from these plots that the best model is with 20 knots as 20 knots corresponds to the lowest AIC and BIC scores.
+
+```{r}
+scores %>% 
+  filter(AIC_scores == min(AIC_scores),
+         BIC_scores == min(BIC_scores)) %>%
+  knitr::kable()
+```
+
+
+### D.
+
+Plot the fit of your selected model on the top of the simulated data.
+
+```{r}
+ggplot(data = data, aes(x = x, y = y)) +
+  geom_point(color = 'salmon', alpha = 0.2) +
+  geom_smooth(method = 'lm', formula = y ~ bs(x, df = 20), se = FALSE,
+              color = 'blue', size = 2) +
+  theme(axis.line = element_line(color = 'black'),
+        panel.background = element_blank())
+```
+
+Looking at the plot above, the fit is just a small amount better than with 12 knots making this a better model.
