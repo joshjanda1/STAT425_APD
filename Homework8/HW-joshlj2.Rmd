@@ -1,0 +1,276 @@
+---
+title: "STAT 425 - HW8"
+author: "Josh Janda"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r message=FALSE, warning=FALSE}
+library(rpart)
+library(randomForest)
+library(tidyverse)
+library(faraway)
+```
+
+## Problem 1.
+
+Four hundred and three African Americans were interviewed in a study to understand the prevalence of obesity, diabetes and other cardiovascular risk factors in central Virginia. Data is presented in diabetes. In this question we want to build a regressiontree-based model for predicting glycosolated hemoglobin (glyhb) in term of the other relevant variables.
+
+### A.
+
+Plot the response against each of the predictors and comment on the apparent strength of the relationship observed.
+
+```{r}
+diabetes_rel = diabetes %>% select(-c(id)) # remove any observations with NA values
+numeric_diabetes = diabetes_rel %>% select_if(is.numeric)
+char_diabetes = diabetes_rel %>% select_if(is.factor) %>% mutate(glyhb = diabetes_rel$glyhb)
+```
+
+```{r message=FALSE, warning=FALSE}
+GGally::ggpairs(numeric_diabetes[, 1:5], progress = FALSE)
+```
+
+This first plot shows the first four numeric variables (`cholesterol`, `stabilized glucose`, `high density lipoprotein`, `ratio`), plotted against one another as well as the target variable of `glyhb`. Looking at the scatter plots and correlation, each of these predictors show a weak/moderate positive or negative correlation with `glyhb` with no signs of multicollinearity. The variable with the strongest correlation to `glyhb` is `stab.glu`, which represents stabilized glucose in the person.
+
+```{r message=FALSE, warning=FALSE}
+GGally::ggpairs(numeric_diabetes[, c(5, 6:10)], progress = FALSE)
+```
+
+This plot shows the next five numeric variables (`age`, `height`, `weight`, `first systolic blood pressure`, and `first diastolic blood pressure`), plotted against one another as well as the target variable of `glyhb`. Looking at the scatter plots and correlation, `age`, `weight`, and `bp.1s` show weak/moderate correlation with the response variable of `glyhb`. Variables `height` and `bp.1d` show extremely weak correlation, possibly suggesting that these variables are not useful as a predictor for `glycisilated hemoglobin`. I will look more into removal of these variables when investigating missing values.
+
+```{r message=FALSE, warning=FALSE}
+GGally::ggpairs(numeric_diabetes[, c(5, 11:15)], progress = FALSE)
+```
+
+This last plot shows the next five numeric variables (`second systolic blood pressure`, `second diastolic blood pressure`, `waist`, `hip`, and `postprandial time`), plotted against one another as well as the target variable of `glyhb`. Looking at the scatter plots and correlation I see that `bp.2d`, `waist`, and `hip` demonstrate weak/moderate absolute correlation with the response variable. Variables `bp.2s` and `time.ppn` show extremely weak correlation, possibly suggesting that these variables are not useful as a predictor for `glycisilated hemoglobin`. I will look more into removal of these variables when investigating missing values. It should be noted that for these variables there is a case of multicollinearity between variables `hip` and `waist`, which makes sense as hip and waist sizes are typically determinants of one another.
+
+Next, I will look into categorical variables of `location`, `gender`, and `frame`.
+
+```{r}
+char_diabetes %>% select(location, glyhb) %>%
+  group_by(location) %>% summarise(mean_glyhb = mean(glyhb, na.rm = TRUE)) %>%
+  ggplot(aes(x = location, y = mean_glyhb)) +
+  geom_bar(stat = 'identity', fill = 'salmon') +
+  geom_text(aes(label = round(mean_glyhb, 3)), vjust = 3) +
+  labs(x = 'Location', y = 'Mean Glycosolated Hemoglobin',
+       title = 'Mean GLYHB\nBy Location') +
+  theme(panel.background = element_blank(),
+        axis.line = element_line(color = 'black'),
+        plot.title = element_text(hjust = 0.5)) -> location_plot
+
+char_diabetes %>% select(gender, glyhb) %>%
+  group_by(gender) %>% summarise(mean_glyhb = mean(glyhb, na.rm = TRUE)) %>%
+  ggplot(aes(x = gender, y = mean_glyhb)) +
+  geom_bar(stat = 'identity', fill = 'salmon') +
+  geom_text(aes(label = round(mean_glyhb, 3)), vjust = 3) +
+  labs(x = 'Gender', y = 'Mean Glycosolated Hemoglobin',
+       title = 'Mean GLYHB\nBy Gender') +
+  theme(panel.background = element_blank(),
+        axis.line = element_line(color = 'black'),
+        plot.title = element_text(hjust = 0.5)) -> gender_plot
+
+char_diabetes %>% select(frame, glyhb) %>%
+  group_by(frame) %>% summarise(mean_glyhb = mean(glyhb, na.rm = TRUE)) %>%
+  ggplot(aes(x = frame, y = mean_glyhb)) +
+  geom_bar(stat = 'identity', fill = 'salmon') +
+  geom_text(aes(label = round(mean_glyhb, 3)), vjust = 3) +
+  labs(x = 'Frame', y = 'Mean Glycosolated Hemoglobin',
+       title = 'Mean GLYHB\nBy Frame') +
+  theme(panel.background = element_blank(),
+        axis.line = element_line(color = 'black'),
+        plot.title = element_text(hjust = 0.5)) -> frame_plot
+
+gridExtra::grid.arrange(location_plot, gender_plot,
+                        frame_plot, nrow = 1)
+```
+
+The plot above looks at mean `Glycosolated Hemoglobin` between groups of each categorical variable.
+
+For `location` I can see that mean `glyhb` does not differ by much between Buckingham and Louisa, with a mean difference of ~.17. This suggests to me that location does not play a large role as a useful predictor.
+
+For 'gender' I can see that mean `glyhb` also does not differ by a great amount between male and female, with a mean difference of ~.25. It should be noted that females have the lower `glyhb` compared to males.
+
+Lastly, for `frame` I can see that there are strong differences between mean `glyhb` and small, medium, and large frames. Note that there is an NA factor, which will be looked into.
+
+```{r}
+chisq.test(char_diabetes$location, char_diabetes$glyhb)
+```
+
+For the test above, we get a p-value of ~.50 so I fail to reject $H_0$ that there is no relationship between `glyhb` and `location`. Location will be removed as a predictor.
+
+```{r}
+chisq.test(char_diabetes$gender, char_diabetes$glyhb)
+```
+
+For the test above, we get a p-value of ~.53 so I fail to reject $H_0$ that there is no relationship between `glyhb` and `gender`. Gender will be removed as a predictor.
+
+```{r}
+chisq.test(char_diabetes$frame, char_diabetes$glyhb)
+```
+
+For the test above, we get a p-value of ~.37 so I fail to reject $H_0$ that there is no relationship between `glyhb` and `frame`. Frame will be removed as a predictor.
+
+Overall, from testing I will be removing all three categorical variables.
+
+### B.
+
+Investigate the pattern of missing values in the data. By eliminating a combination of rows and columns, produce a reduced dataset that contains no missing values.
+
+For starters, I will remove all three categorical variables.
+
+```{r}
+new_diabetes = diabetes_rel %>% select(-c(location, gender, frame))
+
+summary(new_diabetes)
+```
+
+Looking at the summary table above, all but two variables (`age` and `stab.glu`) have missing values. My method for removing missing values will be to drop the columns with a mass amount of NA values which are `bp.2s` and `bp.2d`. I will then remove all remaining rows that contain an NA value.
+
+I will also remove any variables that had extremely weak correlation with the response variable, which are `time.ppn` and `bp.1d`
+
+```{r}
+final_diabetes = new_diabetes %>% select(-c(bp.2s, bp.2d, time.ppn, bp.1d)) %>%
+  drop_na()
+summary(final_diabetes)
+```
+
+The dataset now contains zero missing values and only predictors with moderate to strong correlation with the response.
+
+### C.
+
+Fit the default tree. From the output answer the following questions: How many observations had stab.glu < 158? What was the mean response for these observations? What characterizes the largest terminal node in the tree? What is the mean response of this node?
+
+```{r}
+set.seed(27)
+first_tree = rpart(glyhb ~ ., data = final_diabetes, cp = 0.01)
+first_tree
+```
+
+There are `r sum(final_diabetes$stab.glu < 158)` observations with a `stab.glu` value less than 158.
+
+From the output above, the largest terminal node in the tree is when `stag.glu` is greater than or equal to 158 and `chol` is less than 193.5. If the person satisfies these two filters, then the predicted mean `glyhb` value is 8.312.
+
+```{r}
+final_diabetes %>% filter(stab.glu < 158) %>% summarise(mean(glyhb))
+```
+
+Those with a `stablized glucose` value of less than 158 have a mean `glycosolated hemoglobin` value of ~5.02. 
+
+### D.
+
+Make a plot of the tree. What feature of the plot reveals the most important predictor?
+
+```{r fig.height=6, fig.width=10}
+plot(first_tree,compress=T,uniform=T,branch=0.4,margin=.10)
+text(first_tree)
+```
+
+The plot above allows me to visualize the tree fully and understand where splits are occuring. The plot reveals that the most important predictor for determining mean `glyhb` is the variable `stab.glu`, as it is the variable split on for the root node and also the variable split on for two terminal nodes on the right side. Having the most amount of splits tells me this is one of the most important variables.
+
+### E.
+
+Plot the residuals against the fitted values for this tree. Comment.
+
+```{r}
+resid_df = data.frame(fitted = predict(first_tree, final_diabetes),
+                      residuals = residuals(first_tree))
+
+ggplot(data = resid_df, aes(x = fitted, y = residuals)) +
+  geom_point(color = 'blue') +
+  geom_hline(yintercept = 0, color = 'black', lwd = 1.5) +
+  labs(x = 'Fitted Values', y = 'Residuals', title = 'Residuals Against Fitted Values') +
+  theme(panel.background = element_blank(),
+        axis.line = element_line(color = 'black'),
+        plot.title = element_text(hjust = 0.5))
+```
+
+Looking at the plot above, there does not seem to be much, if any, heteroskedasticity. This plot looks good to me.
+
+### F.
+
+Select the optimal tree using Cross-validation. What would be the smallest tree that could be reasonably used?
+
+```{r}
+plotcp(first_tree)
+```
+
+Looking at the plot above, using a cp value os .01 creates trees that are too small as the relative error is still decreasing at a cp value of 0.01.
+
+```{r}
+second_tree = rpart(glyhb ~ ., data = final_diabetes, cp = 0.001)
+plotcp(second_tree)
+```
+
+Using the new plot above, we see that as cp increases past .01 the relative error actually begins to increase which I do not want. I will be selecting the tree with the smallest CV error plus one standard error.
+
+```{r}
+myCPtable = second_tree$cptable
+id.min = which.min(myCPtable[,'xerror'])
+my1se.err = myCPtable[id.min,'xerror'] + myCPtable[id.min, 'xstd']
+plotcp(second_tree)
+abline(h=my1se.err, col="red") 
+```
+
+Using the output above, the smallest theoretical tree size that can be used is a tree of size two as it is under the minimum error plus one standard error. I will be selecting the tree using the smallest CV error approach, which chooses the tree with minimum CV error.
+
+```{r fig.height=6, fig.width=10}
+CP.min = (myCPtable[id.min, 'CP'] + myCPtable[(id.min-1), 'CP'])/2
+tree.min = prune.rpart(second_tree, CP.min)
+plot(tree.min,compress=T,uniform=T,branch=0.4,margin=.10)
+text(tree.min)
+```
+
+The tree with the minimum CV error was a tree of size four and CP value of `r CP.min`.
+
+Overall, the optimal tree for this data is a tree of size four but in reality a tree of size two could be used and still be a good fit.
+
+## Problem 2.
+
+The data set wbca comes from a study of breast cancer in Wisconsin. There are 681 cases of potentially cancerous tumors of which 238 are actually malignant.
+
+### A.
+
+Fit a binary regression with Class as the response and the other nine variables as predictors. Report the residual deviance and associated degrees of freedom. Can this information be used to determine if the models fits the data? Explain.
+
+```{r}
+bin_reg = glm(Class ~ ., data = wbca, family = binomial)
+summary(bin_reg)
+```
+
+The residual deviance for this model is 89.464 on 671 degrees of freedom. Using this as model criterion can determine if the model fits the data as the residual deviance shows how well the response is prediced when including all variables in the model where the null deviance shows how well the response is predicted when only including an intercept.
+
+### B.
+
+Use AIC as the criterion to determine the best subset of variables. (Use the step function).
+
+```{r}
+best_mod = step(bin_reg)
+```
+
+According to AIC criterion, the best subset of variables to include in this model are:
+
+- `UShap` : cell shape uniformity
+- `Mitos` : mitoses
+- `NNucl` : normal nucleoli
+- `Adhes` : marginal adhesion
+- `Chrom` : bland chromatin
+- `BNucl` : bare nuclei
+- `Thick` : clump thickness
+
+### C.
+
+Suppose that a cancer is classified as benign if p > 0.5 and malignant if p < 0.5. Compute the number of errors of both types (false positives and false negatives) that will be made if this method is applied to the current data with the reduced model.
+
+```{r}
+predictions = best_mod$fitted.values
+prediction_classes = factor(ifelse(predictions > .50, 1, 0))
+
+cf_mtx = caret::confusionMatrix(prediction_classes, factor(wbca$Class))
+cf_mtx$table
+```
+
+False positive, or the type 1 error, is the total number of observations predicted as `malignant` but are actually `benign`. There are a toital of 9 false positives predicted by the reduced model, which gives a false positive rate of `r  1 - cf_mtx$byClass[2]`.
+
+False negative, or the type 2 error, is the total number number of observations predicted as `benign` but are actually `malignant`. There are a total of 11 false negatives predicted by the reduced model, which gives a false negative rate of `r 1 - cf_mtx$byClass[1]`.
