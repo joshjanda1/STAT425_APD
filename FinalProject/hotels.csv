@@ -1,0 +1,2098 @@
+"hotel","is_canceled","lead_time","arrival_date_year","arrival_date_month","arrival_date_week_number","arrival_date_day_of_month","stays_in_weekend_nights","stays_in_week_nights","adults","children","babies","meal","market_segment","reserved_room_type","customer_type","adr","total_of_special_requests"
+"Resort Hotel",0,68,2015,"July",27,1,0,4,2,0,0,"BB","Online TA","D","Transient",97,3
+"Resort Hotel",0,14,2015,"July",27,2,0,2,2,0,0,"BB","Online TA","A","Transient",98,1
+"Resort Hotel",0,10,2015,"July",27,3,0,2,2,2,0,"BB","Online TA","G","Transient",153,0
+"Resort Hotel",0,9,2015,"July",27,3,0,1,2,0,0,"BB","Online TA","C","Transient",94.71,0
+"Resort Hotel",0,51,2015,"July",28,6,1,3,2,0,0,"BB","Online TA","G","Transient",117.81,2
+"Resort Hotel",0,51,2015,"July",28,6,1,3,3,0,0,"BB","Online TA","G","Transient",117.81,2
+"Resort Hotel",0,98,2015,"July",28,6,1,1,2,0,0,"BB","Online TA","D","Transient",87.3,1
+"Resort Hotel",0,88,2015,"July",28,7,0,4,3,0,0,"HB","Offline TA/TO","D","Transient",150,1
+"Resort Hotel",0,10,2015,"July",28,10,0,1,2,0,0,"BB","Direct","A","Transient",131,0
+"Resort Hotel",0,42,2015,"July",29,13,1,2,2,0,0,"BB","Online TA","D","Transient",110,0
+"Resort Hotel",0,7,2015,"July",29,16,0,1,2,2,0,"BB","Online TA","C","Transient",169,1
+"Resort Hotel",0,70,2015,"July",31,28,0,1,2,1,0,"BB","Online TA","D","Transient",114.85,1
+"Resort Hotel",0,110,2015,"July",31,28,2,8,2,0,0,"BB","Offline TA/TO","A","Transient",90.95,1
+"Resort Hotel",0,5,2015,"August",32,8,2,1,2,0,0,"BB","Online TA","D","Transient",157.59,1
+"Resort Hotel",0,34,2015,"August",33,9,2,2,2,0,0,"BB","Online TA","D","Transient",211,1
+"Resort Hotel",0,30,2015,"August",33,10,1,2,2,0,0,"BB","Online TA","A","Transient",211,0
+"Resort Hotel",0,2,2015,"August",33,15,2,2,2,2,0,"BB","Online TA","G","Transient",242.5,0
+"Resort Hotel",0,0,2015,"August",34,20,0,1,1,0,0,"BB","Direct","G","Transient",200,0
+"Resort Hotel",0,4,2015,"September",36,2,0,4,2,0,0,"BB","Online TA","D","Transient",154.25,0
+"Resort Hotel",0,25,2015,"September",36,5,1,1,2,0,0,"BB","Online TA","E","Transient",139.5,1
+"Resort Hotel",0,119,2015,"September",39,23,0,2,2,0,0,"BB","Online TA","A","Transient",56.98,1
+"Resort Hotel",0,69,2015,"October",41,5,1,1,2,0,0,"HB","Online TA","A","Transient",88,1
+"Resort Hotel",0,130,2015,"October",42,16,0,2,2,0,0,"BB","Online TA","F","Transient",98.4,0
+"Resort Hotel",0,2,2015,"October",44,29,0,2,1,0,0,"BB","Online TA","A","Transient",35.1,1
+"Resort Hotel",0,25,2015,"October",44,30,0,2,2,0,0,"BB","Online TA","A","Transient",56,0
+"Resort Hotel",0,54,2015,"October",44,31,0,1,2,0,0,"BB","Online TA","A","Transient",38.81,1
+"Resort Hotel",0,11,2015,"November",45,6,0,1,1,0,0,"BB","Online TA","A","Transient",44.1,1
+"Resort Hotel",0,23,2016,"January",3,14,0,1,2,0,0,"BB","Direct","E","Transient",48,0
+"Resort Hotel",1,44,2016,"May",19,6,2,3,2,0,0,"BB","Online TA","E","Transient",95,0
+"Resort Hotel",1,54,2016,"May",20,13,0,1,2,0,0,"BB","Online TA","D","Transient",86,0
+"Resort Hotel",1,46,2016,"May",22,22,1,0,1,0,0,"BB","Online TA","D","Transient",90,0
+"Resort Hotel",1,18,2016,"May",22,27,0,2,2,2,0,"BB","Online TA","G","Transient",139,1
+"Resort Hotel",1,18,2016,"May",22,27,0,2,2,2,0,"BB","Online TA","G","Transient",145,1
+"Resort Hotel",1,34,2016,"June",23,2,0,3,1,0,0,"BB","Direct","F","Transient",145,0
+"Resort Hotel",1,3,2016,"June",26,22,0,1,2,0,0,"HB","Online TA","E","Transient",171,0
+"Resort Hotel",1,24,2016,"July",28,7,0,2,2,0,0,"BB","Online TA","A","Transient",171,1
+"Resort Hotel",1,22,2016,"July",28,9,2,1,2,0,0,"BB","Direct","H","Transient",224,0
+"Resort Hotel",1,114,2016,"July",30,21,1,3,2,2,0,"BB","Online TA","G","Transient",240,0
+"Resort Hotel",1,114,2016,"July",30,21,1,3,2,0,0,"BB","Online TA","E","Transient",207,0
+"Resort Hotel",1,114,2016,"July",30,21,1,3,2,0,0,"BB","Online TA","E","Transient",207,0
+"Resort Hotel",1,114,2016,"July",30,21,2,3,2,2,0,"BB","Online TA","G","Transient",240,0
+"Resort Hotel",1,114,2016,"July",30,21,2,3,2,0,0,"BB","Online TA","E","Transient",207,0
+"Resort Hotel",1,114,2016,"July",30,21,2,3,2,0,0,"BB","Online TA","E","Transient",207,0
+"Resort Hotel",1,22,2016,"July",31,29,0,2,2,0,0,"BB","Direct","F","Transient",209.1,0
+"Resort Hotel",1,91,2016,"August",33,7,2,3,3,1,0,"BB","Online TA","H","Transient",273,0
+"Resort Hotel",1,22,2016,"August",33,8,1,3,2,0,0,"BB","Online TA","A","Transient",231,0
+"Resort Hotel",1,22,2016,"August",33,8,1,3,2,0,0,"BB","Online TA","A","Transient",219,0
+"Resort Hotel",1,77,2016,"August",34,18,0,2,2,0,0,"BB","Online TA","E","Transient",214,0
+"Resort Hotel",1,26,2016,"August",34,20,1,1,3,1,0,"BB","Online TA","H","Transient",304,0
+"Resort Hotel",1,123,2016,"August",36,28,2,3,2,0,0,"BB","Online TA","E","Transient",189.8,0
+"Resort Hotel",1,124,2016,"August",36,29,1,3,2,0,0,"BB","Online TA","E","Transient",188.5,0
+"Resort Hotel",0,542,2016,"September",40,26,3,7,2,0,0,"SC","Groups","A","Transient-Party",22.4,0
+"Resort Hotel",1,36,2016,"September",40,27,0,2,2,2,0,"BB","Online TA","G","Transient",169,0
+"Resort Hotel",1,69,2016,"September",40,30,0,1,2,0,0,"BB","Online TA","E","Transient",139,0
+"Resort Hotel",1,139,2016,"December",49,1,1,3,2,0,0,"BB","Online TA","E","Transient",55.8,0
+"Resort Hotel",1,135,2016,"December",49,1,1,3,2,0,0,"BB","Online TA","E","Transient",55.8,1
+"Resort Hotel",1,75,2016,"December",50,6,0,5,2,0,0,"BB","Online TA","A","Transient",37.8,0
+"Resort Hotel",1,76,2016,"December",52,24,1,1,2,0,0,"BB","Direct","G","Transient",73.8,2
+"Resort Hotel",1,40,2017,"February",7,12,2,3,2,0,0,"BB","Online TA","A","Transient",48,0
+"Resort Hotel",1,40,2017,"February",7,12,2,3,2,0,0,"BB","Online TA","A","Transient",48,0
+"Resort Hotel",1,73,2017,"February",8,19,2,1,2,0,0,"BB","Online TA","A","Transient",42,0
+"Resort Hotel",1,211,2017,"March",10,9,0,1,1,0,0,"BB","Direct","A","Transient",33.3,0
+"Resort Hotel",1,133,2017,"March",11,13,1,0,2,0,0,"BB","Online TA","A","Transient",42,2
+"Resort Hotel",1,255,2017,"April",14,3,1,0,2,0,0,"BB","Online TA","A","Transient",54,2
+"Resort Hotel",1,192,2017,"April",14,4,2,5,2,0,0,"BB","Online TA","D","Transient",68.57,1
+"Resort Hotel",1,55,2017,"April",15,14,1,2,2,0,0,"BB","Online TA","A","Transient",98.33,0
+"Resort Hotel",1,28,2017,"April",16,19,0,2,2,0,0,"BB","Online TA","D","Transient",100,1
+"Resort Hotel",1,16,2017,"April",17,29,1,1,2,0,0,"BB","Online TA","D","Transient",111,0
+"Resort Hotel",1,94,2017,"May",18,3,0,2,2,0,0,"BB","Online TA","E","Transient",115,2
+"Resort Hotel",1,7,2017,"May",19,9,0,2,1,0,0,"BB","Online TA","A","Transient",85,1
+"Resort Hotel",1,7,2017,"May",19,9,0,2,2,0,0,"BB","Online TA","A","Transient",85,1
+"Resort Hotel",1,201,2017,"May",19,13,1,1,2,0,0,"BB","Online TA","A","Transient",76.5,1
+"Resort Hotel",1,201,2017,"May",19,13,1,1,2,0,0,"BB","Online TA","A","Transient",76.5,1
+"Resort Hotel",1,201,2017,"May",19,13,1,1,2,0,0,"BB","Online TA","A","Transient",76.5,1
+"Resort Hotel",1,259,2017,"May",21,21,2,2,2,2,0,"BB","Online TA","G","Transient",130,0
+"Resort Hotel",1,16,2017,"May",21,25,0,3,2,1,0,"BB","Direct","F","Transient",190,0
+"Resort Hotel",1,2,2017,"June",22,3,1,1,2,0,0,"BB","Online TA","A","Transient",120,1
+"Resort Hotel",1,12,2017,"June",24,13,0,3,2,0,0,"HB","Online TA","E","Transient",202,1
+"Resort Hotel",1,175,2017,"June",24,14,0,3,2,0,0,"BB","Online TA","E","Transient",140,1
+"Resort Hotel",1,77,2017,"June",24,17,2,5,2,2,0,"Undefined","Direct","G","Transient",311,2
+"Resort Hotel",1,57,2017,"June",25,20,0,3,2,2,0,"HB","Online TA","G","Transient",288,0
+"Resort Hotel",1,244,2017,"June",25,22,1,3,2,0,0,"HB","Online TA","A","Transient",127.8,2
+"Resort Hotel",1,244,2017,"June",25,22,1,3,2,0,0,"HB","Online TA","A","Transient",127.8,2
+"Resort Hotel",1,103,2017,"June",26,25,2,1,2,0,0,"BB","Direct","G","Transient",209,1
+"Resort Hotel",1,116,2017,"June",26,26,1,3,2,0,0,"BB","Online TA","A","Transient",120,0
+"Resort Hotel",1,59,2017,"July",26,1,2,1,2,2,0,"BB","Online TA","G","Transient",250,0
+"Resort Hotel",1,171,2017,"July",27,2,2,1,2,2,0,"BB","Online TA","G","Transient",180,0
+"Resort Hotel",1,133,2017,"July",27,3,1,1,2,0,0,"BB","Online TA","A","Transient",140,1
+"Resort Hotel",1,135,2017,"July",28,14,1,2,2,2,0,"BB","Direct","C","Transient",198.33,2
+"Resort Hotel",1,4,2017,"July",30,28,0,2,2,0,0,"BB","Online TA","A","Transient",192.5,2
+"Resort Hotel",1,119,2017,"August",31,5,2,2,2,2,0,"BB","Online TA","C","Transient",269,2
+"Resort Hotel",1,153,2017,"August",32,8,0,1,2,0,0,"BB","Online TA","D","Transient",220,1
+"Resort Hotel",1,161,2017,"August",32,11,1,2,2,2,0,"BB","Online TA","G","Transient",300,1
+"Resort Hotel",1,188,2017,"August",33,14,1,2,2,0,0,"BB","Online TA","E","Transient",204.67,1
+"Resort Hotel",1,76,2017,"August",33,18,2,3,2,0,0,"BB","Direct","E","Transient",265,1
+"Resort Hotel",1,160,2017,"August",33,19,2,3,2,0,0,"BB","Online TA","E","Transient",238,0
+"Resort Hotel",1,160,2017,"August",33,19,2,3,2,0,0,"BB","Online TA","E","Transient",238,0
+"Resort Hotel",1,17,2017,"August",34,26,1,1,2,0,0,"BB","Online TA","D","Transient",240,2
+"Resort Hotel",1,51,2017,"August",35,27,2,0,2,2,0,"BB","Online TA","G","Transient",290,1
+"Resort Hotel",1,51,2017,"August",35,27,2,0,2,2,0,"BB","Online TA","G","Transient",290,1
+"Resort Hotel",1,74,2017,"August",35,30,0,3,2,2,0,"BB","Online TA","C","Transient",233.33,1
+"Resort Hotel",0,0,2015,"July",28,5,1,0,2,2,0,"BB","Online TA","G","Group",153,0
+"Resort Hotel",0,41,2015,"July",29,16,1,3,1,0,0,"BB","Online TA","D","Transient",135,0
+"Resort Hotel",0,39,2015,"July",30,20,1,2,2,0,0,"BB","Online TA","D","Transient",103.95,1
+"Resort Hotel",0,13,2015,"July",31,29,0,1,2,1,0,"BB","Direct","A","Transient",168,2
+"Resort Hotel",0,69,2015,"August",33,9,1,0,2,0,0,"BB","Online TA","A","Transient",134,0
+"Resort Hotel",0,74,2015,"August",33,9,1,0,2,0,0,"BB","Direct","A","Transient",134,0
+"Resort Hotel",0,71,2015,"August",33,12,2,6,2,0,0,"HB","Direct","D","Transient",198,0
+"Resort Hotel",0,49,2016,"August",36,29,2,5,2,0,0,"HB","Direct","D","Transient",218.6,0
+"Resort Hotel",0,41,2015,"August",34,19,0,2,3,0,0,"BB","Online TA","A","Transient",219.3,2
+"Resort Hotel",0,70,2015,"August",34,17,3,5,2,0,0,"BB","Online TA","E","Transient",119.97,1
+"Resort Hotel",0,75,2015,"August",34,22,2,1,2,0,0,"BB","Offline TA/TO","D","Transient",118.13,0
+"Resort Hotel",0,0,2015,"August",35,26,0,1,1,0,0,"BB","Online TA","A","Transient",153,0
+"Resort Hotel",0,37,2015,"August",35,23,2,3,2,0,0,"BB","Online TA","A","Transient",132.44,2
+"Resort Hotel",0,49,2015,"August",35,25,0,3,2,0,1,"HB","Offline TA/TO","E","Transient",177.47,2
+"Resort Hotel",0,193,2015,"August",35,23,2,3,2,0,0,"BB","Offline TA/TO","A","Transient",103.95,1
+"Resort Hotel",0,32,2015,"August",35,23,2,4,1,1,0,"BB","Online TA","E","Transient",154.71,1
+"Resort Hotel",0,0,2015,"August",35,28,0,1,2,0,0,"BB","Offline TA/TO","A","Transient",153,1
+"Resort Hotel",0,13,2015,"August",36,30,2,1,2,0,0,"BB","Offline TA/TO","F","Transient",120.79,0
+"Resort Hotel",0,37,2015,"September",36,2,0,2,3,0,0,"BB","Online TA","G","Transient",117.81,1
+"Resort Hotel",0,89,2015,"September",37,8,0,2,2,0,0,"BB","Online TA","D","Transient",97,1
+"Resort Hotel",0,0,2015,"September",38,16,0,1,1,0,0,"BB","Direct","A","Group",65,0
+"Resort Hotel",0,172,2015,"September",38,14,2,5,2,0,0,"HB","Offline TA/TO","A","Contract",72.25,1
+"Resort Hotel",0,179,2015,"September",39,21,3,6,2,0,0,"BB","Offline TA/TO","A","Contract",60.15,0
+"Resort Hotel",0,37,2015,"September",39,21,1,3,2,2,0,"BB","Direct","G","Transient",135,0
+"Resort Hotel",0,81,2015,"September",39,22,0,4,2,0,0,"BB","Online TA","A","Transient",97,1
+"Resort Hotel",0,38,2015,"October",40,2,4,7,2,2,0,"BB","Online TA","G","Transient",115,1
+"Resort Hotel",0,1,2015,"October",42,13,0,1,2,0,0,"BB","Online TA","D","Transient",66,1
+"Resort Hotel",0,130,2015,"October",42,16,0,2,2,0,0,"BB","Online TA","F","Transient",92.4,0
+"Resort Hotel",0,0,2015,"October",43,21,0,2,1,0,0,"BB","Online TA","G","Transient",106,0
+"Resort Hotel",0,109,2015,"November",46,13,0,1,2,0,0,"BB","Direct","F","Transient",74.8,2
+"Resort Hotel",0,36,2015,"November",45,7,2,6,1,0,0,"BB","Corporate","A","Transient-Party",36,0
+"Resort Hotel",0,12,2015,"November",45,3,3,10,2,0,0,"BB","Corporate","A","Transient-Party",48,0
+"Resort Hotel",0,5,2015,"November",48,22,2,0,1,0,0,"BB","Online TA","A","Transient",40,1
+"Resort Hotel",0,0,2015,"December",53,27,1,0,2,0,0,"BB","Direct","E","Transient",71,0
+"Resort Hotel",0,58,2015,"December",52,23,2,4,2,0,0,"BB","Direct","E","Transient",58,1
+"Resort Hotel",0,0,2015,"December",53,28,1,0,2,0,0,"BB","Direct","A","Transient",75,0
+"Resort Hotel",0,29,2015,"December",52,23,2,5,2,0,0,"BB","Offline TA/TO","D","Transient",71,1
+"Resort Hotel",0,2,2015,"December",53,31,0,3,2,0,0,"BB","Online TA","A","Transient",72.93,0
+"Resort Hotel",0,17,2016,"January",1,2,2,1,2,0,0,"BB","Online TA","E","Transient",57.2,1
+"Resort Hotel",0,0,2016,"January",2,8,0,1,2,0,0,"BB","Offline TA/TO","A","Transient",31.2,0
+"Resort Hotel",0,0,2016,"January",2,4,2,5,2,0,0,"BB","Direct","A","Transient",48,0
+"Resort Hotel",0,11,2016,"January",2,8,1,2,2,0,0,"BB","Online TA","E","Transient",69.2,1
+"Resort Hotel",0,3,2016,"January",2,8,1,2,2,0,0,"BB","Online TA","E","Transient",52.8,0
+"Resort Hotel",0,0,2016,"January",2,7,2,4,2,0,0,"BB","Offline TA/TO","A","Transient",38,0
+"Resort Hotel",0,1,2016,"January",4,22,0,2,2,0,0,"BB","Direct","A","Transient",45,0
+"Resort Hotel",0,0,2016,"February",6,3,1,4,2,0,0,"BB","Online TA","A","Transient",39,2
+"Resort Hotel",0,0,2016,"February",7,12,0,1,2,0,0,"BB","Online TA","A","Transient",58,0
+"Resort Hotel",0,0,2016,"February",8,20,0,1,2,0,0,"BB","Direct","D","Transient",46,0
+"Resort Hotel",0,24,2016,"February",9,22,1,1,2,0,0,"BB","Online TA","A","Transient",36.96,2
+"Resort Hotel",0,24,2016,"February",9,22,1,1,2,0,0,"BB","Online TA","A","Transient",36.96,2
+"Resort Hotel",0,4,2016,"March",13,20,2,1,2,0,0,"BB","Offline TA/TO","D","Transient",43,0
+"Resort Hotel",0,6,2016,"March",14,28,1,3,2,0,0,"HB","Online TA","E","Transient",97.5,0
+"Resort Hotel",0,2,2016,"April",15,4,1,1,2,0,0,"BB","Online TA","E","Transient",87,1
+"Resort Hotel",0,1,2016,"April",15,6,0,2,2,0,0,"BB","Direct","E","Transient",85,1
+"Resort Hotel",0,19,2016,"April",15,7,1,3,2,0,0,"BB","Direct","F","Transient",101,0
+"Resort Hotel",0,26,2016,"April",15,9,2,2,3,1,0,"BB","Direct","H","Transient",146.38,1
+"Resort Hotel",0,27,2016,"April",16,10,2,2,3,1,0,"BB","Direct","G","Transient",136,0
+"Resort Hotel",0,8,2016,"April",16,14,0,1,1,0,0,"BB","Online TA","G","Transient",96.25,0
+"Resort Hotel",0,79,2016,"April",17,22,1,2,2,0,0,"BB","Direct","G","Transient",117,0
+"Resort Hotel",0,79,2016,"April",17,22,1,2,2,0,0,"BB","Direct","F","Transient",102,0
+"Resort Hotel",0,9,2016,"April",18,25,1,1,2,0,0,"BB","Online TA","A","Transient",50.05,1
+"Resort Hotel",0,113,2016,"April",18,26,0,2,1,0,0,"BB","Online TA","G","Transient",78.31,1
+"Resort Hotel",0,113,2016,"April",18,26,0,2,2,0,0,"BB","Online TA","G","Transient",78.31,1
+"Resort Hotel",0,179,2016,"April",18,27,0,2,2,0,0,"BB","Online TA","A","Transient",52.2,1
+"Resort Hotel",0,179,2016,"April",18,27,0,2,2,0,0,"BB","Online TA","A","Transient",58.2,1
+"Resort Hotel",0,1,2016,"April",18,27,0,3,1,0,0,"BB","Online TA","E","Transient",91,1
+"Resort Hotel",0,33,2016,"April",18,25,1,4,1,0,0,"BB","Offline TA/TO","A","Transient",37.1,0
+"Resort Hotel",0,0,2016,"April",18,30,0,1,2,0,0,"BB","Online TA","E","Transient",85,0
+"Resort Hotel",0,0,2016,"May",19,1,1,0,2,0,0,"BB","Online TA","F","Transient",115,1
+"Resort Hotel",0,13,2016,"May",19,1,2,0,2,0,0,"BB","Online TA","D","Transient",72,0
+"Resort Hotel",0,67,2016,"May",19,6,2,4,2,0,0,"BB","Online TA","D","Transient",75.83,1
+"Resort Hotel",0,77,2016,"May",20,10,0,5,2,0,0,"HB","Online TA","F","Transient",34,1
+"Resort Hotel",0,68,2016,"May",21,20,1,2,2,0,0,"BB","Online TA","A","Transient",56,0
+"Resort Hotel",0,129,2016,"May",22,22,2,1,2,0,0,"BB","Online TA","D","Transient",65.7,2
+"Resort Hotel",0,40,2016,"May",22,23,1,1,2,0,0,"BB","Online TA","E","Transient",111,2
+"Resort Hotel",0,129,2016,"May",22,22,2,1,2,0,0,"BB","Online TA","D","Transient",71.7,2
+"Resort Hotel",0,49,2016,"May",22,25,0,1,2,0,0,"BB","Offline TA/TO","F","Transient-Party",105,1
+"Resort Hotel",0,49,2016,"May",22,25,0,1,2,0,0,"BB","Offline TA/TO","F","Transient-Party",105,1
+"Resort Hotel",0,39,2016,"May",22,28,1,1,2,0,0,"BB","Online TA","F","Transient",121,1
+"Resort Hotel",0,5,2016,"May",22,28,1,1,2,2,0,"BB","Online TA","G","Transient",145,0
+"Resort Hotel",0,136,2016,"May",23,29,2,0,2,0,0,"BB","Direct","D","Transient",68,0
+"Resort Hotel",0,59,2016,"May",23,29,2,0,3,0,0,"BB","Direct","G","Transient",145,0
+"Resort Hotel",0,65,2016,"May",23,30,1,1,2,0,0,"BB","Online TA","E","Transient",95,0
+"Resort Hotel",0,1,2016,"June",23,2,0,2,1,0,0,"BB","Direct","F","Transient",161,0
+"Resort Hotel",0,2,2016,"June",23,4,0,1,2,0,0,"BB","Direct","D","Group",124,0
+"Resort Hotel",0,34,2016,"June",23,2,0,3,2,0,0,"BB","Direct","F","Transient",168.33,0
+"Resort Hotel",0,34,2016,"June",23,2,0,3,2,0,0,"BB","Direct","F","Transient",157,0
+"Resort Hotel",0,129,2016,"June",24,5,2,1,2,0,0,"BB","Online TA","A","Transient",61.6,2
+"Resort Hotel",0,124,2016,"June",24,6,1,1,3,0,0,"BB","Direct","C","Transient",135,2
+"Resort Hotel",0,124,2016,"June",24,6,1,1,3,0,0,"BB","Direct","C","Transient",135,2
+"Resort Hotel",0,0,2016,"June",23,4,2,3,2,0,0,"BB","Online TA","F","Transient",120,0
+"Resort Hotel",0,0,2016,"June",25,13,1,0,1,0,0,"BB","Online TA","A","Transient",109,0
+"Resort Hotel",0,0,2016,"June",25,13,1,0,2,0,0,"BB","Direct","F","Transient",159,0
+"Resort Hotel",0,74,2016,"June",25,13,1,1,2,0,0,"BB","Online TA","G","Transient",149.52,1
+"Resort Hotel",0,56,2016,"June",25,13,1,1,3,0,0,"BB","Online TA","A","Transient",164,1
+"Resort Hotel",0,56,2016,"June",25,13,1,1,2,0,0,"BB","Online TA","A","Transient",129,1
+"Resort Hotel",0,160,2016,"June",25,13,2,5,2,0,0,"HB","Direct","D","Transient",118.5,2
+"Resort Hotel",0,5,2016,"June",26,20,1,2,2,0,0,"BB","Direct","F","Transient",184.33,2
+"Resort Hotel",0,161,2016,"June",25,15,2,4,2,0,0,"BB","Online TA","E","Transient",116.5,3
+"Resort Hotel",0,57,2016,"June",25,17,2,2,2,1,0,"BB","Direct","A","Transient",121,1
+"Resort Hotel",0,57,2016,"June",25,17,2,2,2,0,0,"BB","Direct","A","Transient",98.75,1
+"Resort Hotel",0,48,2016,"June",26,20,1,1,2,2,0,"BB","Online TA","G","Transient-Party",189,0
+"Resort Hotel",0,48,2016,"June",26,20,1,1,2,2,0,"BB","Online TA","G","Transient-Party",201,0
+"Resort Hotel",0,0,2016,"June",26,22,0,1,2,0,0,"BB","Direct","E","Transient",139,0
+"Resort Hotel",0,8,2016,"June",26,23,0,2,2,3,0,"BB","Direct","H","Transient",186,0
+"Resort Hotel",0,3,2016,"June",26,25,0,1,2,0,0,"BB","Online TA","A","Transient",98.4,0
+"Resort Hotel",0,25,2016,"June",26,25,1,1,2,0,0,"BB","Online TA","F","Transient",130.13,1
+"Resort Hotel",0,170,2016,"July",27,2,0,1,2,0,0,"BB","Online TA","A","Transient",107.1,2
+"Resort Hotel",0,170,2016,"July",27,2,0,1,2,0,0,"BB","Online TA","A","Transient",119.1,2
+"Resort Hotel",0,0,2016,"July",28,3,1,0,2,0,0,"BB","Online TA","A","Transient",95.64,0
+"Resort Hotel",0,25,2016,"July",28,3,1,0,2,0,0,"BB","Online TA","A","Transient",131,1
+"Resort Hotel",0,29,2016,"July",28,5,0,1,2,0,0,"BB","Online TA","C","Transient",150.92,1
+"Resort Hotel",0,8,2016,"July",28,5,0,2,3,1,0,"BB","Online TA","G","Transient-Party",219,0
+"Resort Hotel",0,8,2016,"July",28,5,0,2,2,2,0,"BB","Online TA","H","Transient-Party",224,0
+"Resort Hotel",0,61,2016,"July",28,5,0,2,2,2,0,"BB","Direct","C","Transient",190,1
+"Resort Hotel",0,61,2016,"July",28,5,0,2,2,0,0,"BB","Direct","F","Transient",192,1
+"Resort Hotel",0,14,2016,"July",28,7,0,2,2,0,0,"BB","Online TA","A","Transient",134.43,1
+"Resort Hotel",0,30,2016,"July",28,7,0,3,1,0,0,"BB","Online TA","E","Transient",146.3,1
+"Resort Hotel",0,0,2016,"July",29,13,0,1,2,0,0,"BB","Direct","D","Transient",161,0
+"Resort Hotel",0,2,2016,"July",29,14,0,1,2,0,0,"BB","Direct","A","Transient",161,0
+"Resort Hotel",0,38,2016,"July",29,12,0,3,2,0,0,"BB","Direct","F","Transient",212,1
+"Resort Hotel",0,0,2016,"July",29,15,0,1,2,0,0,"BB","Online TA","A","Transient",151,0
+"Resort Hotel",0,25,2016,"July",29,15,0,1,2,0,0,"BB","Direct","A","Transient",155.1,0
+"Resort Hotel",0,22,2016,"July",29,14,1,3,2,2,0,"BB","Direct","C","Transient",186.5,0
+"Resort Hotel",0,14,2016,"July",30,18,1,1,2,0,0,"BB","Online TA","D","Transient",167.21,0
+"Resort Hotel",0,97,2016,"July",30,21,0,1,2,0,0,"BB","Online TA","E","Transient",230,2
+"Resort Hotel",0,94,2016,"July",30,20,0,2,2,0,0,"BB","Online TA","A","Transient",160,1
+"Resort Hotel",0,130,2016,"July",31,25,1,2,4,0,0,"BB","Online TA","A","Transient",208,0
+"Resort Hotel",0,61,2016,"July",31,26,0,2,2,0,0,"BB","Online TA","F","Transient",157.85,1
+"Resort Hotel",0,92,2016,"July",31,26,0,4,2,0,0,"BB","Online TA","D","Transient",213.75,1
+"Resort Hotel",0,1,2016,"July",31,30,0,1,2,0,0,"BB","Direct","D","Transient",221,1
+"Resort Hotel",0,38,2016,"July",31,28,0,2,2,0,0,"BB","Online TA","D","Transient",194,1
+"Resort Hotel",0,1,2016,"July",31,30,0,1,2,0,0,"BB","Direct","D","Transient",194,1
+"Resort Hotel",0,0,2016,"July",32,31,2,2,2,0,0,"BB","Direct","F","Transient",237.75,1
+"Resort Hotel",0,7,2016,"July",31,29,0,2,2,0,0,"BB","Direct","F","Transient",221.1,0
+"Resort Hotel",0,0,2016,"July",31,26,1,5,2,0,0,"BB","Direct","A","Transient",180,0
+"Resort Hotel",0,27,2016,"July",31,29,2,2,2,2,0,"BB","Online TA","G","Transient",264,0
+"Resort Hotel",0,0,2016,"August",32,1,1,0,2,0,0,"BB","Online TA","A","Transient",102.49,0
+"Resort Hotel",0,113,2016,"July",31,26,2,5,2,0,0,"BB","Direct","E","Transient",193.8,2
+"Resort Hotel",0,113,2016,"July",31,26,2,5,2,0,0,"BB","Direct","E","Transient",181.8,2
+"Resort Hotel",0,23,2016,"August",32,6,2,2,3,0,0,"BB","Online TA","A","Transient",268,3
+"Resort Hotel",0,151,2016,"August",33,8,1,2,2,0,0,"BB","Online TA","G","Transient",204.5,0
+"Resort Hotel",0,151,2016,"August",33,8,1,2,2,0,0,"BB","Online TA","A","Transient",132.9,2
+"Resort Hotel",0,22,2016,"August",33,12,0,1,1,0,0,"BB","Online TA","E","Transient",195.58,1
+"Resort Hotel",0,37,2016,"August",33,10,0,3,3,0,0,"BB","Online TA","A","Transient",187.88,1
+"Resort Hotel",0,32,2016,"August",33,12,0,2,1,0,0,"BB","Online TA","E","Transient",254,1
+"Resort Hotel",0,12,2016,"August",34,16,0,2,2,0,0,"BB","Online TA","A","Transient",221,0
+"Resort Hotel",0,0,2016,"August",35,23,0,1,2,0,0,"BB","Online TA","A","Transient",167.09,0
+"Resort Hotel",0,217,2016,"August",35,22,1,2,2,2,0,"BB","Online TA","C","Transient",174,1
+"Resort Hotel",0,25,2016,"August",35,24,0,2,2,2,0,"BB","Online TA","G","Transient",311,1
+"Resort Hotel",0,69,2016,"August",35,25,0,2,2,0,0,"BB","Online TA","A","Transient",145.53,1
+"Resort Hotel",0,18,2016,"August",35,26,0,2,2,0,0,"BB","Online TA","D","Transient",153.37,1
+"Resort Hotel",0,15,2016,"August",35,27,1,1,2,0,0,"BB","Online TA","D","Transient",171.47,1
+"Resort Hotel",0,95,2016,"August",36,30,0,3,2,0,0,"BB","Direct","F","Transient",195.67,0
+"Resort Hotel",0,219,2016,"August",36,29,1,3,2,0,0,"BB","Offline TA/TO","A","Transient",93,0
+"Resort Hotel",0,219,2016,"August",36,29,1,3,2,0,0,"BB","Offline TA/TO","A","Transient",81,0
+"Resort Hotel",0,219,2016,"August",36,29,1,3,2,0,0,"BB","Offline TA/TO","A","Transient",64.8,1
+"Resort Hotel",0,1,2016,"September",36,2,0,1,2,0,0,"BB","Online TA","A","Transient",161,1
+"Resort Hotel",0,1,2016,"September",36,3,0,1,2,0,0,"BB","Direct","D","Transient",154,1
+"Resort Hotel",0,16,2016,"September",36,2,0,2,2,0,0,"BB","Direct","G","Transient",209.1,1
+"Resort Hotel",0,1,2016,"September",36,3,0,1,2,0,0,"BB","Online TA","D","Transient",164,0
+"Resort Hotel",0,50,2016,"August",36,31,1,4,2,0,0,"BB","Direct","G","Transient",239,0
+"Resort Hotel",0,61,2016,"September",36,3,1,1,2,0,0,"BB","Online TA","E","Transient",181,1
+"Resort Hotel",0,237,2016,"September",37,4,1,0,3,0,0,"BB","Direct","E","Transient",157,2
+"Resort Hotel",0,211,2016,"September",36,3,1,1,2,0,1,"BB","Online TA","E","Transient",94.4,2
+"Resort Hotel",0,228,2016,"September",36,2,2,2,2,0,0,"BB","Direct","E","Transient",111.75,0
+"Resort Hotel",0,54,2016,"September",37,10,0,1,2,0,0,"BB","Offline TA/TO","A","Transient",138.6,0
+"Resort Hotel",0,205,2016,"September",37,8,0,3,2,1,0,"BB","Direct","C","Transient",146.1,0
+"Resort Hotel",0,71,2016,"September",38,12,1,1,2,0,0,"BB","Online TA","H","Transient",167,1
+"Resort Hotel",0,10,2016,"September",38,13,0,2,2,0,1,"BB","Direct","E","Transient",129,0
+"Resort Hotel",0,145,2016,"September",38,15,0,3,2,0,0,"BB","Online TA","A","Transient",131,1
+"Resort Hotel",0,55,2016,"September",38,17,2,1,4,0,0,"BB","Direct","H","Transient",205.67,0
+"Resort Hotel",0,35,2016,"September",39,18,2,0,1,0,0,"BB","Online TA","A","Transient",51.94,1
+"Resort Hotel",0,146,2016,"September",40,29,0,1,2,0,0,"BB","Offline TA/TO","E","Transient-Party",116.1,0
+"Resort Hotel",0,146,2016,"September",40,29,0,1,1,0,0,"BB","Offline TA/TO","E","Transient-Party",116.1,0
+"Resort Hotel",0,146,2016,"September",40,29,0,1,2,0,0,"BB","Offline TA/TO","E","Transient-Party",116.1,0
+"Resort Hotel",0,146,2016,"September",40,29,0,1,2,0,0,"BB","Offline TA/TO","E","Transient-Party",116.1,0
+"Resort Hotel",0,146,2016,"September",40,29,0,1,2,0,0,"BB","Offline TA/TO","E","Transient-Party",116.1,0
+"Resort Hotel",0,146,2016,"September",40,29,0,1,2,0,0,"BB","Offline TA/TO","E","Transient-Party",116.1,0
+"Resort Hotel",0,0,2016,"September",40,30,0,1,1,0,0,"BB","Online TA","D","Transient",136,1
+"Resort Hotel",0,12,2016,"October",40,1,0,1,2,0,0,"BB","Direct","E","Transient",146,0
+"Resort Hotel",0,12,2016,"October",41,2,1,0,2,0,0,"BB","Direct","G","Transient",198,0
+"Resort Hotel",0,0,2016,"October",41,4,0,1,2,0,0,"BB","Online TA","A","Transient",69.49,2
+"Resort Hotel",0,0,2016,"October",41,5,0,1,2,0,0,"BB","Direct","D","Transient",105,0
+"Resort Hotel",0,0,2016,"October",41,3,1,2,2,0,0,"BB","Direct","E","Transient",124,0
+"Resort Hotel",0,59,2016,"October",41,5,0,1,2,0,0,"BB","Direct","E","Transient",89.1,0
+"Resort Hotel",0,17,2016,"October",41,7,0,2,2,2,0,"BB","Online TA","G","Transient",161,0
+"Resort Hotel",0,100,2016,"October",41,6,1,3,2,0,0,"BB","Direct","G","Transient",158.1,0
+"Resort Hotel",0,12,2016,"October",42,10,1,1,2,0,0,"BB","Online TA","A","Transient",66,2
+"Resort Hotel",0,2,2016,"October",42,11,0,1,1,0,0,"BB","Online TA","A","Transient",46.96,1
+"Resort Hotel",0,0,2016,"October",42,11,0,2,2,0,0,"BB","Direct","E","Transient",96,0
+"Resort Hotel",0,0,2016,"October",42,15,0,0,2,0,0,"BB","Direct","D","Transient",0,0
+"Resort Hotel",0,68,2016,"October",43,16,1,0,2,0,0,"BB","Offline TA/TO","A","Transient",54,0
+"Resort Hotel",0,3,2016,"October",42,15,2,1,2,0,0,"BB","Online TA","D","Transient",90,2
+"Resort Hotel",0,2,2016,"October",43,17,1,1,2,0,0,"BB","Online TA","A","Transient",42.65,0
+"Resort Hotel",0,1,2016,"October",43,19,0,1,2,0,0,"BB","Online TA","A","Group",42.65,0
+"Resort Hotel",0,28,2016,"October",43,18,0,2,2,0,0,"BB","Online TA","A","Transient",43.89,1
+"Resort Hotel",0,28,2016,"October",43,18,0,2,2,0,0,"BB","Online TA","A","Transient",43.89,1
+"Resort Hotel",0,28,2016,"October",43,18,0,2,2,0,0,"BB","Online TA","A","Transient",43.89,1
+"Resort Hotel",0,28,2016,"October",43,18,0,2,2,0,0,"BB","Online TA","A","Transient",43.89,1
+"Resort Hotel",0,28,2016,"October",43,18,0,2,2,0,0,"BB","Online TA","A","Transient",43.89,1
+"Resort Hotel",0,0,2016,"October",44,26,0,2,2,0,0,"BB","Online TA","A","Transient",50.18,0
+"Resort Hotel",0,0,2016,"November",45,2,0,3,2,0,0,"BB","Direct","F","Transient",96,0
+"Resort Hotel",0,108,2016,"October",45,31,1,5,2,0,0,"BB","Online TA","E","Transient",51.47,0
+"Resort Hotel",0,25,2016,"November",46,10,0,2,2,0,0,"HB","Online TA","D","Transient",100,1
+"Resort Hotel",0,13,2016,"November",46,7,1,4,2,0,0,"BB","Offline TA/TO","D","Transient",37,0
+"Resort Hotel",0,51,2016,"November",46,11,0,2,3,0,0,"BB","Online TA","H","Transient",93,1
+"Resort Hotel",0,113,2016,"November",47,13,2,4,2,0,0,"BB","Online TA","D","Transient",37.71,1
+"Resort Hotel",0,54,2016,"November",47,19,2,3,2,0,0,"BB","Offline TA/TO","A","Transient",29,0
+"Resort Hotel",0,0,2016,"December",49,1,0,1,2,0,0,"BB","Online TA","E","Transient",63,0
+"Resort Hotel",0,1,2016,"December",49,3,0,1,2,0,0,"BB","Direct","A","Transient",66,0
+"Resort Hotel",0,155,2016,"December",50,5,2,5,2,0,0,"BB","Online TA","E","Transient",61.8,2
+"Resort Hotel",0,0,2016,"December",51,12,1,0,2,0,0,"BB","Online TA","A","Transient",41.11,1
+"Resort Hotel",0,16,2016,"December",51,16,0,1,1,0,0,"BB","Offline TA/TO","D","Transient",42,0
+"Resort Hotel",0,5,2016,"December",52,18,1,0,2,0,0,"BB","Online TA","A","Transient",35.11,1
+"Resort Hotel",0,35,2016,"December",52,19,1,1,1,0,0,"BB","Offline TA/TO","A","Transient",30,0
+"Resort Hotel",0,0,2016,"December",52,20,0,1,2,0,0,"BB","Direct","A","Transient",90,0
+"Resort Hotel",0,36,2016,"December",53,27,0,1,2,0,0,"BB","Direct","F","Transient",75,0
+"Resort Hotel",0,16,2016,"December",53,29,0,1,1,0,0,"BB","Online TA","A","Transient",60,1
+"Resort Hotel",0,10,2016,"December",53,31,0,1,2,2,0,"BB","Online TA","G","Transient",180,0
+"Resort Hotel",0,1,2017,"January",1,4,0,2,2,0,0,"BB","Direct","E","Transient",64,1
+"Resort Hotel",0,54,2016,"December",53,30,2,6,2,2,0,"BB","Online TA","G","Transient",215.25,0
+"Resort Hotel",0,0,2017,"January",2,8,1,0,2,0,0,"BB","Online TA","A","Transient",34.44,0
+"Resort Hotel",0,0,2017,"January",2,9,1,0,2,0,0,"BB","Online TA","A","Transient",30.99,0
+"Resort Hotel",0,12,2017,"January",2,12,0,2,2,0,0,"BB","Online TA","A","Transient-Party",48,2
+"Resort Hotel",0,0,2017,"January",4,25,0,1,1,0,0,"BB","Online TA","A","Transient",4,0
+"Resort Hotel",0,1,2017,"January",4,25,0,3,1,0,0,"BB","Online TA","A","Transient",31.45,1
+"Resort Hotel",0,17,2017,"January",4,26,0,3,2,0,0,"BB","Online TA","A","Transient",48,1
+"Resort Hotel",0,80,2017,"January",5,30,1,1,2,0,0,"BB","Online TA","D","Transient",69,0
+"Resort Hotel",0,1,2017,"February",5,3,0,1,2,0,0,"BB","Online TA","F","Transient",56.21,1
+"Resort Hotel",0,56,2017,"January",5,31,0,4,1,0,0,"BB","Online TA","A","Transient",29.6,0
+"Resort Hotel",0,0,2017,"February",6,10,0,1,2,0,0,"BB","Direct","E","Transient",68,0
+"Resort Hotel",0,22,2017,"February",7,12,1,0,2,2,0,"BB","Online TA","C","Transient",73.06,1
+"Resort Hotel",0,0,2017,"February",7,14,0,2,2,0,0,"BB","Online TA","A","Transient",52.35,1
+"Resort Hotel",0,27,2017,"February",7,14,0,2,2,2,0,"BB","Online TA","G","Transient",95,1
+"Resort Hotel",0,0,2017,"February",7,16,0,1,2,0,0,"BB","Direct","D","Transient",68,0
+"Resort Hotel",0,1,2017,"February",7,17,0,2,2,0,0,"BB","Online TA","D","Transient",68,1
+"Resort Hotel",0,24,2017,"February",8,19,1,0,2,0,0,"BB","Corporate","D","Transient-Party",48,0
+"Resort Hotel",0,21,2017,"February",8,20,1,0,2,0,0,"BB","Offline TA/TO","E","Transient",74,0
+"Resort Hotel",0,65,2017,"February",7,16,2,3,2,0,0,"BB","Online TA","A","Transient",48,1
+"Resort Hotel",0,88,2017,"February",8,25,1,1,2,2,0,"BB","Online TA","G","Transient",89,1
+"Resort Hotel",0,88,2017,"February",8,25,1,1,2,2,0,"BB","Online TA","G","Transient",82,1
+"Resort Hotel",0,88,2017,"February",8,25,1,1,2,2,0,"BB","Online TA","G","Transient",89,1
+"Resort Hotel",0,19,2017,"February",9,26,1,0,2,0,0,"HB","Online TA","F","Transient",87.85,1
+"Resort Hotel",0,53,2017,"February",8,25,2,3,2,2,0,"BB","Online TA","G","Transient",90.4,2
+"Resort Hotel",0,53,2017,"February",8,25,2,3,2,0,0,"BB","Online TA","E","Transient",72.4,2
+"Resort Hotel",0,13,2017,"March",10,5,2,0,2,0,0,"BB","Online TA","E","Transient",87,0
+"Resort Hotel",0,77,2017,"March",10,10,0,1,2,0,0,"BB","Offline TA/TO","E","Transient",50,0
+"Resort Hotel",0,9,2017,"March",10,10,0,1,2,0,0,"BB","Online TA","A","Transient-Party",65,2
+"Resort Hotel",0,0,2017,"March",12,19,1,0,2,0,0,"BB","Direct","F","Transient-Party",100,0
+"Resort Hotel",0,0,2017,"March",12,19,1,0,2,0,0,"BB","Direct","F","Transient-Party",100,0
+"Resort Hotel",0,241,2017,"March",12,21,2,5,2,0,0,"BB","Groups","D","Transient-Party",41.6,0
+"Resort Hotel",0,0,2017,"March",13,28,0,1,2,0,0,"BB","Direct","F","Transient",100,0
+"Resort Hotel",0,0,2017,"March",13,28,0,1,2,0,0,"BB","Direct","F","Transient",100,0
+"Resort Hotel",0,63,2017,"April",14,6,0,2,2,0,0,"BB","Online TA","A","Transient",60,2
+"Resort Hotel",0,151,2017,"April",14,4,0,5,1,0,0,"BB","Groups","A","Transient-Party",42,0
+"Resort Hotel",0,14,2017,"April",14,6,0,3,2,0,0,"BB","Direct","E","Transient",110,0
+"Resort Hotel",0,0,2017,"April",14,8,0,1,2,0,0,"BB","Online TA","E","Transient",110,2
+"Resort Hotel",0,21,2017,"April",15,11,0,1,2,0,0,"BB","Online TA","E","Transient",99,1
+"Resort Hotel",0,0,2017,"April",16,17,1,0,2,0,0,"BB","Direct","D","Transient",98,0
+"Resort Hotel",0,0,2017,"April",16,18,0,2,2,0,0,"BB","Direct","A","Transient",91,0
+"Resort Hotel",0,0,2017,"April",16,19,0,1,2,0,0,"BB","Online TA","A","Transient",80.75,0
+"Resort Hotel",0,84,2017,"April",16,18,1,5,1,0,0,"BB","Direct","E","Transient-Party",114.6,0
+"Resort Hotel",0,85,2017,"April",16,19,1,4,2,0,0,"BB","Direct","E","Transient-Party",74.6,1
+"Resort Hotel",0,0,2017,"April",16,20,1,3,2,0,0,"BB","Direct","A","Transient",74.6,0
+"Resort Hotel",0,1,2017,"April",17,29,0,1,2,0,0,"BB","Direct","E","Transient",107,0
+"Resort Hotel",0,96,2017,"May",19,7,2,0,2,0,0,"BB","Online TA","E","Transient-Party",111.25,1
+"Resort Hotel",0,35,2017,"May",18,5,2,2,2,0,0,"BB","Online TA","G","Transient",139.4,1
+"Resort Hotel",0,96,2017,"May",19,7,2,0,2,0,0,"BB","Online TA","E","Transient-Party",118.25,1
+"Resort Hotel",0,42,2017,"May",19,12,0,2,2,0,0,"BB","Online TA","D","Transient-Party",106,1
+"Resort Hotel",0,319,2017,"May",19,12,2,2,2,0,1,"BB","Online TA","A","Transient",55.5,3
+"Resort Hotel",0,12,2017,"May",20,16,0,2,2,0,0,"BB","Online TA","A","Transient",85,1
+"Resort Hotel",0,106,2017,"May",19,12,2,5,1,0,0,"BB","Online TA","F","Transient",96.25,0
+"Resort Hotel",0,120,2017,"May",20,15,1,4,2,0,0,"BB","Online TA","D","Transient",100,2
+"Resort Hotel",0,93,2017,"May",20,18,0,3,2,0,0,"BB","Online TA","C","Transient",123,2
+"Resort Hotel",0,25,2017,"May",21,23,0,1,2,0,0,"BB","Online TA","D","Transient",76,1
+"Resort Hotel",0,8,2017,"May",21,23,0,1,1,0,0,"BB","Online TA","E","Transient",72,1
+"Resort Hotel",0,1,2017,"May",21,24,0,1,1,0,0,"BB","Direct","A","Transient",80,0
+"Resort Hotel",0,203,2017,"May",21,25,0,3,2,0,0,"BB","Groups","A","Transient-Party",55,0
+"Resort Hotel",0,39,2017,"May",21,26,1,2,2,0,0,"BB","Online TA","C","Transient",111,1
+"Resort Hotel",0,1,2017,"June",22,2,0,2,2,0,0,"BB","Online TA","A","Transient",103,1
+"Resort Hotel",0,10,2017,"May",22,28,1,0,3,1,0,"HB","Online TA","H","Transient",178.2,1
+"Resort Hotel",0,9,2017,"May",21,27,2,1,1,1,0,"HB","Online TA","E","Transient",140.98,1
+"Resort Hotel",0,2,2017,"May",22,28,2,0,2,0,0,"HB","Online TA","E","Transient",159,0
+"Resort Hotel",0,32,2017,"May",21,27,2,2,2,2,0,"BB","Direct","G","Transient",165,1
+"Resort Hotel",0,112,2017,"May",22,28,2,1,2,0,0,"BB","Online TA","E","Transient",117,1
+"Resort Hotel",0,83,2017,"June",22,2,0,2,2,0,0,"BB","Online TA","A","Transient",137,2
+"Resort Hotel",0,110,2017,"June",22,2,0,2,2,0,0,"BB","Online TA","E","Transient",107.8,0
+"Resort Hotel",0,0,2017,"June",22,1,0,3,2,0,0,"BB","Online TA","D","Transient",94.41,1
+"Resort Hotel",0,130,2017,"June",22,1,1,3,1,0,0,"BB","Online TA","A","Transient",122,1
+"Resort Hotel",0,83,2017,"June",23,7,0,1,2,0,0,"BB","Online TA","A","Transient",96,1
+"Resort Hotel",0,50,2017,"June",23,8,0,1,2,0,0,"BB","Direct","E","Transient",165,0
+"Resort Hotel",0,21,2017,"June",24,13,0,1,2,0,0,"BB","Online TA","A","Transient",140,1
+"Resort Hotel",0,17,2017,"June",24,15,0,2,2,2,0,"BB","Online TA","G","Transient",234,2
+"Resort Hotel",0,146,2017,"June",24,15,0,2,2,0,0,"BB","Online TA","E","Transient-Party",154,1
+"Resort Hotel",0,146,2017,"June",24,15,0,2,2,0,0,"BB","Online TA","E","Transient-Party",142,1
+"Resort Hotel",0,146,2017,"June",24,15,0,2,2,0,0,"BB","Online TA","E","Transient-Party",140,1
+"Resort Hotel",0,1,2017,"June",25,21,0,2,2,0,0,"BB","Online TA","A","Transient",92.82,0
+"Resort Hotel",0,57,2017,"June",25,20,0,3,2,0,0,"HB","Online TA","G","Transient-Party",288,2
+"Resort Hotel",0,57,2017,"June",25,20,0,3,2,2,0,"HB","Online TA","C","Transient-Party",248,2
+"Resort Hotel",0,33,2017,"June",25,20,0,3,2,0,0,"BB","Online TA","C","Transient-Party",189.33,1
+"Resort Hotel",0,33,2017,"June",25,20,0,3,2,2,0,"BB","Online TA","C","Transient-Party",180,1
+"Resort Hotel",0,247,2017,"June",25,22,1,3,3,0,0,"HB","Online TA","H","Transient",212,1
+"Resort Hotel",0,19,2017,"June",25,24,1,1,2,0,0,"BB","Direct","E","Transient",155,2
+"Resort Hotel",0,104,2017,"June",25,21,2,5,1,0,0,"BB","Online TA","A","Transient",111,1
+"Resort Hotel",0,64,2017,"June",25,21,2,5,2,0,0,"HB","Online TA","A","Transient",194,1
+"Resort Hotel",0,44,2017,"June",25,24,2,2,2,0,0,"BB","Online TA","A","Transient",130,1
+"Resort Hotel",0,112,2017,"June",26,30,0,1,2,1,0,"BB","Online TA","A","Transient",120.9,1
+"Resort Hotel",0,28,2017,"July",26,1,0,1,2,0,0,"BB","Online TA","A","Transient",128,1
+"Resort Hotel",0,45,2017,"July",26,1,0,1,2,0,0,"BB","Online TA","A","Transient",150,1
+"Resort Hotel",0,0,2017,"July",27,2,1,0,2,0,0,"BB","Online TA","A","Transient",117.74,1
+"Resort Hotel",0,1,2017,"July",27,3,1,0,2,0,0,"BB","Direct","F","Transient",173,1
+"Resort Hotel",0,133,2017,"July",27,3,1,1,2,0,0,"BB","Online TA","E","Transient",170,0
+"Resort Hotel",0,159,2017,"July",27,2,2,1,2,0,0,"BB","Online TA","D","Transient",96.25,1
+"Resort Hotel",0,72,2017,"July",27,5,0,2,2,0,0,"BB","Online TA","D","Transient",162,1
+"Resort Hotel",0,57,2017,"July",27,5,0,3,2,0,0,"BB","Online TA","G","Transient",200,1
+"Resort Hotel",0,0,2017,"July",28,9,1,0,1,0,0,"BB","Direct","G","Transient",160,0
+"Resort Hotel",0,153,2017,"July",28,9,2,1,2,0,0,"BB","Online TA","A","Transient",120,1
+"Resort Hotel",0,10,2017,"July",27,8,2,2,2,0,0,"BB","Direct","D","Transient",177,0
+"Resort Hotel",0,21,2017,"July",28,12,0,2,2,0,0,"BB","Direct","A","Transient",167.25,1
+"Resort Hotel",0,0,2017,"July",28,13,0,1,2,0,0,"BB","Online TA","D","Transient",96,1
+"Resort Hotel",0,164,2017,"July",28,9,2,4,2,0,0,"BB","Online TA","E","Transient",185,1
+"Resort Hotel",0,0,2017,"July",28,14,0,1,2,0,0,"BB","Online TA","A","Transient",142,1
+"Resort Hotel",0,89,2017,"July",28,13,0,3,2,0,0,"BB","Online TA","D","Transient",201.67,1
+"Resort Hotel",0,0,2017,"July",28,15,0,1,2,1,0,"BB","Online TA","A","Transient",147.7,1
+"Resort Hotel",0,0,2017,"July",29,16,1,0,3,0,0,"BB","Direct","A","Transient",160,0
+"Resort Hotel",0,0,2017,"July",28,15,2,1,2,0,0,"BB","Online TA","D","Transient",168,0
+"Resort Hotel",0,0,2017,"July",28,15,2,1,3,0,0,"BB","Online TA","D","Transient",205.33,0
+"Resort Hotel",0,33,2017,"July",28,11,2,5,2,0,0,"BB","Direct","F","Transient",241.86,0
+"Resort Hotel",0,39,2017,"July",28,15,2,2,1,1,0,"BB","Online TA","A","Transient",204.16,1
+"Resort Hotel",0,39,2017,"July",28,15,2,2,2,1,0,"BB","Online TA","A","Transient",220.16,1
+"Resort Hotel",0,199,2017,"July",28,15,2,3,2,0,0,"BB","Online TA","A","Transient",150,1
+"Resort Hotel",0,32,2017,"July",29,20,0,1,2,0,0,"BB","Online TA","A","Transient",190,1
+"Resort Hotel",0,1,2017,"July",29,20,0,1,2,0,0,"BB","Direct","F","Transient",228,1
+"Resort Hotel",0,17,2017,"July",29,21,0,2,2,0,0,"BB","Online TA","D","Transient",156.6,1
+"Resort Hotel",0,6,2017,"July",29,21,0,2,2,0,0,"BB","Online TA","A","Transient",142.21,1
+"Resort Hotel",0,9,2017,"July",29,21,0,2,3,0,0,"BB","Online TA","A","Transient",222,1
+"Resort Hotel",0,6,2017,"July",30,25,0,2,2,0,0,"BB","Online TA","E","Transient",231,1
+"Resort Hotel",0,0,2017,"July",30,28,1,2,2,0,0,"BB","Online TA","A","Transient",105.31,0
+"Resort Hotel",0,0,2017,"July",30,28,1,2,2,0,0,"BB","Online TA","A","Transient",102.73,0
+"Resort Hotel",0,281,2017,"July",31,30,2,1,2,2,0,"BB","Online TA","C","Transient",170.24,1
+"Resort Hotel",0,60,2017,"July",30,29,2,3,2,0,0,"BB","Direct","F","Transient",270,1
+"Resort Hotel",0,76,2017,"August",31,1,0,2,2,0,0,"BB","Online TA","D","Transient",250,3
+"Resort Hotel",0,0,2017,"August",31,4,0,0,2,0,0,"BB","Direct","A","Transient",0,0
+"Resort Hotel",0,112,2017,"July",31,30,2,3,2,0,0,"BB","Direct","F","Transient",246,1
+"Resort Hotel",0,117,2017,"August",31,1,0,4,2,2,0,"BB","Direct","H","Transient",315.5,1
+"Resort Hotel",0,29,2017,"August",31,3,0,2,3,0,0,"BB","Online TA","A","Transient",176.4,1
+"Resort Hotel",0,3,2017,"August",31,4,0,2,2,0,0,"BB","Online TA","A","Transient",164,1
+"Resort Hotel",0,2,2017,"August",32,9,0,1,2,2,0,"BB","Online TA","G","Transient",230,1
+"Resort Hotel",0,27,2017,"August",32,8,0,2,1,0,0,"BB","Online TA","E","Transient",232,1
+"Resort Hotel",0,27,2017,"August",32,8,0,2,2,0,0,"BB","Online TA","D","Transient",202,1
+"Resort Hotel",0,3,2017,"August",32,12,0,1,2,2,0,"BB","Online TA","G","Transient",324,1
+"Resort Hotel",0,27,2017,"August",33,13,1,0,2,0,0,"BB","Online TA","A","Transient",181.2,2
+"Resort Hotel",0,6,2017,"August",33,14,1,1,2,2,0,"BB","Direct","H","Transient",300,1
+"Resort Hotel",0,220,2017,"August",33,13,2,1,2,2,0,"BB","Online TA","C","Transient",252.33,2
+"Resort Hotel",0,212,2017,"August",32,11,2,4,2,0,0,"BB","Online TA","E","Transient",203.67,4
+"Resort Hotel",0,212,2017,"August",32,11,2,4,2,0,0,"BB","Online TA","E","Transient",203.67,4
+"Resort Hotel",0,212,2017,"August",32,11,2,4,2,0,0,"BB","Online TA","E","Transient",217.67,4
+"Resort Hotel",0,173,2017,"August",32,11,2,4,2,0,0,"BB","Online TA","D","Transient",200,4
+"Resort Hotel",0,5,2017,"August",33,16,0,1,2,0,0,"BB","Online TA","A","Transient",210,2
+"Resort Hotel",0,77,2017,"August",33,16,0,2,2,0,0,"BB","Online TA","D","Transient",216,2
+"Resort Hotel",0,35,2017,"August",33,16,0,2,2,0,0,"BB","Online TA","F","Transient",222.8,1
+"Resort Hotel",0,77,2017,"August",33,16,0,2,2,0,0,"BB","Online TA","D","Transient",200,2
+"Resort Hotel",0,19,2017,"August",33,17,0,2,2,0,0,"BB","Online TA","F","Transient",232,1
+"Resort Hotel",0,6,2017,"August",33,17,0,2,2,0,0,"BB","Online TA","D","Transient",230,0
+"Resort Hotel",0,24,2017,"August",33,18,0,1,2,0,0,"BB","Online TA","D","Transient",250,4
+"Resort Hotel",0,176,2017,"August",33,18,0,2,2,2,0,"HB","Direct","G","Transient",279,1
+"Resort Hotel",0,28,2017,"August",34,20,2,0,2,0,0,"BB","Online TA","D","Transient",250,1
+"Resort Hotel",0,194,2017,"August",33,19,2,2,2,0,0,"BB","Offline TA/TO","A","Transient",125,0
+"Resort Hotel",0,64,2017,"August",34,23,0,4,2,0,0,"BB","Direct","E","Transient",265,1
+"Resort Hotel",0,49,2017,"August",34,25,1,2,2,0,0,"BB","Online TA","A","Transient",157.99,1
+"Resort Hotel",0,30,2017,"August",34,26,1,1,2,0,0,"BB","Online TA","A","Transient",182,1
+"Resort Hotel",0,92,2017,"August",34,23,2,4,3,2,0,"BB","Direct","H","Transient",328.33,2
+"Resort Hotel",0,125,2017,"August",35,28,1,1,2,0,0,"BB","Online TA","C","Transient",204,1
+"Resort Hotel",0,125,2017,"August",35,28,1,1,2,2,0,"BB","Online TA","C","Transient",228.89,1
+"Resort Hotel",0,21,2017,"August",35,30,0,2,2,1,0,"BB","Online TA","A","Transient",186,2
+"Resort Hotel",0,45,2017,"August",35,31,0,2,2,0,0,"BB","Online TA","D","Transient",214,2
+"Resort Hotel",0,126,2017,"August",35,29,0,5,2,0,0,"BB","Direct","E","Transient",240.6,1
+"City Hotel",0,0,2015,"August",32,6,0,1,2,0,0,"SC","Online TA","A","Transient",81,0
+"City Hotel",0,1,2015,"August",33,10,1,0,2,0,0,"SC","Online TA","A","Contract",96,2
+"City Hotel",0,5,2015,"August",33,11,4,15,2,0,0,"BB","Direct","A","Transient",75,2
+"City Hotel",0,39,2015,"August",33,14,0,2,1,0,0,"HB","Offline TA/TO","A","Transient-Party",87,0
+"City Hotel",0,3,2015,"September",36,5,0,1,2,0,0,"BB","Online TA","A","Contract",143,1
+"City Hotel",0,82,2015,"September",36,5,0,1,2,0,0,"BB","Online TA","A","Transient",89.25,2
+"City Hotel",0,0,2015,"September",37,7,1,1,2,0,0,"BB","Online TA","A","Contract",133.5,1
+"City Hotel",0,52,2015,"September",37,7,1,1,2,0,0,"BB","Online TA","A","Transient",72.76,2
+"City Hotel",0,8,2015,"September",37,8,0,2,2,0,0,"BB","Online TA","A","Transient",80.85,2
+"City Hotel",0,0,2015,"September",37,9,0,3,2,0,0,"BB","Online TA","A","Contract",152,2
+"City Hotel",0,0,2015,"September",37,9,0,3,2,0,0,"BB","Online TA","A","Contract",152,2
+"City Hotel",0,17,2015,"September",37,10,0,2,2,0,0,"SC","Online TA","A","Transient",73.92,0
+"City Hotel",0,34,2015,"September",37,10,0,3,2,0,0,"BB","Online TA","A","Contract",145.8,2
+"City Hotel",0,18,2015,"September",38,15,0,3,2,0,0,"SC","Online TA","A","Transient",73.92,1
+"City Hotel",0,12,2015,"September",38,15,2,7,1,0,0,"BB","Direct","A","Transient",130.22,1
+"City Hotel",0,12,2015,"September",38,15,2,7,1,0,0,"BB","Direct","A","Transient",130.22,1
+"City Hotel",0,15,2015,"September",38,16,0,2,2,0,0,"SC","Online TA","D","Contract",115,2
+"City Hotel",0,23,2015,"September",38,16,1,4,2,0,0,"BB","Offline TA/TO","D","Transient",68,1
+"City Hotel",0,42,2015,"September",38,16,2,4,1,0,0,"BB","Direct","A","Transient",104.5,0
+"City Hotel",0,32,2015,"September",38,18,2,2,1,0,0,"SC","Online TA","A","Contract",141.53,2
+"City Hotel",0,41,2015,"September",38,18,2,3,2,0,0,"BB","Online TA","A","Transient",74.4,0
+"City Hotel",0,32,2015,"September",39,23,0,4,2,0,0,"BB","Online TA","A","Transient",155.8,1
+"City Hotel",0,62,2015,"September",40,27,4,5,2,0,0,"BB","Online TA","A","Contract",131.51,3
+"City Hotel",0,42,2015,"September",40,30,0,1,2,0,0,"BB","Online TA","A","Transient",86.4,1
+"City Hotel",0,51,2015,"September",40,30,2,6,1,0,0,"BB","Online TA","A","Transient",69.12,1
+"City Hotel",0,27,2015,"October",41,4,1,0,2,0,0,"BB","Online TA","A","Transient",80.85,1
+"City Hotel",0,28,2015,"October",41,5,1,0,2,0,0,"BB","Online TA","A","Contract",94.5,2
+"City Hotel",0,93,2015,"October",41,7,0,4,2,0,0,"BB","Online TA","A","Transient",89.25,1
+"City Hotel",0,45,2015,"October",42,16,2,2,2,0,0,"BB","Online TA","D","Transient",78.54,2
+"City Hotel",0,57,2015,"October",43,22,0,1,2,0,0,"BB","Online TA","A","Contract",94.5,1
+"City Hotel",0,62,2015,"October",44,29,0,1,2,2,0,"SC","Online TA","F","Contract",139.5,1
+"City Hotel",0,233,2015,"November",45,7,1,1,2,0,0,"BB","Groups","A","Transient-Party",60,1
+"City Hotel",0,6,2015,"December",51,17,0,2,1,0,0,"BB","Online TA","D","Transient",74.69,0
+"City Hotel",0,10,2015,"December",52,20,2,2,2,0,0,"SC","Online TA","A","Transient",52.36,1
+"City Hotel",0,4,2015,"December",52,26,2,5,2,0,0,"BB","Online TA","D","Transient",92.43,1
+"City Hotel",0,21,2015,"December",53,27,2,2,2,2,0,"BB","Online TA","F","Transient",187,1
+"City Hotel",0,0,2015,"December",53,28,1,0,2,0,0,"BB","Online TA","A","Transient",74.69,1
+"City Hotel",0,30,2016,"January",1,1,0,2,2,0,0,"SC","Online TA","A","Transient",92,1
+"City Hotel",0,0,2016,"January",1,2,0,1,2,0,0,"BB","Online TA","A","Transient",74.67,0
+"City Hotel",0,2,2016,"January",2,3,2,0,2,0,0,"BB","Online TA","A","Transient",67.66,0
+"City Hotel",0,1,2016,"January",2,6,0,1,2,0,0,"BB","Online TA","A","Transient-Party",89,0
+"City Hotel",0,23,2016,"January",3,11,1,0,1,0,0,"SC","Online TA","A","Transient",61,0
+"City Hotel",0,23,2016,"January",3,11,1,0,2,0,0,"SC","Online TA","A","Transient",62,0
+"City Hotel",0,9,2016,"January",3,15,0,2,2,0,0,"BB","Online TA","A","Transient",80.3,1
+"City Hotel",0,11,2016,"January",4,17,2,0,2,0,0,"BB","Online TA","A","Transient",98,2
+"City Hotel",1,11,2016,"February",6,1,2,5,2,0,0,"SC","Online TA","A","Transient",79,0
+"City Hotel",0,53,2016,"February",6,4,2,3,2,0,0,"BB","Direct","A","Transient",65.75,0
+"City Hotel",0,31,2016,"February",6,5,0,1,2,0,0,"BB","Online TA","A","Transient",80.3,1
+"City Hotel",0,31,2016,"February",6,5,0,1,2,0,0,"BB","Online TA","A","Transient",89.3,1
+"City Hotel",1,9,2016,"February",6,5,0,1,1,0,0,"BB","Direct","A","Transient",79,0
+"City Hotel",1,35,2016,"February",7,11,0,3,2,0,0,"SC","Online TA","A","Transient",67.5,0
+"City Hotel",0,37,2016,"February",7,12,1,2,0,2,0,"BB","Online TA","B","Transient",69.5,1
+"City Hotel",1,22,2016,"February",7,12,2,2,2,0,0,"BB","Online TA","D","Transient",80.8,0
+"City Hotel",1,1,2016,"February",9,22,1,0,2,0,0,"SC","Online TA","A","Transient",85,0
+"City Hotel",1,10,2016,"February",9,25,0,3,2,0,0,"BB","Online TA","A","Transient",93,0
+"City Hotel",1,4,2016,"March",10,5,2,1,2,0,0,"BB","Online TA","D","Transient",118,0
+"City Hotel",1,70,2016,"March",11,9,0,2,2,0,0,"SC","Online TA","A","Transient",67.5,1
+"City Hotel",1,30,2016,"March",11,9,0,3,2,2,0,"BB","Online TA","B","Transient",77.5,0
+"City Hotel",1,29,2016,"March",11,9,0,3,2,2,0,"BB","Online TA","B","Transient",77.5,2
+"City Hotel",0,87,2016,"March",11,9,1,4,1,0,0,"BB","Online TA","A","Transient",53.67,1
+"City Hotel",1,35,2016,"March",11,10,0,1,1,0,0,"BB","Online TA","A","Transient",71.1,0
+"City Hotel",1,2,2016,"March",11,10,0,1,2,0,0,"SC","Online TA","A","Transient",89,0
+"City Hotel",1,69,2016,"March",11,12,1,1,2,2,0,"BB","Online TA","F","Transient",150.3,1
+"City Hotel",1,69,2016,"March",11,12,1,1,2,2,0,"BB","Online TA","F","Transient",150.3,1
+"City Hotel",1,69,2016,"March",11,12,1,1,2,0,0,"BB","Online TA","A","Transient",72.9,1
+"City Hotel",1,35,2016,"March",12,14,1,2,2,0,0,"SC","Online TA","A","Transient",71.1,0
+"City Hotel",0,72,2016,"March",12,16,0,3,2,0,0,"BB","Online TA","A","Transient",81.3,1
+"City Hotel",0,71,2016,"March",12,17,0,2,2,0,0,"BB","Online TA","B","Transient-Party",69.05,0
+"City Hotel",0,71,2016,"March",12,17,0,2,2,0,0,"BB","Online TA","B","Transient-Party",69,1
+"City Hotel",0,75,2016,"March",13,21,1,1,2,0,0,"BB","Online TA","B","Transient-Party",78.15,0
+"City Hotel",0,75,2016,"March",13,21,1,1,2,0,0,"BB","Online TA","B","Transient-Party",78,0
+"City Hotel",0,78,2016,"March",13,21,1,5,2,2,0,"BB","Online TA","F","Transient",154.7,0
+"City Hotel",0,89,2016,"March",13,21,2,5,2,0,0,"BB","Online TA","A","Transient",83.66,1
+"City Hotel",1,32,2016,"March",13,25,0,2,2,0,0,"BB","Online TA","D","Transient",149.4,0
+"City Hotel",0,86,2016,"March",13,26,2,3,2,0,0,"BB","Online TA","A","Transient",95.85,1
+"City Hotel",1,5,2016,"March",13,26,2,5,2,0,0,"BB","Online TA","D","Transient",146,0
+"City Hotel",1,68,2016,"March",14,29,4,11,1,0,0,"BB","Online TA","A","Transient",76.22,0
+"City Hotel",1,102,2016,"April",14,2,2,4,2,0,0,"SC","Direct","A","Transient",80.75,2
+"City Hotel",1,14,2016,"April",15,3,2,0,2,0,0,"SC","Online TA","A","Transient",89,1
+"City Hotel",1,79,2016,"April",15,3,2,4,2,0,0,"BB","Online TA","D","Transient",95.2,0
+"City Hotel",1,46,2016,"April",15,4,1,1,2,0,0,"SC","Online TA","A","Transient",107.1,0
+"City Hotel",0,113,2016,"April",15,4,1,3,2,0,0,"BB","Online TA","A","Transient",63.49,2
+"City Hotel",1,95,2016,"April",15,5,0,2,1,0,0,"BB","Online TA","A","Transient",72.8,0
+"City Hotel",1,107,2016,"April",15,5,0,2,1,0,0,"BB","Online TA","A","Transient",81.9,0
+"City Hotel",1,77,2016,"April",15,8,2,6,1,0,0,"BB","Online TA","A","Transient",80.75,0
+"City Hotel",1,64,2016,"April",16,11,1,1,2,0,0,"SC","Online TA","A","Transient",94.5,1
+"City Hotel",1,19,2016,"April",16,14,2,3,2,0,0,"BB","Online TA","D","Transient",131.6,0
+"City Hotel",1,82,2016,"April",16,16,2,4,2,0,0,"BB","Online TA","D","Transient",109.37,0
+"City Hotel",1,56,2016,"April",17,17,2,0,2,0,0,"SC","Online TA","A","Transient",90,0
+"City Hotel",1,5,2016,"April",17,23,0,1,3,1,0,"BB","Direct","E","Transient",197,0
+"City Hotel",1,80,2016,"April",18,24,2,2,2,2,0,"HB","Online TA","F","Transient",173.19,0
+"City Hotel",1,36,2016,"April",18,29,0,1,1,0,0,"SC","Offline TA/TO","A","Transient",111.6,0
+"City Hotel",1,37,2016,"April",18,29,2,2,2,0,0,"BB","Online TA","A","Transient",126.9,0
+"City Hotel",1,53,2016,"April",18,30,0,1,1,0,0,"BB","Direct","A","Transient",116.1,0
+"City Hotel",1,22,2016,"April",18,30,1,1,3,0,0,"BB","Online TA","D","Transient",172,0
+"City Hotel",1,36,2016,"April",18,30,2,2,1,0,0,"BB","Online TA","D","Transient",140.4,0
+"City Hotel",1,38,2016,"May",19,7,1,1,2,0,0,"BB","Online TA","A","Transient",135.9,0
+"City Hotel",1,49,2016,"May",19,7,2,5,2,0,0,"BB","Online TA","A","Transient",119.85,0
+"City Hotel",1,68,2016,"May",19,7,2,4,2,1,0,"BB","Online TA","A","Transient",135.15,0
+"City Hotel",1,65,2016,"May",20,9,1,3,1,0,0,"BB","Online TA","D","Transient",132.6,0
+"City Hotel",1,38,2016,"May",20,10,0,3,3,0,0,"BB","Online TA","D","Transient",159.3,0
+"City Hotel",1,130,2016,"May",20,12,1,3,2,0,0,"BB","Online TA","D","Transient",113.05,1
+"City Hotel",1,39,2016,"May",20,12,1,3,2,0,0,"SC","Online TA","A","Transient",116.1,0
+"City Hotel",0,129,2016,"May",20,13,1,2,1,0,0,"BB","Online TA","D","Transient",121.5,1
+"City Hotel",1,116,2016,"May",21,18,0,1,2,0,0,"BB","Online TA","A","Transient",104.5,0
+"City Hotel",1,81,2016,"May",21,19,0,1,2,0,0,"SC","Online TA","A","Transient",116.1,0
+"City Hotel",1,29,2016,"May",21,20,2,3,2,0,0,"BB","Online TA","D","Transient",132.72,1
+"City Hotel",1,23,2016,"May",21,21,1,1,1,0,0,"BB","Online TA","D","Transient",156,0
+"City Hotel",1,76,2016,"May",22,22,1,0,2,0,0,"SC","Online TA","A","Transient",116.1,0
+"City Hotel",0,169,2016,"May",22,25,0,4,2,0,0,"BB","Online TA","D","Transient-Party",123.25,0
+"City Hotel",0,169,2016,"May",22,25,0,4,2,0,0,"BB","Online TA","D","Transient-Party",123.25,0
+"City Hotel",1,144,2016,"May",22,27,2,2,2,0,0,"BB","Online TA","D","Transient",118.15,1
+"City Hotel",1,144,2016,"May",22,27,2,2,2,2,0,"BB","Online TA","F","Transient",177.65,1
+"City Hotel",1,144,2016,"May",22,27,2,2,2,2,0,"BB","Online TA","F","Transient",177.65,1
+"City Hotel",1,110,2016,"June",23,3,0,1,2,1,0,"BB","Online TA","A","Transient-Party",143.1,0
+"City Hotel",1,37,2016,"June",23,4,1,1,2,0,0,"BB","Online TA","D","Transient",131.4,0
+"City Hotel",1,31,2016,"June",24,8,0,2,2,0,0,"BB","Online TA","A","Transient",110.7,1
+"City Hotel",1,32,2016,"June",24,8,0,4,2,2,0,"BB","Online TA","F","Transient",191.7,0
+"City Hotel",1,16,2016,"June",24,11,0,1,2,2,0,"BB","Online TA","F","Transient",221,0
+"City Hotel",1,53,2016,"June",25,12,1,0,2,0,0,"BB","Direct","D","Transient",129.2,1
+"City Hotel",1,154,2016,"June",25,12,2,1,2,2,0,"BB","Online TA","F","Transient",189.9,0
+"City Hotel",1,153,2016,"June",25,12,2,1,2,2,0,"BB","Online TA","F","Transient",189.9,0
+"City Hotel",1,146,2016,"June",25,12,2,1,2,2,0,"BB","Online TA","F","Transient",178.2,3
+"City Hotel",1,160,2016,"June",25,12,2,2,2,0,0,"BB","Online TA","B","Transient-Party",103.22,1
+"City Hotel",1,159,2016,"June",25,12,2,2,2,0,0,"BB","Online TA","B","Transient-Party",103.21,0
+"City Hotel",1,120,2016,"June",25,13,1,0,2,0,0,"BB","Online TA","D","Transient-Party",140.4,0
+"City Hotel",1,28,2016,"June",26,21,0,1,3,0,0,"BB","Online TA","D","Transient",147,2
+"City Hotel",1,28,2016,"June",26,21,0,1,2,0,0,"BB","Online TA","D","Transient",126,1
+"City Hotel",1,37,2016,"June",27,26,2,1,2,1,0,"BB","Online TA","A","Transient",115.32,0
+"City Hotel",1,59,2016,"June",27,27,1,2,2,0,0,"SC","Online TA","A","Transient",101.1,0
+"City Hotel",1,59,2016,"June",27,27,1,2,2,0,0,"SC","Online TA","A","Transient",101.1,0
+"City Hotel",1,129,2016,"June",27,27,1,4,2,0,0,"SC","Online TA","A","Transient",80.75,1
+"City Hotel",1,89,2016,"June",27,27,1,5,3,0,0,"BB","Online TA","D","Transient",143.7,0
+"City Hotel",1,90,2016,"June",27,28,1,5,2,0,0,"BB","Online TA","A","Transient",114.3,0
+"City Hotel",1,123,2016,"June",27,28,2,6,3,0,0,"BB","Online TA","A","Transient",126.86,0
+"City Hotel",0,206,2016,"June",27,30,1,3,2,0,0,"BB","Online TA","E","Transient",101.83,0
+"City Hotel",1,113,2016,"July",27,1,2,6,3,0,0,"BB","Online TA","D","Transient",138.55,0
+"City Hotel",1,81,2016,"July",28,3,2,1,2,0,0,"SC","Online TA","A","Transient",103.5,1
+"City Hotel",1,101,2016,"July",28,3,2,5,1,0,0,"SC","Online TA","A","Transient",103.5,0
+"City Hotel",1,2,2016,"July",28,4,1,0,2,0,0,"BB","Direct","A","Transient",116.45,0
+"City Hotel",1,23,2016,"July",28,5,0,2,1,0,0,"BB","Online TA","A","Transient",145,0
+"City Hotel",1,11,2016,"July",28,5,2,6,1,0,0,"BB","Online TA","A","Transient",145,0
+"City Hotel",1,24,2016,"July",28,7,1,3,2,0,0,"BB","Direct","E","Transient",187,0
+"City Hotel",1,10,2016,"July",28,9,0,1,2,0,0,"BB","Direct","D","Transient",99.52,0
+"City Hotel",1,113,2016,"July",29,10,1,0,2,0,0,"SC","Online TA","A","Transient",103.5,0
+"City Hotel",1,126,2016,"July",29,11,1,2,2,0,0,"SC","Online TA","A","Transient-Party",73.12,0
+"City Hotel",1,128,2016,"July",29,11,1,2,3,0,0,"BB","Online TA","A","Transient-Party",140.7,0
+"City Hotel",1,60,2016,"July",29,11,1,4,2,0,0,"BB","Online TA","D","Transient",120.6,0
+"City Hotel",1,60,2016,"July",29,12,0,1,2,0,0,"BB","Online TA","A","Transient",105.3,0
+"City Hotel",1,92,2016,"July",29,14,0,2,2,2,0,"BB","Online TA","F","Transient",177.3,0
+"City Hotel",1,99,2016,"July",29,16,2,1,2,0,0,"SC","Online TA","A","Transient",94.5,1
+"City Hotel",1,134,2016,"July",30,17,1,0,2,0,0,"SC","Online TA","A","Transient",94.5,1
+"City Hotel",1,68,2016,"July",31,24,2,1,2,1,0,"BB","Online TA","A","Transient",121.5,0
+"City Hotel",1,131,2016,"July",31,25,1,1,1,1,0,"HB","Online TA","A","Transient",164.25,0
+"City Hotel",1,61,2016,"July",31,26,0,2,2,0,0,"SC","Online TA","A","Transient",94.5,0
+"City Hotel",1,0,2016,"August",32,1,1,0,2,0,0,"SC","Online TA","A","Transient",109,1
+"City Hotel",1,119,2016,"August",32,5,2,2,1,0,0,"BB","Online TA","D","Transient",144.45,0
+"City Hotel",1,116,2016,"August",32,5,2,5,3,0,0,"BB","Online TA","D","Transient",145.41,0
+"City Hotel",1,34,2016,"August",33,10,0,1,3,0,0,"BB","Online TA","D","Transient",168.3,0
+"City Hotel",1,34,2016,"August",33,10,0,1,2,0,0,"BB","Online TA","D","Transient",149.4,0
+"City Hotel",1,151,2016,"August",33,13,1,1,2,0,0,"SC","Online TA","A","Transient",103.5,0
+"City Hotel",1,143,2016,"August",33,13,1,1,2,0,0,"BB","Online TA","A","Transient",114.3,0
+"City Hotel",1,151,2016,"August",33,13,1,1,2,0,0,"SC","Online TA","A","Transient",103.5,0
+"City Hotel",1,143,2016,"August",33,13,1,1,2,0,0,"BB","Online TA","A","Transient",114.3,0
+"City Hotel",1,125,2016,"August",34,20,1,1,3,0,0,"BB","Online TA","D","Transient",137.7,1
+"City Hotel",1,94,2016,"August",35,24,0,4,2,0,0,"BB","Online TA","D","Transient",131.4,0
+"City Hotel",1,54,2016,"August",35,26,0,1,2,0,0,"SC","Online TA","A","Transient",125.1,0
+"City Hotel",1,127,2016,"August",35,26,0,2,3,0,0,"BB","Online TA","D","Transient",128.7,0
+"City Hotel",1,105,2016,"August",35,26,1,2,3,0,0,"BB","Online TA","D","Transient",150.3,0
+"City Hotel",1,105,2016,"August",35,26,1,2,2,0,0,"BB","Online TA","D","Transient",131.4,0
+"City Hotel",1,176,2016,"August",35,27,1,1,2,0,0,"BB","Online TA","A","Transient",96.3,0
+"City Hotel",1,52,2016,"August",35,27,2,1,3,0,0,"BB","Online TA","D","Transient",150.9,1
+"City Hotel",1,84,2016,"August",36,28,2,1,3,0,0,"BB","Online TA","D","Transient",159.3,0
+"City Hotel",1,50,2016,"September",36,2,0,1,2,0,0,"SC","Online TA","A","Transient",99,0
+"City Hotel",1,193,2016,"September",36,3,0,1,2,0,0,"BB","Online TA","A","Transient",108.9,1
+"City Hotel",1,29,2016,"September",37,4,2,0,2,0,0,"BB","Online TA","D","Transient",130.15,1
+"City Hotel",1,12,2016,"September",37,4,2,0,2,0,0,"BB","Online TA","D","Transient",154,0
+"City Hotel",1,62,2016,"September",37,4,2,2,2,0,0,"BB","Online TA","B","Transient",96.23,0
+"City Hotel",1,62,2016,"September",37,4,2,2,0,2,0,"BB","Online TA","B","Transient",96.23,0
+"City Hotel",1,243,2016,"September",37,4,4,6,1,0,0,"BB","Online TA","A","Transient",89.17,0
+"City Hotel",1,11,2016,"September",37,5,1,1,2,0,0,"BB","Online TA","D","Transient",154,0
+"City Hotel",1,49,2016,"September",37,5,1,2,1,0,0,"BB","Online TA","D","Transient",115.5,1
+"City Hotel",1,57,2016,"September",37,7,0,1,2,0,0,"SC","Online TA","A","Transient",87.3,3
+"City Hotel",1,25,2016,"September",37,9,0,1,2,0,0,"SC","Online TA","A","Transient",106.2,0
+"City Hotel",1,25,2016,"September",37,9,0,1,1,0,0,"SC","Online TA","A","Transient",106.2,0
+"City Hotel",1,56,2016,"September",38,11,2,1,2,0,0,"SC","Online TA","A","Transient",125.1,0
+"City Hotel",1,61,2016,"September",38,12,1,1,2,0,0,"SC","Online TA","A","Transient",125.1,0
+"City Hotel",1,198,2016,"September",38,15,0,1,2,0,0,"SC","Online TA","A","Transient",116.1,3
+"City Hotel",1,205,2016,"September",38,15,0,1,2,0,0,"SC","Online TA","A","Transient",116.1,0
+"City Hotel",1,2,2016,"September",38,16,0,1,2,0,0,"BB","Direct","A","Transient",169,0
+"City Hotel",1,5,2016,"September",38,17,0,1,2,0,0,"SC","Online TA","A","Transient",159,1
+"City Hotel",1,255,2016,"September",39,20,0,4,2,0,0,"BB","Online TA","D","Transient",122.83,0
+"City Hotel",1,14,2016,"September",39,22,0,1,1,0,0,"BB","Online TA","D","Transient",184,2
+"City Hotel",1,14,2016,"September",39,22,0,1,1,0,0,"BB","Online TA","D","Transient",184,2
+"City Hotel",1,14,2016,"September",39,22,0,1,1,0,0,"BB","Online TA","D","Transient",184,2
+"City Hotel",1,12,2016,"September",40,25,2,0,2,0,0,"BB","Online TA","A","Transient",149,0
+"City Hotel",1,13,2016,"September",40,25,2,0,2,0,0,"BB","Online TA","A","Transient",149,0
+"City Hotel",1,44,2016,"September",40,25,2,1,2,0,0,"BB","Online TA","D","Transient",149.4,0
+"City Hotel",1,253,2016,"September",40,26,1,2,1,0,0,"BB","Online TA","A","Transient",2,0
+"City Hotel",1,253,2016,"September",40,26,1,2,1,0,0,"BB","Online TA","A","Transient",2,0
+"City Hotel",0,274,2016,"September",40,27,0,2,2,0,0,"BB","Online TA","D","Transient",115.2,1
+"City Hotel",1,2,2016,"September",40,28,0,1,2,0,0,"SC","Online TA","A","Transient",0,1
+"City Hotel",1,47,2016,"October",41,2,2,0,1,0,0,"BB","Online TA","A","Transient",127,1
+"City Hotel",1,39,2016,"October",41,2,2,0,1,0,0,"BB","Online TA","A","Transient",134,1
+"City Hotel",1,26,2016,"October",41,2,2,1,1,0,0,"BB","Online TA","A","Transient",147,0
+"City Hotel",1,26,2016,"October",41,2,2,1,1,0,0,"BB","Online TA","A","Transient",147,0
+"City Hotel",1,31,2016,"October",41,2,2,1,1,0,0,"SC","Online TA","A","Transient",114.3,1
+"City Hotel",1,122,2016,"October",41,4,0,1,2,0,0,"SC","Online TA","A","Transient",108,1
+"City Hotel",1,196,2016,"October",41,8,1,1,2,0,0,"BB","Online TA","D","Transient",122.4,0
+"City Hotel",1,205,2016,"October",41,8,1,1,2,0,0,"SC","Online TA","A","Transient",98.1,0
+"City Hotel",1,35,2016,"October",42,11,0,3,2,0,0,"BB","Online TA","D","Transient",151.5,1
+"City Hotel",1,99,2016,"October",42,12,0,4,2,0,0,"BB","Direct","F","Transient",187.2,0
+"City Hotel",1,97,2016,"October",42,12,1,4,2,0,0,"BB","Direct","F","Transient",176.8,0
+"City Hotel",1,59,2016,"October",42,13,0,3,2,0,0,"BB","Direct","D","Transient",128.7,0
+"City Hotel",1,54,2016,"October",42,13,0,3,2,0,0,"BB","Online TA","D","Transient",139.5,3
+"City Hotel",1,32,2016,"October",42,15,2,1,2,0,0,"BB","Online TA","D","Transient",161.33,0
+"City Hotel",1,103,2016,"October",43,17,1,4,2,0,0,"BB","Online TA","A","Transient",118.8,3
+"City Hotel",1,46,2016,"October",44,25,0,3,2,0,0,"SC","Online TA","A","Transient",112.67,1
+"City Hotel",1,30,2016,"November",45,2,4,9,1,2,0,"BB","Online TA","F","Transient",186.22,0
+"City Hotel",1,30,2016,"November",45,2,4,9,1,2,0,"BB","Online TA","F","Transient",186.22,1
+"City Hotel",1,30,2016,"November",45,2,4,9,1,2,0,"BB","Online TA","F","Transient",186.22,1
+"City Hotel",1,74,2016,"November",45,4,2,6,2,0,0,"BB","Direct","D","Transient",155.5,0
+"City Hotel",1,76,2016,"November",46,6,1,0,2,0,0,"SC","Online TA","A","Transient",79.2,2
+"City Hotel",1,68,2016,"November",46,7,1,3,1,0,0,"BB","Online TA","E","Transient",220,2
+"City Hotel",1,109,2016,"November",46,8,0,4,1,0,0,"BB","Offline TA/TO","E","Transient",216,1
+"City Hotel",1,17,2016,"November",46,9,0,4,2,0,0,"BB","Direct","E","Transient",178.75,0
+"City Hotel",1,28,2016,"November",46,11,1,2,3,0,0,"BB","Online TA","D","Transient",166.67,0
+"City Hotel",1,20,2016,"November",46,11,2,5,2,0,0,"SC","Online TA","A","Transient",77.71,0
+"City Hotel",1,131,2016,"November",47,13,2,4,2,0,0,"SC","Online TA","A","Transient",85.27,1
+"City Hotel",1,49,2016,"November",47,19,2,5,2,0,0,"SC","Online TA","A","Transient",74.8,0
+"City Hotel",1,37,2016,"December",49,2,2,2,2,0,0,"SC","Online TA","A","Transient",74.8,1
+"City Hotel",1,37,2016,"December",49,2,2,2,2,0,0,"SC","Online TA","A","Transient",74.8,1
+"City Hotel",1,31,2016,"December",50,4,5,10,1,0,0,"SC","Online TA","A","Transient",87.41,2
+"City Hotel",1,0,2016,"December",50,9,4,7,2,0,0,"SC","Online TA","A","Transient",71.25,0
+"City Hotel",1,58,2016,"December",51,12,1,0,2,0,0,"SC","Online TA","A","Transient",79.2,0
+"City Hotel",1,18,2016,"December",51,17,2,2,2,0,0,"SC","Online TA","A","Transient",74.8,0
+"City Hotel",1,88,2016,"December",51,17,2,5,3,0,0,"BB","Online TA","D","Transient",119,1
+"City Hotel",1,220,2016,"December",52,21,1,4,3,0,0,"BB","Online TA","D","Transient",104.55,0
+"City Hotel",1,84,2016,"December",52,22,0,1,2,0,0,"SC","Online TA","A","Transient",79.2,0
+"City Hotel",1,84,2016,"December",52,22,0,1,2,1,0,"BB","Online TA","A","Transient",122,0
+"City Hotel",1,89,2016,"December",52,22,2,3,3,0,0,"BB","Online TA","D","Transient",119,1
+"City Hotel",1,89,2016,"December",52,22,2,3,2,0,0,"SC","Online TA","A","Transient",74.8,1
+"City Hotel",1,94,2016,"December",52,23,2,2,3,0,0,"BB","Online TA","D","Transient",119,1
+"City Hotel",1,94,2016,"December",52,23,2,2,3,0,0,"BB","Online TA","D","Transient",119,1
+"City Hotel",1,20,2016,"December",53,25,2,0,2,0,0,"SC","Online TA","A","Transient",88,2
+"City Hotel",1,223,2016,"December",53,26,2,5,2,0,0,"BB","Direct","A","Transient",69.09,0
+"City Hotel",1,223,2016,"December",53,26,2,5,2,0,0,"BB","Direct","A","Transient",69.09,0
+"City Hotel",1,237,2016,"December",53,28,2,5,2,0,0,"BB","Online TA","A","Transient",95.56,0
+"City Hotel",1,237,2016,"December",53,28,2,5,2,1,0,"BB","Online TA","A","Transient",80.26,0
+"City Hotel",1,237,2016,"December",53,28,2,5,2,2,0,"BB","Online TA","F","Transient",148.26,0
+"City Hotel",1,28,2017,"January",1,4,0,1,1,0,0,"BB","Online TA","A","Transient",96,3
+"City Hotel",1,195,2017,"January",1,4,0,4,2,0,0,"SC","Online TA","A","Transient",74.8,0
+"City Hotel",1,75,2017,"January",1,7,1,1,1,0,0,"BB","Online TA","A","Transient",86.4,1
+"City Hotel",1,12,2017,"January",2,14,2,6,3,0,0,"BB","Online TA","E","Transient",114.28,2
+"City Hotel",1,21,2017,"January",3,16,1,5,2,0,0,"BB","Direct","D","Transient",95.16,0
+"City Hotel",1,22,2017,"January",3,16,1,5,2,0,0,"BB","Online TA","D","Transient",99.24,0
+"City Hotel",1,69,2017,"January",4,25,0,2,2,0,0,"SC","Online TA","A","Transient",88,0
+"City Hotel",1,30,2017,"January",4,28,2,1,2,1,0,"BB","Online TA","A","Transient",120.33,0
+"City Hotel",1,65,2017,"February",5,2,0,1,2,0,0,"BB","Online TA","A","Transient",93.6,1
+"City Hotel",1,28,2017,"February",6,10,1,2,3,0,0,"BB","Online TA","D","Transient",160,0
+"City Hotel",1,76,2017,"February",7,16,1,3,2,0,0,"BB","Online TA","A","Transient",88.4,0
+"City Hotel",1,32,2017,"February",8,24,2,4,1,0,0,"BB","Online TA","D","Transient",100.3,1
+"City Hotel",1,29,2017,"March",9,3,2,2,2,0,0,"BB","Online TA","D","Transient",100.3,0
+"City Hotel",1,58,2017,"March",10,5,2,0,2,0,0,"SC","Online TA","A","Transient",79.2,0
+"City Hotel",1,82,2017,"March",10,5,2,4,2,0,0,"BB","Online TA","A","Transient",91.8,0
+"City Hotel",1,104,2017,"March",10,10,0,2,2,0,0,"BB","Online TA","A","Transient",97.2,0
+"City Hotel",1,6,2017,"March",10,10,2,3,1,0,0,"BB","Online TA","E","Transient",152,0
+"City Hotel",1,45,2017,"March",10,11,1,1,2,2,0,"BB","Online TA","F","Transient",198,0
+"City Hotel",1,15,2017,"March",10,11,2,1,2,0,0,"BB","Online TA","D","Transient",121.33,0
+"City Hotel",1,43,2017,"March",10,11,2,3,2,0,0,"BB","Online TA","D","Transient",100.3,1
+"City Hotel",1,45,2017,"March",11,16,0,1,2,0,0,"BB","Online TA","A","Transient",97.2,0
+"City Hotel",1,72,2017,"March",11,17,0,1,2,2,0,"BB","Online TA","F","Transient",160.2,0
+"City Hotel",1,110,2017,"March",11,18,1,1,2,0,0,"BB","Online TA","D","Transient",106.2,2
+"City Hotel",1,28,2017,"March",12,21,0,4,3,0,0,"BB","Online TA","E","Transient",127.93,1
+"City Hotel",1,20,2017,"March",12,22,1,4,2,2,0,"BB","Online TA","F","Transient",200,0
+"City Hotel",1,31,2017,"March",12,25,1,1,2,2,0,"BB","Online TA","F","Transient",198,0
+"City Hotel",1,112,2017,"March",13,26,1,0,2,0,0,"SC","Online TA","A","Transient",79.2,2
+"City Hotel",1,106,2017,"March",13,28,0,5,2,0,0,"SC","Online TA","A","Transient",79.64,2
+"City Hotel",1,52,2017,"March",13,30,0,2,2,0,0,"SC","Online TA","A","Transient",88.2,0
+"City Hotel",1,208,2017,"April",13,1,2,1,2,0,0,"SC","Online TA","A","Transient",99,2
+"City Hotel",1,169,2017,"April",14,3,1,4,2,0,0,"BB","Online TA","A","Transient",117,0
+"City Hotel",1,111,2017,"April",14,8,2,6,2,0,0,"BB","Online TA","D","Transient",136.13,0
+"City Hotel",1,52,2017,"April",15,9,2,0,2,0,0,"SC","Online TA","A","Transient",108,0
+"City Hotel",1,52,2017,"April",15,9,2,0,2,0,0,"SC","Online TA","A","Transient",108,0
+"City Hotel",1,202,2017,"April",15,9,2,1,3,0,0,"BB","Online TA","D","Transient",166,0
+"City Hotel",1,202,2017,"April",15,9,2,1,2,2,0,"BB","Online TA","B","Transient",229,0
+"City Hotel",1,55,2017,"April",15,9,2,3,1,0,0,"BB","Online TA","A","Transient",117,0
+"City Hotel",1,10,2017,"April",15,10,1,1,2,0,0,"SC","Online TA","A","Transient",115,1
+"City Hotel",1,11,2017,"April",15,14,1,2,2,0,0,"SC","Online TA","A","Transient",138.33,0
+"City Hotel",1,60,2017,"April",15,15,0,1,2,2,0,"BB","Online TA","F","Transient",230,0
+"City Hotel",1,4,2017,"April",15,15,1,1,2,0,0,"SC","Online TA","A","Transient",155,0
+"City Hotel",1,196,2017,"April",16,16,2,1,2,0,0,"SC","Online TA","A","Transient",99,1
+"City Hotel",1,34,2017,"April",16,17,1,1,1,0,0,"BB","Online TA","A","Transient",129,0
+"City Hotel",1,144,2017,"April",16,17,1,3,2,0,0,"SC","Online TA","A","Transient",99,0
+"City Hotel",1,15,2017,"April",16,17,1,4,2,0,0,"SC","Online TA","A","Transient",115,1
+"City Hotel",1,59,2017,"April",16,18,0,2,2,2,0,"BB","Online TA","F","Transient",239,0
+"City Hotel",1,90,2017,"April",16,18,0,5,2,0,0,"BB","Online TA","D","Transient",135,1
+"City Hotel",1,316,2017,"April",16,21,0,1,2,0,0,"BB","Online TA","A","Transient",109.8,0
+"City Hotel",1,316,2017,"April",16,21,0,1,2,0,0,"BB","Direct","A","Transient",93.5,0
+"City Hotel",1,316,2017,"April",16,21,0,1,2,0,0,"BB","Direct","A","Transient",93.5,0
+"City Hotel",1,316,2017,"April",16,21,0,1,2,0,0,"BB","Online TA","A","Transient",109.8,0
+"City Hotel",1,54,2017,"April",17,23,2,1,3,0,0,"BB","Online TA","D","Transient",171,0
+"City Hotel",1,37,2017,"April",17,24,1,2,2,2,0,"BB","Online TA","F","Transient",224,0
+"City Hotel",1,58,2017,"April",17,26,0,3,3,0,0,"BB","Online TA","E","Transient",198,0
+"City Hotel",1,78,2017,"April",17,28,0,1,2,0,0,"SC","Online TA","A","Transient",108,0
+"City Hotel",1,134,2017,"April",17,28,2,2,2,2,0,"BB","Online TA","F","Transient",191.25,2
+"City Hotel",1,10,2017,"April",17,29,0,1,2,0,0,"BB","Online TA","D","Transient",190,2
+"City Hotel",1,26,2017,"April",17,29,1,1,2,0,0,"SC","Online TA","A","Transient",115,1
+"City Hotel",1,63,2017,"May",18,1,1,0,2,0,0,"BB","Online TA","A","Transient",144,0
+"City Hotel",1,43,2017,"May",18,1,1,1,2,0,0,"SC","Online TA","A","Transient",149,0
+"City Hotel",1,228,2017,"May",18,1,1,2,2,0,0,"SC","Online TA","A","Transient",99,1
+"City Hotel",1,148,2017,"May",18,1,1,2,2,0,0,"SC","Online TA","A","Transient",108,1
+"City Hotel",1,228,2017,"May",18,1,1,2,2,0,0,"SC","Online TA","A","Transient",110,1
+"City Hotel",1,61,2017,"May",18,1,1,2,2,0,0,"SC","Online TA","A","Transient",126,0
+"City Hotel",1,5,2017,"May",18,1,1,2,1,0,0,"SC","Offline TA/TO","E","Transient",190,1
+"City Hotel",1,12,2017,"May",18,1,1,2,1,0,0,"BB","Offline TA/TO","E","Transient",6,0
+"City Hotel",1,327,2017,"May",18,2,0,2,1,0,0,"SC","Online TA","A","Transient",99,0
+"City Hotel",1,327,2017,"May",18,2,0,2,1,0,0,"SC","Online TA","A","Transient",99,0
+"City Hotel",1,102,2017,"May",18,2,0,4,1,0,0,"SC","Online TA","A","Transient",111,1
+"City Hotel",1,40,2017,"May",18,2,0,4,2,0,0,"SC","Online TA","A","Transient",149,0
+"City Hotel",1,82,2017,"May",18,3,0,3,2,0,0,"SC","Online TA","A","Transient",108,0
+"City Hotel",1,82,2017,"May",18,3,0,3,2,0,0,"SC","Online TA","A","Transient",108,0
+"City Hotel",1,9,2017,"May",18,3,0,4,2,0,0,"SC","Online TA","A","Transient",150,1
+"City Hotel",1,83,2017,"May",18,3,0,4,2,0,0,"BB","Online TA","D","Transient",135,0
+"City Hotel",1,60,2017,"May",18,6,0,1,1,0,0,"SC","Online TA","A","Transient",126,0
+"City Hotel",1,40,2017,"May",19,7,2,1,2,0,0,"SC","Online TA","A","Transient",149,0
+"City Hotel",1,83,2017,"May",19,8,1,2,3,0,0,"BB","Online TA","D","Transient",171,0
+"City Hotel",1,316,2017,"May",19,9,0,2,3,0,0,"BB","Online TA","D","Transient",142.2,1
+"City Hotel",1,15,2017,"May",19,9,0,3,2,0,0,"BB","Online TA","D","Transient",180,2
+"City Hotel",1,57,2017,"May",19,10,0,1,2,0,0,"SC","Online TA","A","Transient",134.1,0
+"City Hotel",1,57,2017,"May",19,10,0,1,2,0,0,"BB","Online TA","A","Transient",152.1,1
+"City Hotel",1,34,2017,"May",19,10,0,1,2,0,0,"BB","Online TA","A","Transient",169,1
+"City Hotel",1,196,2017,"May",19,10,0,2,2,0,0,"BB","Online TA","D","Transient",143.55,2
+"City Hotel",1,196,2017,"May",19,10,0,2,2,0,0,"BB","Online TA","D","Transient",143.55,2
+"City Hotel",1,324,2017,"May",19,11,0,1,2,0,0,"SC","Online TA","A","Transient",99,3
+"City Hotel",1,78,2017,"May",19,11,0,2,2,0,0,"BB","Online TA","D","Transient",153,0
+"City Hotel",1,78,2017,"May",19,11,0,2,2,0,0,"BB","Online TA","D","Transient",153,0
+"City Hotel",1,91,2017,"May",19,11,1,3,2,0,0,"SC","Online TA","A","Transient",127.25,1
+"City Hotel",1,156,2017,"May",19,12,1,2,1,0,0,"BB","Online TA","A","Transient",130.8,0
+"City Hotel",1,156,2017,"May",19,12,1,2,1,0,0,"BB","Direct","A","Transient",116.67,0
+"City Hotel",1,88,2017,"May",19,12,1,2,3,0,0,"BB","Online TA","D","Transient",183,0
+"City Hotel",1,224,2017,"May",20,14,1,0,2,0,0,"SC","Online TA","A","Transient",107.1,1
+"City Hotel",1,104,2017,"May",20,16,0,3,1,0,0,"SC","Online TA","A","Transient",117,0
+"City Hotel",1,13,2017,"May",20,16,0,5,2,0,0,"BB","Online TA","D","Transient",182,2
+"City Hotel",1,13,2017,"May",20,16,0,5,2,0,0,"BB","Online TA","D","Transient",182,2
+"City Hotel",1,79,2017,"May",20,17,2,4,2,0,0,"SC","Direct","A","Transient",135,0
+"City Hotel",1,151,2017,"May",20,19,0,1,2,0,0,"BB","Online TA","A","Transient",140,1
+"City Hotel",1,151,2017,"May",20,19,0,1,2,0,0,"BB","Online TA","A","Transient",140,1
+"City Hotel",1,24,2017,"May",20,19,0,2,2,0,0,"SC","Online TA","A","Transient",128,1
+"City Hotel",1,77,2017,"May",20,20,2,1,2,0,0,"SC","Online TA","A","Transient",144,0
+"City Hotel",1,18,2017,"May",21,22,1,0,2,0,0,"BB","Direct","E","Transient",195,0
+"City Hotel",1,28,2017,"May",21,22,1,2,1,0,0,"SC","Online TA","A","Transient",160,1
+"City Hotel",1,23,2017,"May",21,26,0,1,2,0,0,"SC","Online TA","A","Transient",160,1
+"City Hotel",1,124,2017,"May",21,27,0,1,1,0,0,"SC","Online TA","A","Transient",108,0
+"City Hotel",1,283,2017,"May",21,27,1,1,2,0,0,"HB","Online TA","A","Transient",126.9,2
+"City Hotel",1,127,2017,"May",21,27,2,2,2,0,0,"BB","Online TA","A","Transient",126,1
+"City Hotel",1,87,2017,"May",22,30,0,3,2,0,0,"SC","Online TA","A","Transient",130.67,0
+"City Hotel",1,25,2017,"May",22,31,0,1,2,0,0,"BB","Online TA","A","Transient",160,1
+"City Hotel",1,80,2017,"May",22,31,0,2,2,0,0,"SC","Online TA","A","Transient",126,0
+"City Hotel",1,31,2017,"June",22,1,0,2,2,0,0,"SC","Online TA","A","Transient",140,1
+"City Hotel",1,16,2017,"June",22,2,0,1,2,0,0,"SC","Online TA","A","Transient",140,1
+"City Hotel",1,43,2017,"June",22,3,2,5,2,0,0,"SC","Online TA","A","Transient",140,1
+"City Hotel",1,40,2017,"June",23,5,1,4,2,0,0,"BB","Online TA","E","Transient",196,2
+"City Hotel",1,34,2017,"June",23,5,1,5,1,0,0,"SC","Online TA","A","Transient",130,1
+"City Hotel",1,38,2017,"June",23,8,0,2,2,1,0,"BB","Online TA","A","Transient",160,1
+"City Hotel",1,31,2017,"June",23,8,0,3,2,0,0,"SC","Online TA","A","Transient",146.67,1
+"City Hotel",1,31,2017,"June",24,11,2,1,2,0,0,"BB","Online TA","A","Transient",126.67,1
+"City Hotel",1,156,2017,"June",24,14,0,2,2,0,0,"SC","Online TA","A","Transient",126,1
+"City Hotel",1,134,2017,"June",24,14,2,4,2,0,0,"SC","Online TA","A","Transient",108,0
+"City Hotel",1,51,2017,"June",25,20,0,2,3,0,0,"BB","Online TA","E","Transient",200,1
+"City Hotel",1,51,2017,"June",25,20,0,2,2,0,0,"BB","Online TA","E","Transient",240,1
+"City Hotel",1,19,2017,"June",25,20,0,4,2,2,0,"BB","Online TA","F","Transient",250,1
+"City Hotel",1,51,2017,"June",25,21,0,4,2,0,0,"SC","Online TA","A","Transient",135,1
+"City Hotel",1,51,2017,"June",25,21,0,4,2,0,0,"SC","Online TA","A","Transient",135,1
+"City Hotel",1,139,2017,"June",25,22,0,3,2,0,0,"BB","Online TA","D","Transient",126,1
+"City Hotel",1,64,2017,"June",26,26,1,0,3,0,0,"BB","Direct","F","Transient",265,0
+"City Hotel",1,25,2017,"June",26,27,0,2,2,0,0,"BB","Direct","E","Transient",140,0
+"City Hotel",1,14,2017,"June",26,28,0,1,2,0,0,"BB","Direct","D","Transient",118.2,0
+"City Hotel",1,272,2017,"June",26,28,0,3,3,0,0,"BB","Online TA","D","Transient",149.4,1
+"City Hotel",1,272,2017,"June",26,28,0,3,2,0,0,"BB","Online TA","A","Transient",117,1
+"City Hotel",1,36,2017,"June",26,29,0,1,2,0,0,"SC","Online TA","A","Transient",160,1
+"City Hotel",1,0,2017,"June",26,29,0,2,2,0,0,"BB","Online TA","A","Transient-Party",117,1
+"City Hotel",1,0,2017,"June",26,29,0,2,3,0,0,"BB","Online TA","D","Transient-Party",149.4,1
+"City Hotel",1,185,2017,"June",26,29,0,3,2,2,0,"BB","Online TA","F","Transient",192.7,0
+"City Hotel",1,125,2017,"June",26,29,0,3,1,0,0,"BB","Direct","A","Transient",95.7,0
+"City Hotel",1,125,2017,"June",26,29,0,3,2,0,0,"BB","Direct","D","Transient",118.2,0
+"City Hotel",1,96,2017,"June",26,29,2,3,1,0,0,"SC","Online TA","A","Transient",120,0
+"City Hotel",1,39,2017,"July",27,2,2,0,2,0,0,"BB","Online TA","D","Transient",139,0
+"City Hotel",1,112,2017,"July",27,3,1,2,2,2,0,"BB","Online TA","F","Transient",230,0
+"City Hotel",1,155,2017,"July",27,3,1,3,3,0,0,"BB","Online TA","D","Transient",152.1,0
+"City Hotel",1,195,2017,"July",27,5,0,4,3,0,0,"BB","Online TA","D","Transient",147.9,0
+"City Hotel",1,225,2017,"July",27,5,1,4,1,0,0,"BB","Online TA","A","Transient",99.9,0
+"City Hotel",1,223,2017,"July",27,5,1,4,2,0,0,"SC","Online TA","A","Transient",89.1,0
+"City Hotel",1,78,2017,"July",27,6,0,3,2,0,0,"SC","Online TA","A","Transient",120,1
+"City Hotel",1,315,2017,"July",27,7,0,1,2,0,0,"BB","Online TA","B","Transient",91.85,3
+"City Hotel",1,315,2017,"July",27,7,0,1,2,0,0,"SC","Online TA","A","Transient",89.1,2
+"City Hotel",1,315,2017,"July",27,7,0,1,0,2,0,"BB","Online TA","B","Transient",91.85,2
+"City Hotel",1,315,2017,"July",27,7,0,1,2,0,0,"BB","Online TA","B","Transient",91.85,3
+"City Hotel",1,315,2017,"July",27,7,0,1,0,2,0,"BB","Online TA","B","Transient",91.85,2
+"City Hotel",1,315,2017,"July",27,7,0,1,0,2,0,"BB","Online TA","B","Transient",91.85,2
+"City Hotel",1,315,2017,"July",27,7,0,1,2,0,0,"BB","Online TA","B","Transient",91.85,3
+"City Hotel",1,99,2017,"July",27,8,1,1,2,0,0,"SC","Online TA","A","Transient",120,1
+"City Hotel",1,140,2017,"July",27,8,2,1,3,0,0,"HB","Online TA","E","Transient",177.3,0
+"City Hotel",1,134,2017,"July",27,8,2,2,2,0,0,"SC","Online TA","A","Transient",80.19,0
+"City Hotel",1,134,2017,"July",27,8,2,2,2,0,0,"SC","Online TA","A","Transient",80.19,0
+"City Hotel",1,134,2017,"July",27,8,2,2,2,0,0,"BB","Online TA","E","Transient",128.79,0
+"City Hotel",1,146,2017,"July",27,8,2,3,2,0,0,"BB","Online TA","D","Transient",116.1,0
+"City Hotel",1,153,2017,"July",28,9,1,0,2,0,0,"SC","Online TA","A","Transient",89.1,0
+"City Hotel",1,34,2017,"July",28,9,2,2,2,0,0,"SC","Online TA","A","Transient",130,1
+"City Hotel",1,34,2017,"July",28,9,2,2,2,0,0,"SC","Online TA","A","Transient",130,1
+"City Hotel",1,56,2017,"July",28,10,1,1,2,1,0,"BB","Online TA","A","Transient",160,1
+"City Hotel",1,238,2017,"July",28,13,2,4,2,0,0,"BB","Online TA","D","Transient",122.83,2
+"City Hotel",1,138,2017,"July",29,16,2,0,2,0,0,"SC","Online TA","A","Transient",108,0
+"City Hotel",1,155,2017,"July",29,17,1,1,2,0,0,"BB","Online TA","D","Transient",152.1,0
+"City Hotel",1,155,2017,"July",29,17,1,1,2,0,0,"SC","Online TA","A","Transient",89.1,1
+"City Hotel",1,155,2017,"July",29,17,1,1,3,0,0,"SC","Online TA","A","Transient",89.1,0
+"City Hotel",1,7,2017,"July",29,17,1,1,3,0,0,"BB","Online TA","D","Transient",210,0
+"City Hotel",1,155,2017,"July",29,17,1,1,2,1,0,"BB","Online TA","A","Transient",125.1,1
+"City Hotel",1,176,2017,"July",29,18,0,1,1,0,0,"BB","Online TA","A","Transient",98.1,0
+"City Hotel",1,173,2017,"July",29,18,0,3,2,0,0,"SC","Online TA","A","Transient",89.1,0
+"City Hotel",1,31,2017,"July",29,18,0,3,2,0,0,"SC","Online TA","A","Transient",140,1
+"City Hotel",1,61,2017,"July",29,22,1,1,2,0,0,"BB","Direct","D","Transient",139.5,0
+"City Hotel",1,150,2017,"July",29,22,1,1,3,0,0,"BB","Online TA","D","Transient",175.5,0
+"City Hotel",1,150,2017,"July",29,22,2,1,3,0,0,"BB","Online TA","D","Transient",175.5,0
+"City Hotel",1,150,2017,"July",29,22,2,1,2,0,0,"BB","Online TA","E","Transient",166.5,0
+"City Hotel",1,150,2017,"July",29,22,2,1,3,0,0,"BB","Online TA","D","Transient",175.5,0
+"City Hotel",1,53,2017,"July",29,22,2,1,3,0,0,"BB","Online TA","E","Transient",219.33,0
+"City Hotel",1,56,2017,"July",30,24,1,4,2,0,0,"SC","Online TA","A","Transient",127.6,0
+"City Hotel",1,56,2017,"July",30,24,1,4,2,0,0,"SC","Online TA","A","Transient",127.6,0
+"City Hotel",1,106,2017,"July",30,25,0,1,2,0,0,"SC","Online TA","A","Transient",125,0
+"City Hotel",1,4,2017,"July",30,26,0,2,2,0,0,"SC","Online TA","A","Transient",160,0
+"City Hotel",1,80,2017,"July",30,26,0,4,2,2,0,"HB","Online TA","F","Transient",287,1
+"City Hotel",1,45,2017,"July",31,30,2,1,1,0,0,"SC","Online TA","A","Transient",129,0
+"City Hotel",1,302,2017,"July",31,31,1,2,2,0,0,"SC","Online TA","A","Transient",89.1,1
+"City Hotel",1,302,2017,"July",31,31,1,2,2,0,0,"SC","Online TA","A","Transient",89.1,1
+"City Hotel",1,302,2017,"July",31,31,1,2,2,0,0,"SC","Online TA","A","Transient",89.1,1
+"City Hotel",1,302,2017,"July",31,31,1,2,2,0,0,"SC","Online TA","A","Transient",89.1,1
+"City Hotel",1,302,2017,"July",31,31,1,2,2,0,0,"SC","Online TA","A","Transient",89.1,1
+"City Hotel",1,302,2017,"July",31,31,1,2,2,0,0,"SC","Online TA","A","Transient",89.1,1
+"City Hotel",1,92,2017,"August",31,2,0,3,2,0,0,"SC","Online TA","A","Transient",125,2
+"City Hotel",1,41,2017,"August",31,3,0,1,1,0,0,"SC","Online TA","A","Transient",126,0
+"City Hotel",1,191,2017,"August",31,5,1,1,2,0,0,"BB","Online TA","D","Transient",139.5,0
+"City Hotel",1,170,2017,"August",31,5,1,1,2,0,0,"BB","Online TA","D","Transient",139.5,0
+"City Hotel",1,191,2017,"August",31,5,1,1,2,0,0,"BB","Online TA","D","Transient",139.5,0
+"City Hotel",1,138,2017,"August",31,5,1,1,1,0,0,"BB","Online TA","D","Transient",147.25,0
+"City Hotel",1,191,2017,"August",31,5,1,1,2,0,0,"BB","Online TA","D","Transient",139.5,0
+"City Hotel",1,140,2017,"August",31,5,2,1,2,1,0,"BB","Online TA","A","Transient",154,0
+"City Hotel",1,19,2017,"August",31,5,2,2,3,0,0,"BB","Online TA","E","Transient",260,1
+"City Hotel",1,185,2017,"August",32,6,2,2,2,2,0,"BB","Online TA","F","Transient",235,0
+"City Hotel",1,168,2017,"August",32,6,4,10,1,0,0,"BB","Online TA","A","Transient",119.83,1
+"City Hotel",1,172,2017,"August",32,6,4,10,2,0,0,"SC","Online TA","A","Transient",113.32,0
+"City Hotel",1,172,2017,"August",32,6,4,10,3,0,0,"BB","Online TA","D","Transient",173.83,0
+"City Hotel",1,172,2017,"August",32,6,4,10,1,0,0,"BB","Online TA","A","Transient",128.83,1
+"City Hotel",1,158,2017,"August",32,8,0,2,2,0,0,"SC","Online TA","A","Transient",118.75,1
+"City Hotel",1,28,2017,"August",32,9,0,3,2,0,0,"SC","Online TA","A","Transient",160,1
+"City Hotel",1,128,2017,"August",32,9,0,4,2,0,0,"SC","Online TA","A","Transient",125,1
+"City Hotel",1,128,2017,"August",32,9,0,4,2,2,0,"BB","Online TA","F","Transient",235,1
+"City Hotel",1,128,2017,"August",32,9,0,4,3,0,0,"BB","Online TA","D","Transient",195,1
+"City Hotel",1,128,2017,"August",32,9,0,4,2,0,0,"SC","Online TA","A","Transient",125,1
+"City Hotel",1,27,2017,"August",32,11,0,1,2,0,0,"SC","Online TA","A","Transient",160,1
+"City Hotel",1,197,2017,"August",32,12,2,1,2,0,0,"BB","Direct","A","Transient",112.5,0
+"City Hotel",1,197,2017,"August",32,12,2,1,2,0,0,"BB","Direct","A","Transient",112.5,0
+"City Hotel",1,251,2017,"August",32,12,2,1,2,0,0,"SC","Online TA","A","Transient",112.5,2
+"City Hotel",1,78,2017,"August",33,15,0,2,2,2,0,"BB","Online TA","F","Transient",240,2
+"City Hotel",1,182,2017,"August",33,16,0,1,2,2,0,"BB","Online TA","F","Transient",235,0
+"City Hotel",1,195,2017,"August",33,16,0,3,2,2,0,"BB","Online TA","F","Transient",235,0
+"City Hotel",1,85,2017,"August",33,17,0,2,1,0,0,"BB","Online TA","D","Transient",190,2
+"City Hotel",1,207,2017,"August",33,17,0,3,3,0,0,"BB","Online TA","D","Transient",167.7,0
+"City Hotel",1,214,2017,"August",33,18,2,2,2,0,0,"BB","Online TA","D","Transient",130.78,0
+"City Hotel",1,214,2017,"August",33,18,2,3,3,0,0,"BB","Online TA","D","Transient",155.52,0
+"City Hotel",1,45,2017,"August",33,19,0,1,2,0,0,"SC","Online TA","A","Transient",140,0
+"City Hotel",1,195,2017,"August",33,19,2,1,2,0,0,"SC","Online TA","A","Transient",95.7,0
+"City Hotel",1,195,2017,"August",33,19,2,1,3,0,0,"BB","Online TA","D","Transient",158.7,0
+"City Hotel",1,176,2017,"August",33,19,2,3,2,0,0,"BB","Online TA","A","Transient",115.02,1
+"City Hotel",1,121,2017,"August",34,20,2,4,2,0,0,"SC","Online TA","A","Transient",125,1
+"City Hotel",1,12,2017,"August",34,21,1,2,2,0,0,"BB","Direct","D","Transient",144,0
+"City Hotel",1,211,2017,"August",34,22,0,1,1,0,0,"BB","Online TA","A","Transient",108,1
+"City Hotel",1,91,2017,"August",34,23,0,1,1,0,0,"BB","Online TA","A","Transient",140,2
+"City Hotel",1,42,2017,"August",34,23,0,2,2,0,0,"SC","Online TA","A","Transient",129,1
+"City Hotel",1,141,2017,"August",34,23,0,2,2,0,0,"BB","Direct","D","Transient",150,2
+"City Hotel",1,17,2017,"August",34,23,0,2,2,0,0,"SC","Online TA","A","Transient",129.5,1
+"City Hotel",1,93,2017,"August",34,24,1,3,3,0,0,"BB","Online TA","D","Transient",192,0
+"City Hotel",1,81,2017,"August",34,26,1,1,1,0,0,"BB","Online TA","D","Transient",170,1
+"City Hotel",1,79,2017,"August",34,26,2,3,3,0,0,"BB","Online TA","E","Transient",240,0
+"City Hotel",1,162,2017,"August",34,26,2,3,2,2,0,"BB","Online TA","F","Transient",235,0
+"City Hotel",1,66,2017,"August",35,27,1,0,1,0,0,"SC","Online TA","A","Transient",130,0
+"City Hotel",1,17,2017,"August",35,27,1,0,2,0,0,"SC","Online TA","A","Transient",89,1
+"City Hotel",1,168,2017,"August",35,27,2,1,3,0,0,"BB","Online TA","D","Transient",175.5,0
+"City Hotel",1,33,2017,"August",35,27,2,1,3,0,0,"BB","Online TA","E","Transient",223,0
+"City Hotel",1,305,2017,"August",35,28,1,2,2,0,0,"BB","Online TA","A","Transient",107.1,2
+"City Hotel",1,47,2017,"August",35,30,0,2,3,0,0,"BB","Online TA","D","Transient",210,3
+"City Hotel",1,68,2017,"August",35,31,0,2,2,0,0,"SC","Online TA","A","Transient",129,1
+"City Hotel",0,241,2015,"October",43,19,1,2,2,0,0,"BB","Groups","A","Transient-Party",60,0
+"City Hotel",0,241,2015,"October",43,19,1,2,2,0,0,"BB","Groups","A","Transient-Party",60,0
+"City Hotel",0,241,2015,"October",43,19,1,2,2,0,0,"BB","Groups","A","Transient-Party",60,0
+"City Hotel",0,241,2015,"October",43,19,1,2,2,0,0,"BB","Groups","A","Transient-Party",60,0
+"City Hotel",0,241,2015,"October",43,19,1,2,2,0,0,"BB","Groups","A","Transient-Party",60,0
+"City Hotel",0,241,2015,"October",43,19,1,2,2,0,0,"BB","Groups","A","Transient-Party",60,0
+"City Hotel",0,241,2015,"October",43,19,1,2,2,0,0,"BB","Groups","A","Transient-Party",60,0
+"City Hotel",0,241,2015,"October",43,19,1,2,2,0,0,"BB","Groups","A","Transient-Party",60,0
+"City Hotel",0,241,2015,"October",43,19,1,2,2,0,0,"BB","Groups","A","Transient-Party",60,0
+"City Hotel",0,241,2015,"October",43,19,1,2,1,0,0,"BB","Groups","A","Transient-Party",50,0
+"City Hotel",0,241,2015,"October",43,19,1,2,1,0,0,"BB","Groups","A","Transient-Party",50,0
+"City Hotel",0,241,2015,"October",43,19,1,2,1,0,0,"BB","Groups","A","Transient-Party",50,0
+"City Hotel",0,241,2015,"October",43,19,1,2,1,0,0,"BB","Groups","A","Transient-Party",50,0
+"City Hotel",0,241,2015,"October",43,19,1,2,1,0,0,"BB","Groups","A","Transient-Party",50,0
+"City Hotel",0,241,2015,"October",43,19,1,2,1,0,0,"BB","Groups","A","Transient-Party",50,0
+"City Hotel",0,241,2015,"October",43,19,1,2,1,0,0,"BB","Groups","A","Transient-Party",50,0
+"City Hotel",0,24,2015,"September",36,3,0,2,2,0,0,"BB","Online TA","A","Transient",80.85,1
+"City Hotel",0,17,2015,"September",36,5,2,1,1,0,0,"BB","Online TA","A","Transient",69.49,0
+"City Hotel",0,0,2015,"September",37,12,2,2,1,0,0,"BB","Direct","A","Group",114,0
+"City Hotel",0,3,2015,"September",38,19,1,1,2,0,0,"BB","Corporate","A","Transient",120,0
+"City Hotel",0,3,2015,"September",38,19,1,1,1,0,0,"BB","Groups","A","Transient-Party",120,0
+"City Hotel",0,1,2015,"September",39,20,1,0,1,0,0,"SC","Direct","A","Transient",69,0
+"City Hotel",0,3,2015,"September",38,19,1,1,1,0,0,"BB","Groups","A","Transient-Party",120,0
+"City Hotel",0,3,2015,"September",38,19,2,1,2,0,0,"BB","Corporate","A","Transient",120,0
+"City Hotel",0,7,2015,"September",39,21,1,1,1,0,0,"BB","Direct","A","Transient",109,0
+"City Hotel",0,7,2015,"September",39,21,1,1,1,0,0,"BB","Direct","A","Transient",109,0
+"City Hotel",0,7,2015,"September",39,21,1,1,1,0,0,"BB","Direct","A","Transient",109,0
+"City Hotel",0,0,2015,"September",39,22,0,2,2,0,0,"SC","Online TA","A","Transient",117.04,1
+"City Hotel",0,6,2015,"September",39,26,0,1,1,0,0,"SC","Direct","A","Transient",69,0
+"City Hotel",0,0,2015,"September",39,26,0,1,1,0,0,"BB","Direct","A","Transient",180,0
+"City Hotel",0,17,2015,"September",39,26,0,1,1,0,0,"BB","Groups","A","Transient-Party",170,0
+"City Hotel",0,12,2015,"September",39,26,1,1,2,0,0,"BB","Direct","A","Transient",200,1
+"City Hotel",0,12,2015,"September",39,26,1,1,2,0,0,"BB","Direct","A","Transient",200,1
+"City Hotel",0,17,2015,"September",39,26,2,1,1,0,0,"BB","Groups","A","Transient-Party",170,0
+"City Hotel",0,17,2015,"September",39,26,2,1,1,0,0,"BB","Groups","A","Transient-Party",170,0
+"City Hotel",0,17,2015,"September",39,26,2,2,1,0,0,"BB","Groups","A","Transient-Party",170,0
+"City Hotel",0,16,2015,"September",39,25,2,3,1,0,0,"BB","Groups","A","Transient-Party",170,0
+"City Hotel",0,17,2015,"September",39,26,2,2,1,0,0,"BB","Groups","A","Transient-Party",170,0
+"City Hotel",0,19,2015,"September",40,28,1,1,1,0,0,"BB","Groups","A","Transient-Party",170,0
+"City Hotel",0,16,2015,"September",39,25,2,3,1,0,0,"BB","Groups","A","Transient-Party",170,0
+"City Hotel",0,7,2015,"September",40,28,1,1,1,0,0,"BB","Groups","A","Transient-Party",170,0
+"City Hotel",0,16,2015,"September",39,25,2,3,1,0,0,"BB","Groups","A","Transient-Party",170,0
+"City Hotel",0,18,2015,"October",40,2,0,1,2,0,0,"BB","Online TA","A","Transient",82.39,1
+"City Hotel",0,9,2015,"October",41,4,2,0,1,0,0,"BB","Direct","A","Transient",109,0
+"City Hotel",0,14,2015,"October",41,5,1,0,1,0,0,"BB","Online TA","A","Contract",120,1
+"City Hotel",0,1,2015,"October",41,6,0,1,2,0,0,"BB","Direct","E","Transient",146,0
+"City Hotel",0,5,2015,"October",41,4,2,1,1,0,0,"BB","Online TA","A","Transient",96,0
+"City Hotel",0,23,2015,"October",41,9,0,1,2,0,0,"BB","Offline TA/TO","D","Transient",96.3,0
+"City Hotel",0,22,2015,"October",41,9,0,1,2,0,0,"BB","Online TA","A","Transient",82.39,2
+"City Hotel",0,0,2015,"October",41,7,0,4,1,0,0,"BB","Online TA","D","Transient",159.75,1
+"City Hotel",0,0,2015,"October",41,9,0,2,1,0,0,"SC","Online TA","A","Transient",117.04,1
+"City Hotel",0,1,2015,"October",41,9,2,2,2,0,0,"BB","Online TA","A","Transient",145,2
+"City Hotel",0,1,2015,"October",42,14,0,1,2,0,0,"BB","Direct","A","Transient",12,0
+"City Hotel",0,10,2015,"October",42,15,0,1,1,0,0,"BB","Direct","E","Transient",146,0
+"City Hotel",0,0,2015,"October",43,18,1,0,1,0,0,"SC","Online TA","A","Transient",87.78,0
+"City Hotel",0,6,2015,"October",43,18,2,2,2,0,0,"BB","Online TA","A","Transient",97.02,1
+"City Hotel",0,7,2015,"October",43,21,0,1,2,0,0,"BB","Direct","A","Transient",114,0
+"City Hotel",0,7,2015,"October",43,22,0,1,2,0,0,"SC","Online TA","A","Transient",114,1
+"City Hotel",0,11,2015,"October",43,23,0,1,2,0,0,"BB","Online TA","D","Contract",136,0
+"City Hotel",0,3,2015,"October",43,22,0,3,2,0,0,"SC","Online TA","A","Contract",114,1
+"City Hotel",0,8,2015,"October",43,20,1,5,2,0,0,"BB","Offline TA/TO","D","Transient",85,0
+"City Hotel",0,0,2015,"October",43,23,2,2,1,0,0,"BB","Direct","A","Transient",96,0
+"City Hotel",0,0,2015,"November",45,1,1,0,2,1,0,"BB","Online TA","A","Transient",90.4,0
+"City Hotel",0,0,2015,"November",45,5,0,2,2,0,0,"BB","Direct","A","Transient",95,0
+"City Hotel",0,21,2015,"November",45,5,0,2,2,0,0,"BB","Online TA","A","Transient",76,0
+"City Hotel",0,21,2015,"November",45,5,0,2,2,0,0,"BB","Online TA","A","Transient",76,0
+"City Hotel",0,0,2015,"November",45,7,1,1,1,0,0,"SC","Online TA","A","Group",73.15,0
+"City Hotel",0,12,2015,"November",45,7,2,1,2,0,0,"BB","Online TA","A","Transient",114,0
+"City Hotel",0,2,2015,"November",46,9,1,2,1,0,0,"BB","Complementary","A","Group",79,0
+"City Hotel",0,0,2015,"November",46,9,1,3,2,0,0,"BB","Online TA","A","Contract",106,1
+"City Hotel",0,0,2015,"November",47,19,0,1,1,0,0,"BB","Direct","A","Transient",99,0
+"City Hotel",0,70,2015,"November",48,26,0,3,1,0,0,"BB","Offline TA/TO","A","Transient",46.33,0
+"City Hotel",0,6,2015,"December",49,1,0,1,1,0,0,"BB","Online TA","A","Transient",81,1
+"City Hotel",0,31,2015,"December",51,19,0,1,2,1,0,"SC","Online TA","A","Transient",51.97,1
+"City Hotel",0,31,2015,"December",51,19,0,1,3,0,0,"SC","Online TA","A","Transient",76.23,1
+"City Hotel",0,83,2015,"December",53,27,2,1,2,0,0,"BB","Direct","A","Transient",85.5,2
+"City Hotel",0,57,2015,"December",52,25,2,5,2,0,0,"BB","Online TA","A","Transient",72.47,0
+"City Hotel",0,52,2015,"December",53,31,0,2,2,2,0,"BB","Online TA","F","Contract",207,2
+"City Hotel",0,71,2015,"December",53,29,0,5,3,0,0,"BB","Online TA","A","Transient",112.58,1
+"City Hotel",0,27,2016,"January",2,5,0,1,1,0,0,"SC","Offline TA/TO","A","Transient",64.8,0
+"City Hotel",0,80,2016,"January",2,7,0,1,2,0,0,"BB","Online TA","A","Transient",87.32,0
+"City Hotel",0,0,2016,"January",3,10,1,0,2,0,0,"SC","Online TA","A","Transient",54.02,0
+"City Hotel",0,48,2016,"January",2,8,2,5,2,0,0,"BB","Online TA","A","Transient",84.45,1
+"City Hotel",0,5,2016,"January",3,15,1,2,2,0,0,"BB","Online TA","A","Transient",80.3,2
+"City Hotel",0,36,2016,"January",4,19,0,2,1,0,0,"BB","Offline TA/TO","A","Transient-Party",71,0
+"City Hotel",0,1,2016,"January",3,15,2,6,2,0,0,"BB","Direct","A","Transient",82.45,1
+"City Hotel",0,9,2016,"January",5,29,0,2,2,0,0,"BB","Online TA","B","Transient-Party",78.25,1
+"City Hotel",0,9,2016,"February",6,3,0,1,2,0,0,"SC","Online TA","A","Transient",90,0
+"City Hotel",0,2,2016,"February",6,1,1,3,2,0,1,"BB","Online TA","A","Transient",93,2
+"City Hotel",0,15,2016,"February",6,5,1,2,1,0,0,"BB","Corporate","G","Transient-Party",100,0
+"City Hotel",0,0,2016,"February",7,10,0,1,2,0,0,"SC","Online TA","A","Transient",79,0
+"City Hotel",0,0,2016,"February",7,11,0,1,2,0,0,"BB","Direct","A","Transient",91,0
+"City Hotel",0,15,2016,"February",7,12,1,2,2,0,0,"BB","Offline TA/TO","A","Transient",40.67,0
+"City Hotel",0,3,2016,"February",7,13,1,1,2,0,0,"SC","Online TA","A","Transient",60.83,0
+"City Hotel",0,87,2016,"February",8,15,1,1,1,0,0,"BB","Direct","A","Transient",62.1,0
+"City Hotel",0,1,2016,"February",8,19,0,1,2,1,0,"BB","Online TA","F","Transient",173,0
+"City Hotel",0,22,2016,"February",8,19,0,2,2,0,0,"SC","Online TA","A","Transient",81,1
+"City Hotel",0,5,2016,"February",9,25,0,1,2,0,0,"SC","Online TA","A","Transient",81,2
+"City Hotel",0,0,2016,"February",9,27,0,1,2,0,0,"BB","Online TA","A","Transient",89,1
+"City Hotel",0,0,2016,"February",9,27,0,1,1,0,0,"BB","Online TA","A","Transient",89,0
+"City Hotel",0,9,2016,"March",11,7,1,0,1,0,0,"SC","Online TA","A","Transient",90,1
+"City Hotel",0,78,2016,"March",11,7,1,2,2,0,0,"BB","Offline TA/TO","A","Transient",65.58,0
+"City Hotel",0,56,2016,"March",11,9,0,2,2,0,0,"BB","Online TA","A","Transient",78.3,0
+"City Hotel",0,3,2016,"March",11,8,0,3,2,0,0,"BB","Online TA","A","Transient",91,1
+"City Hotel",0,44,2016,"March",11,9,0,3,2,0,0,"SC","Online TA","A","Transient",71.1,1
+"City Hotel",0,133,2016,"March",11,11,1,2,2,0,0,"BB","Offline TA/TO","A","Transient-Party",84.33,1
+"City Hotel",0,133,2016,"March",11,11,1,2,2,0,0,"BB","Offline TA/TO","A","Transient-Party",84.33,1
+"City Hotel",0,133,2016,"March",11,11,1,2,2,0,0,"BB","Offline TA/TO","A","Transient-Party",84.33,1
+"City Hotel",0,133,2016,"March",11,11,1,2,2,0,0,"BB","Offline TA/TO","A","Transient-Party",84.33,1
+"City Hotel",0,133,2016,"March",11,11,1,2,2,0,0,"BB","Offline TA/TO","A","Transient-Party",84.33,1
+"City Hotel",0,133,2016,"March",11,11,1,2,2,0,0,"BB","Offline TA/TO","A","Transient-Party",84.33,1
+"City Hotel",0,133,2016,"March",11,11,1,2,2,0,0,"BB","Offline TA/TO","A","Transient-Party",84.33,1
+"City Hotel",0,133,2016,"March",11,11,1,2,2,0,0,"BB","Offline TA/TO","A","Transient-Party",84.33,1
+"City Hotel",0,133,2016,"March",11,11,1,2,2,0,0,"BB","Offline TA/TO","A","Transient-Party",42.17,1
+"City Hotel",0,133,2016,"March",11,11,1,2,1,0,0,"BB","Offline TA/TO","A","Transient-Party",74.67,1
+"City Hotel",0,133,2016,"March",11,11,1,2,2,0,0,"BB","Offline TA/TO","A","Transient-Party",84.33,1
+"City Hotel",0,62,2016,"March",11,11,1,2,2,0,0,"BB","Online TA","A","Transient",60.29,1
+"City Hotel",0,133,2016,"March",11,11,1,2,2,0,0,"BB","Offline TA/TO","A","Transient-Party",84.33,1
+"City Hotel",0,52,2016,"March",12,13,2,2,2,0,0,"SC","Online TA","A","Transient",51,0
+"City Hotel",0,5,2016,"March",12,19,2,1,2,0,0,"BB","Groups","A","Transient-Party",93.33,0
+"City Hotel",0,5,2016,"March",12,19,2,1,2,0,0,"BB","Groups","A","Transient-Party",93.33,0
+"City Hotel",0,5,2016,"March",12,19,2,1,2,0,0,"BB","Groups","A","Transient-Party",93.33,0
+"City Hotel",0,5,2016,"March",12,19,2,1,1,0,0,"BB","Groups","A","Transient-Party",79.17,0
+"City Hotel",0,5,2016,"March",12,19,2,1,1,0,0,"BB","Groups","A","Transient-Party",79.17,0
+"City Hotel",0,64,2016,"March",12,18,2,2,1,0,0,"BB","Online TA","A","Transient-Party",93.5,0
+"City Hotel",0,5,2016,"March",12,19,2,1,2,0,0,"BB","Groups","A","Transient-Party",93.33,0
+"City Hotel",0,5,2016,"March",12,19,2,1,1,0,0,"BB","Groups","A","Transient-Party",79.17,0
+"City Hotel",0,5,2016,"March",12,19,2,1,2,0,0,"BB","Groups","A","Transient-Party",93.33,0
+"City Hotel",0,5,2016,"March",12,19,2,1,2,0,0,"BB","Groups","A","Transient-Party",93.33,0
+"City Hotel",0,5,2016,"March",12,19,2,1,2,0,0,"BB","Groups","A","Transient-Party",93.33,0
+"City Hotel",0,5,2016,"March",12,19,2,1,2,0,0,"BB","Groups","A","Transient-Party",93.33,0
+"City Hotel",0,6,2016,"March",12,19,2,1,3,0,0,"BB","Online TA","D","Transient",177,1
+"City Hotel",0,0,2016,"March",13,26,0,1,3,0,0,"SC","Online TA","A","Transient",135,1
+"City Hotel",0,5,2016,"March",12,19,2,1,2,0,0,"BB","Groups","A","Transient-Party",93.33,0
+"City Hotel",0,5,2016,"March",12,19,2,1,2,0,0,"BB","Groups","A","Transient-Party",93.33,0
+"City Hotel",0,5,2016,"March",12,19,2,1,1,0,0,"BB","Groups","A","Transient-Party",0,0
+"City Hotel",0,5,2016,"March",12,19,2,1,1,0,0,"BB","Groups","A","Transient-Party",79.17,0
+"City Hotel",0,5,2016,"March",12,19,2,1,1,0,0,"BB","Groups","A","Transient-Party",79.17,0
+"City Hotel",0,145,2016,"March",12,19,2,1,2,0,0,"SC","Online TA","A","Transient",60.98,0
+"City Hotel",0,49,2016,"March",13,23,0,1,2,0,0,"BB","Online TA","A","Transient",110,0
+"City Hotel",0,45,2016,"March",12,15,2,8,2,1,0,"BB","Online TA","G","Transient",217.75,3
+"City Hotel",0,49,2016,"March",12,19,2,4,2,0,0,"BB","Online TA","D","Transient",106.25,1
+"City Hotel",0,11,2016,"March",13,24,0,2,3,0,0,"BB","Online TA","D","Transient",182,2
+"City Hotel",0,11,2016,"March",13,24,0,2,2,0,0,"BB","Online TA","D","Transient",161,1
+"City Hotel",0,23,2016,"March",13,25,0,1,2,1,0,"BB","Direct","G","Transient",285,0
+"City Hotel",0,0,2016,"March",13,26,1,1,1,0,0,"BB","Direct","A","Transient",89,0
+"City Hotel",0,0,2016,"March",13,26,1,1,2,0,0,"SC","Online TA","A","Transient",134,0
+"City Hotel",0,39,2016,"March",14,28,1,0,2,0,0,"BB","Online TA","A","Transient",117.9,1
+"City Hotel",0,73,2016,"March",14,29,0,2,2,0,0,"SC","Online TA","A","Transient",60.29,1
+"City Hotel",0,2,2016,"March",14,28,1,3,1,0,0,"BB","Direct","A","Transient",91.5,1
+"City Hotel",0,0,2016,"March",14,28,1,4,2,0,0,"BB","Online TA","A","Transient",114,0
+"City Hotel",0,0,2016,"April",14,1,0,2,2,0,0,"SC","Online TA","A","Transient",75.42,0
+"City Hotel",0,0,2016,"April",15,3,1,0,1,0,0,"SC","Online TA","A","Transient",89,0
+"City Hotel",0,1,2016,"April",15,4,1,0,2,0,0,"BB","Direct","A","Transient",99,0
+"City Hotel",0,10,2016,"April",15,3,2,0,2,0,0,"SC","Online TA","A","Transient",89,1
+"City Hotel",0,28,2016,"April",15,6,0,1,1,0,0,"BB","Corporate","D","Transient",90,1
+"City Hotel",0,23,2017,"March",11,12,1,0,2,0,0,"BB","Corporate","A","Transient",85,1
+"City Hotel",0,64,2016,"April",15,8,0,1,2,0,0,"SC","Online TA","A","Transient",94.5,1
+"City Hotel",0,3,2016,"April",15,7,0,2,3,0,0,"BB","Online TA","G","Transient",185.57,0
+"City Hotel",0,31,2016,"April",15,9,0,1,1,0,0,"BB","Corporate","D","Transient",90,1
+"City Hotel",0,11,2016,"April",16,10,1,0,1,0,0,"BB","Corporate","D","Transient",90,1
+"City Hotel",0,7,2016,"April",16,10,2,0,2,0,0,"BB","Online TA","D","Transient",124,1
+"City Hotel",0,55,2016,"April",16,12,0,1,2,0,0,"SC","Online TA","A","Transient-Party",94.5,0
+"City Hotel",0,55,2016,"April",16,12,0,1,2,0,0,"SC","Online TA","A","Transient-Party",94.5,0
+"City Hotel",0,94,2016,"April",16,12,0,2,2,0,0,"BB","Online TA","A","Transient-Party",96.3,1
+"City Hotel",0,94,2016,"April",16,12,0,2,2,0,0,"BB","Online TA","A","Transient-Party",96.3,1
+"City Hotel",0,94,2016,"April",16,12,0,2,2,0,0,"BB","Online TA","A","Transient-Party",96.3,1
+"City Hotel",0,14,2016,"April",16,15,0,2,2,0,0,"BB","Online TA","D","Transient",142,1
+"City Hotel",0,1,2016,"April",16,16,1,1,2,0,0,"BB","Online TA","A","Transient",77.77,1
+"City Hotel",0,40,2016,"April",17,18,1,0,2,0,0,"BB","Online TA","D","Transient",109.8,0
+"City Hotel",0,61,2016,"April",16,16,2,1,3,0,0,"BB","Direct","F","Transient",151.3,3
+"City Hotel",0,1,2016,"April",17,18,1,0,2,0,0,"BB","Online TA","A","Transient",111,0
+"City Hotel",0,0,2016,"April",17,19,0,1,2,0,0,"BB","Direct","A","Transient",109,0
+"City Hotel",0,38,2016,"April",17,17,2,1,2,0,0,"SC","Online TA","A","Transient",68.14,1
+"City Hotel",0,34,2016,"April",17,22,0,1,2,0,0,"BB","Online TA","A","Transient",105.3,1
+"City Hotel",0,16,2016,"April",17,22,0,1,2,0,0,"SC","Online TA","A","Transient",119,1
+"City Hotel",0,37,2016,"April",17,23,1,1,2,0,0,"SC","Online TA","A","Transient",94.5,0
+"City Hotel",0,1,2016,"April",17,23,1,1,2,0,0,"SC","Online TA","A","Transient",104,0
+"City Hotel",0,31,2016,"April",17,23,2,1,2,0,0,"BB","Offline TA/TO","D","Transient",87.04,0
+"City Hotel",0,168,2016,"April",17,21,2,3,2,0,0,"BB","Offline TA/TO","A","Transient-Party",81.2,1
+"City Hotel",0,35,2016,"April",18,24,2,0,2,0,0,"BB","Online TA","D","Transient",118.8,1
+"City Hotel",0,77,2016,"April",18,25,1,1,2,1,0,"BB","Online TA","A","Transient-Party",112.5,2
+"City Hotel",0,77,2016,"April",18,25,1,1,2,0,0,"BB","Online TA","D","Transient-Party",109.8,1
+"City Hotel",0,3,2016,"April",18,25,1,2,2,0,0,"BB","Online TA","A","Transient",131,1
+"City Hotel",0,97,2016,"April",18,25,1,3,2,0,0,"SC","Online TA","A","Transient",80.75,1
+"City Hotel",0,108,2016,"April",18,28,0,1,1,0,0,"BB","Online TA","A","Transient",67.15,0
+"City Hotel",0,45,2016,"April",18,28,0,1,2,0,0,"BB","Online TA","A","Transient",106.2,1
+"City Hotel",0,127,2016,"April",18,28,1,3,2,0,0,"BB","Offline TA/TO","A","Transient-Party",90,0
+"City Hotel",0,127,2016,"April",18,28,1,3,1,0,0,"BB","Offline TA/TO","A","Transient-Party",80,0
+"City Hotel",0,127,2016,"April",18,28,1,3,2,0,0,"BB","Offline TA/TO","A","Transient-Party",90,0
+"City Hotel",0,127,2016,"April",18,28,1,3,2,0,0,"BB","Offline TA/TO","A","Transient-Party",90,0
+"City Hotel",0,127,2016,"April",18,28,1,3,2,0,0,"BB","Offline TA/TO","A","Transient",90,0
+"City Hotel",0,127,2016,"April",18,28,1,3,2,0,0,"BB","Offline TA/TO","A","Transient-Party",90,0
+"City Hotel",0,127,2016,"April",18,28,1,3,2,0,0,"BB","Offline TA/TO","A","Transient-Party",90,0
+"City Hotel",0,127,2016,"April",18,28,1,3,2,0,0,"BB","Offline TA/TO","A","Transient-Party",90,0
+"City Hotel",0,4,2016,"May",19,1,1,0,1,0,0,"BB","Online TA","A","Transient",125,1
+"City Hotel",0,99,2016,"April",18,27,2,4,2,0,0,"BB","Online TA","D","Transient",107.95,1
+"City Hotel",0,102,2016,"May",19,1,2,2,1,0,0,"BB","Online TA","A","Transient",89.25,2
+"City Hotel",0,1,2016,"May",19,6,0,2,2,0,0,"SC","Online TA","A","Transient",138,1
+"City Hotel",0,95,2016,"May",19,6,1,2,2,0,0,"BB","Offline TA/TO","A","Transient",80.75,0
+"City Hotel",0,1,2016,"May",20,8,1,0,2,0,0,"SC","Online TA","A","Transient",56.47,0
+"City Hotel",0,1,2016,"May",20,8,1,0,2,0,0,"SC","Online TA","A","Transient",56.47,0
+"City Hotel",0,0,2016,"May",20,10,0,1,3,0,0,"BB","Online TA","F","Transient",153.15,0
+"City Hotel",0,0,2016,"May",20,9,1,1,3,0,0,"BB","Online TA","D","Transient",158,0
+"City Hotel",0,24,2016,"May",20,8,2,3,1,0,0,"BB","Corporate","A","Transient",95,1
+"City Hotel",0,24,2016,"May",20,8,2,3,1,0,0,"BB","Corporate","A","Transient",95,1
+"City Hotel",0,77,2016,"May",20,10,0,4,2,0,0,"BB","Online TA","D","Transient",132.6,2
+"City Hotel",0,91,2016,"May",20,12,0,3,2,0,0,"BB","Offline TA/TO","A","Transient-Party",80.75,0
+"City Hotel",0,73,2016,"May",20,14,0,1,2,0,0,"BB","Online TA","A","Transient",126.9,1
+"City Hotel",0,196,2016,"May",20,12,1,3,2,0,0,"BB","Offline TA/TO","A","Transient-Party",80.75,1
+"City Hotel",0,196,2016,"May",20,12,1,3,2,0,0,"BB","Offline TA/TO","A","Transient-Party",80.75,1
+"City Hotel",0,196,2016,"May",20,12,1,3,2,0,0,"BB","Offline TA/TO","A","Transient-Party",80.75,1
+"City Hotel",0,196,2016,"May",20,12,1,3,2,0,0,"BB","Offline TA/TO","A","Transient-Party",80.75,1
+"City Hotel",0,196,2016,"May",20,12,1,3,2,0,0,"BB","Offline TA/TO","A","Transient-Party",80.75,0
+"City Hotel",0,5,2016,"May",21,16,1,0,2,0,0,"SC","Online TA","A","Transient",68.53,1
+"City Hotel",0,14,2016,"May",21,15,2,0,2,2,0,"BB","Online TA","F","Transient",211,2
+"City Hotel",0,0,2016,"May",21,16,1,0,2,0,0,"SC","Online TA","A","Transient",62.73,0
+"City Hotel",0,53,2016,"May",21,17,0,1,2,0,0,"BB","Online TA","A","Transient",126.9,1
+"City Hotel",0,5,2016,"May",21,16,1,2,1,0,0,"BB","Corporate","A","Transient-Party",98.32,0
+"City Hotel",0,116,2016,"May",21,18,0,1,2,0,0,"BB","Online TA","A","Transient",105.3,1
+"City Hotel",0,4,2016,"May",21,15,2,2,1,0,0,"BB","Corporate","A","Transient-Party",98.32,0
+"City Hotel",0,0,2016,"May",21,20,0,0,1,0,0,"BB","Corporate","A","Transient-Party",0,0
+"City Hotel",0,5,2016,"May",21,16,1,3,1,0,0,"BB","Corporate","A","Transient",98.32,0
+"City Hotel",0,31,2016,"May",21,15,2,4,1,0,0,"BB","Corporate","A","Transient",95,1
+"City Hotel",0,1,2016,"May",21,20,0,1,2,0,0,"BB","Direct","E","Transient",206,0
+"City Hotel",0,101,2016,"May",21,19,0,3,3,0,0,"BB","Online TA","F","Transient",198.9,2
+"City Hotel",0,23,2016,"May",22,22,1,0,2,1,0,"BB","Online TA","D","Transient",173.5,1
+"City Hotel",0,228,2016,"May",22,22,2,0,2,0,0,"BB","Online TA","A","Transient",106.2,1
+"City Hotel",0,14,2016,"May",22,23,1,0,2,0,0,"SC","Online TA","A","Transient",129,2
+"City Hotel",0,9,2016,"May",21,21,2,2,2,0,0,"BB","Direct","G","Transient",257,0
+"City Hotel",0,93,2016,"May",22,23,1,2,2,0,0,"HB","Direct","E","Transient-Party",211,0
+"City Hotel",0,93,2016,"May",22,23,1,2,2,0,0,"HB","Direct","E","Transient-Party",211,0
+"City Hotel",0,8,2016,"May",22,25,0,1,2,0,0,"SC","Online TA","A","Transient",99,1
+"City Hotel",0,13,2016,"May",22,23,1,2,2,1,0,"SC","Online TA","A","Transient",105.11,2
+"City Hotel",0,27,2016,"May",22,22,2,2,2,0,0,"BB","Online TA","A","Transient",90.84,1
+"City Hotel",0,87,2016,"May",22,27,0,1,1,0,0,"BB","Online TA","A","Transient",94.25,1
+"City Hotel",0,73,2016,"May",22,25,1,4,2,0,0,"BB","Online TA","D","Transient",129.96,1
+"City Hotel",0,135,2016,"May",22,28,2,1,2,0,0,"SC","Online TA","A","Transient",101.7,1
+"City Hotel",0,18,2016,"May",23,29,2,1,1,0,0,"BB","Direct","A","Transient",112.33,1
+"City Hotel",0,134,2016,"May",23,30,1,1,2,0,0,"SC","Online TA","A","Transient",94.5,0
+"City Hotel",0,38,2016,"June",23,1,0,1,2,0,0,"SC","Online TA","A","Transient",89.1,1
+"City Hotel",0,5,2016,"June",23,2,0,1,2,0,0,"SC","Online TA","A","Transient",119,0
+"City Hotel",0,14,2016,"June",23,2,0,1,1,0,0,"BB","Direct","D","Transient",120.7,0
+"City Hotel",0,2,2016,"June",23,2,0,1,2,0,0,"BB","Direct","A","Transient",120,1
+"City Hotel",0,110,2016,"June",23,3,0,1,2,1,0,"BB","Online TA","A","Transient-Party",143.1,3
+"City Hotel",0,110,2016,"June",23,3,0,1,2,0,0,"BB","Direct","D","Transient",150,1
+"City Hotel",0,102,2016,"June",23,3,0,1,2,0,0,"BB","Online TA","D","Transient",140.4,0
+"City Hotel",0,19,2016,"June",23,2,0,3,3,0,0,"BB","Online TA","D","Transient",170.33,1
+"City Hotel",0,15,2016,"June",23,2,1,3,2,0,0,"SC","Online TA","A","Transient",93.56,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,1,0,0,"BB","Groups","A","Transient-Party",61.67,0
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,1,0,0,"BB","Groups","A","Transient-Party",0,0
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,1,0,0,"BB","Groups","A","Transient-Party",61.67,0
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,220,2016,"June",23,4,2,1,2,0,0,"BB","Groups","A","Transient-Party",73.33,1
+"City Hotel",0,111,2016,"June",24,5,2,0,2,0,0,"BB","Direct","A","Transient",116.1,1
+"City Hotel",0,0,2016,"June",24,7,0,1,2,0,0,"SC","Online TA","A","Transient",109,0
+"City Hotel",0,118,2016,"June",24,6,1,2,1,0,0,"BB","Offline TA/TO","A","Transient-Party",110,0
+"City Hotel",0,14,2016,"June",24,8,0,1,2,0,0,"BB","Online TA","A","Transient",121,1
+"City Hotel",0,43,2016,"June",24,8,0,1,2,0,0,"BB","Online TA","A","Transient",83.85,2
+"City Hotel",0,18,2016,"June",24,9,0,1,2,0,0,"BB","Direct","A","Transient",92.65,0
+"City Hotel",0,18,2016,"June",24,9,0,1,2,0,0,"BB","Direct","A","Transient",92.65,0
+"City Hotel",0,63,2016,"June",24,9,0,1,2,0,0,"SC","Online TA","A","Transient",109,1
+"City Hotel",0,3,2016,"June",24,7,0,3,1,0,0,"BB","Online TA","D","Transient",109.85,2
+"City Hotel",0,14,2016,"June",24,8,0,4,1,0,0,"BB","Offline TA/TO","A","Transient",110.8,1
+"City Hotel",0,14,2016,"June",24,8,0,4,2,0,0,"BB","Offline TA/TO","A","Transient",110.8,1
+"City Hotel",0,106,2016,"June",24,8,0,4,2,0,0,"BB","Online TA","A","Transient",92.28,1
+"City Hotel",0,118,2016,"June",24,6,1,5,1,0,0,"BB","Offline TA/TO","A","Transient-Party",110,2
+"City Hotel",0,120,2016,"June",25,13,1,0,2,1,0,"BB","Online TA","A","Transient-Party",143.1,4
+"City Hotel",0,2,2016,"June",25,13,1,0,2,0,0,"SC","Online TA","A","Transient",79,1
+"City Hotel",0,13,2016,"June",25,14,0,1,2,0,0,"SC","Online TA","A","Transient",89,0
+"City Hotel",0,34,2016,"June",25,12,2,1,0,2,0,"BB","Online TA","B","Transient",119.5,1
+"City Hotel",0,34,2016,"June",25,12,2,1,2,0,0,"BB","Online TA","B","Transient",119.5,1
+"City Hotel",0,137,2016,"June",25,13,1,1,2,0,0,"BB","Online TA","A","Transient",101.53,2
+"City Hotel",0,102,2016,"June",25,12,2,3,3,0,0,"BB","Online TA","D","Transient",150.15,0
+"City Hotel",0,1,2016,"June",25,17,0,1,1,0,0,"HB","Offline TA/TO","A","Transient",89.25,0
+"City Hotel",0,243,2016,"June",26,19,2,0,2,0,0,"BB","Online TA","B","Transient",95.58,1
+"City Hotel",0,243,2016,"June",26,19,2,0,2,0,0,"BB","Online TA","B","Transient",95.58,1
+"City Hotel",0,48,2016,"June",26,21,0,1,2,0,0,"SC","Online TA","A","Transient",89.1,1
+"City Hotel",0,59,2016,"June",26,20,1,1,2,0,0,"SC","Online TA","A","Transient",89.1,1
+"City Hotel",0,50,2016,"June",26,22,0,1,2,0,0,"BB","Online TA","A","Transient",76.92,1
+"City Hotel",0,50,2016,"June",26,22,0,1,2,0,0,"BB","Online TA","A","Transient",76.92,1
+"City Hotel",0,39,2016,"June",26,21,0,2,1,2,0,"BB","Direct","F","Transient",168.3,2
+"City Hotel",0,146,2016,"June",26,20,1,3,2,0,0,"BB","Online TA","A","Transient",91.98,0
+"City Hotel",0,87,2016,"June",27,26,1,0,2,0,0,"SC","Online TA","A","Transient",85.5,1
+"City Hotel",0,39,2016,"June",27,26,2,0,2,0,0,"BB","Online TA","A","Transient",99.9,1
+"City Hotel",0,16,2016,"June",27,27,1,0,2,1,0,"BB","Online TA","A","Transient",134.8,1
+"City Hotel",0,84,2016,"June",27,26,2,1,3,0,0,"BB","Online TA","A","Transient",103.72,2
+"City Hotel",0,146,2016,"June",27,30,0,1,2,0,0,"BB","Direct","A","Transient",85.5,1
+"City Hotel",0,17,2016,"June",27,29,0,2,3,1,0,"BB","Direct","G","Transient",237,1
+"City Hotel",0,12,2016,"June",27,29,0,2,1,0,0,"BB","Online TA","D","Transient",151,2
+"City Hotel",0,12,2016,"June",27,29,0,2,2,1,0,"BB","Online TA","D","Transient",156,3
+"City Hotel",0,38,2016,"July",27,2,0,1,2,0,0,"SC","Online TA","A","Transient",107.1,1
+"City Hotel",0,54,2016,"July",27,2,0,1,2,0,0,"SC","Online TA","A","Transient",107.1,1
+"City Hotel",0,20,2016,"June",27,29,0,4,2,0,0,"BB","Direct","D","Transient",124.2,0
+"City Hotel",0,107,2016,"June",27,28,0,5,3,0,0,"BB","Online TA","D","Transient",146.7,2
+"City Hotel",0,82,2016,"July",27,2,0,1,3,0,0,"BB","Online TA","G","Transient",185.03,2
+"City Hotel",0,140,2016,"July",27,2,1,1,3,0,0,"BB","Online TA","D","Transient",128.7,3
+"City Hotel",0,0,2016,"July",28,3,1,0,1,0,0,"SC","Online TA","A","Transient",92.86,0
+"City Hotel",0,140,2016,"July",27,2,1,1,2,2,0,"BB","Online TA","B","Transient",88.77,1
+"City Hotel",0,137,2016,"July",27,2,1,1,2,2,0,"BB","Online TA","B","Transient",88.77,1
+"City Hotel",0,160,2016,"June",27,30,1,3,2,0,0,"BB","Online TA","A","Transient",90.95,1
+"City Hotel",0,100,2016,"July",28,4,1,0,2,0,0,"SC","Online TA","A","Transient",112.5,1
+"City Hotel",0,11,2016,"July",28,4,1,0,2,3,0,"BB","Direct","G","Transient",267,3
+"City Hotel",0,138,2016,"July",27,2,2,2,2,0,0,"BB","Online TA","A","Transient",71.67,1
+"City Hotel",0,53,2016,"July",28,3,2,1,2,0,0,"SC","Online TA","A","Transient",107.1,1
+"City Hotel",0,128,2016,"July",27,1,2,4,2,2,0,"BB","Online TA","F","Transient",163.2,2
+"City Hotel",0,0,2016,"July",28,5,0,3,2,0,0,"SC","Online TA","A","Transient",110.46,1
+"City Hotel",0,4,2016,"July",28,6,0,3,2,0,0,"BB","Online TA","A","Transient",151,1
+"City Hotel",0,118,2016,"July",28,8,0,1,2,0,0,"BB","Online TA","A","Transient",88.01,1
+"City Hotel",0,56,2016,"July",29,11,1,0,2,0,0,"BB","Online TA","A","Transient",88.01,0
+"City Hotel",0,57,2016,"July",29,12,0,1,2,0,0,"BB","Online TA","A","Transient",105.3,1
+"City Hotel",0,97,2016,"July",29,12,0,2,2,1,0,"BB","Online TA","A","Transient",121.5,1
+"City Hotel",0,128,2016,"July",29,11,1,2,2,0,0,"BB","Online TA","D","Transient-Party",97.43,1
+"City Hotel",0,128,2016,"July",29,11,1,2,3,0,0,"BB","Online TA","A","Transient-Party",116.32,2
+"City Hotel",0,94,2016,"July",29,13,0,2,3,0,0,"BB","Online TA","D","Transient",137.7,0
+"City Hotel",0,94,2016,"July",29,13,0,2,3,0,0,"BB","Online TA","D","Transient",137.7,2
+"City Hotel",0,4,2016,"July",29,14,0,1,2,1,0,"BB","Online TA","A","Transient",151,1
+"City Hotel",0,33,2016,"July",29,15,0,1,1,0,0,"SC","Online TA","A","Transient",125.1,1
+"City Hotel",0,73,2016,"July",29,14,0,3,2,0,0,"BB","Offline TA/TO","A","Transient",85,0
+"City Hotel",0,57,2016,"July",30,18,1,0,2,0,0,"SC","Online TA","A","Transient",84.6,0
+"City Hotel",0,121,2016,"July",29,16,2,1,2,0,0,"BB","Online TA","A","Transient",105.3,1
+"City Hotel",0,81,2016,"July",29,16,2,1,2,0,0,"BB","Offline TA/TO","A","Transient",96,0
+"City Hotel",0,0,2016,"July",30,20,0,1,2,0,0,"SC","Direct","A","Transient",99,0
+"City Hotel",0,60,2016,"July",30,20,0,1,2,0,0,"BB","Online TA","A","Transient",81.08,1
+"City Hotel",0,11,2016,"July",30,18,1,2,1,0,0,"BB","Offline TA/TO","E","Transient",174.33,0
+"City Hotel",0,226,2016,"July",30,22,0,2,1,0,0,"BB","Groups","A","Transient-Party",64.25,0
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,1,0,0,"BB","Groups","A","Transient-Party",64.25,0
+"City Hotel",0,226,2016,"July",30,22,0,2,1,0,0,"BB","Groups","A","Transient-Party",64.25,0
+"City Hotel",0,226,2016,"July",30,22,0,2,1,0,0,"BB","Groups","A","Transient-Party",64.25,0
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,1,0,0,"BB","Groups","A","Transient-Party",64.25,0
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,226,2016,"July",30,22,0,2,1,0,0,"BB","Groups","A","Transient-Party",64.25,0
+"City Hotel",0,226,2016,"July",30,22,0,2,2,0,0,"BB","Groups","A","Transient-Party",76.5,1
+"City Hotel",0,0,2016,"July",30,23,0,1,2,0,0,"SC","Online TA","A","Transient",82.66,0
+"City Hotel",0,0,2016,"July",31,28,0,1,1,0,0,"BB","Online TA","A","Transient",108.11,0
+"City Hotel",0,0,2016,"July",31,29,0,1,2,0,0,"SC","Online TA","A","Transient",61.68,0
+"City Hotel",0,4,2016,"August",32,2,0,1,3,0,0,"BB","Direct","E","Transient",205,0
+"City Hotel",0,11,2016,"August",32,2,0,1,2,1,0,"BB","Online TA","A","Transient",138.5,1
+"City Hotel",0,4,2016,"August",32,2,0,1,1,1,0,"SC","Online TA","A","Transient",93.56,0
+"City Hotel",0,4,2016,"August",32,2,0,1,2,1,0,"SC","Online TA","A","Transient",97.41,0
+"City Hotel",0,4,2016,"August",32,2,0,1,2,0,0,"SC","Online TA","A","Transient",92.93,0
+"City Hotel",0,23,2016,"August",32,3,0,2,2,0,0,"BB","Online TA","A","Transient",151,1
+"City Hotel",0,131,2016,"August",32,3,0,3,2,0,0,"BB","Offline TA/TO","A","Transient",87.03,3
+"City Hotel",0,7,2016,"August",32,6,0,1,2,2,0,"BB","Online TA","F","Transient",240,1
+"City Hotel",0,236,2016,"August",32,2,0,5,2,0,0,"BB","Corporate","A","Transient",89,0
+"City Hotel",0,11,2016,"August",33,8,1,0,2,2,0,"BB","Online TA","F","Transient",191.35,1
+"City Hotel",0,221,2016,"August",33,12,0,1,1,0,0,"HB","Offline TA/TO","A","Transient-Party",73,0
+"City Hotel",0,116,2016,"August",33,12,0,1,2,2,0,"BB","Online TA","G","Transient",202.74,1
+"City Hotel",0,40,2016,"August",33,13,1,1,2,0,0,"BB","Online TA","G","Transient",205.38,1
+"City Hotel",0,11,2016,"August",33,13,2,2,2,0,0,"SC","Online TA","A","Transient",139,0
+"City Hotel",0,6,2016,"August",34,15,1,2,2,0,0,"BB","Online TA","D","Transient",180.67,1
+"City Hotel",0,0,2016,"August",34,17,0,1,1,0,0,"BB","Online TA","A","Transient",138,0
+"City Hotel",0,0,2016,"August",34,18,0,1,1,0,0,"BB","Direct","A","Transient",109,0
+"City Hotel",0,320,2016,"August",34,18,0,2,2,0,0,"HB","Offline TA/TO","A","Transient-Party",115,1
+"City Hotel",0,5,2016,"August",34,20,0,1,2,0,0,"BB","Online TA","A","Transient",130,1
+"City Hotel",0,155,2016,"August",35,21,1,0,2,0,0,"SC","Online TA","A","Transient",94.5,1
+"City Hotel",0,155,2016,"August",35,21,1,0,2,1,0,"BB","Online TA","A","Transient",121.5,1
+"City Hotel",0,0,2016,"August",34,19,2,2,2,0,0,"SC","Online TA","A","Transient",78.42,0
+"City Hotel",0,7,2016,"August",35,23,0,1,2,0,0,"SC","Online TA","A","Transient",128,1
+"City Hotel",0,0,2016,"August",35,23,0,1,2,0,0,"SC","Online TA","A","Transient",139,0
+"City Hotel",0,168,2016,"August",34,20,2,2,2,1,0,"BB","Online TA","D","Transient",99.87,1
+"City Hotel",0,1,2016,"August",35,24,0,1,1,0,0,"SC","Online TA","A","Transient",81.19,0
+"City Hotel",0,21,2016,"August",35,24,0,1,2,1,0,"SC","Online TA","A","Transient",146.5,2
+"City Hotel",0,32,2016,"August",35,23,0,3,2,2,0,"BB","Direct","E","Transient",182.95,2
+"City Hotel",0,4,2016,"August",35,25,0,1,2,0,0,"BB","Online TA","A","Transient",149,1
+"City Hotel",0,10,2016,"August",35,22,1,4,3,0,0,"BB","Online TA","G","Transient",160.16,1
+"City Hotel",0,112,2016,"August",35,24,0,4,2,0,0,"BB","Offline TA/TO","E","Transient",92.65,2
+"City Hotel",0,8,2016,"August",35,22,1,5,2,0,0,"BB","Online TA","D","Transient",99.46,1
+"City Hotel",0,112,2016,"August",35,24,0,4,2,0,0,"BB","Offline TA/TO","E","Transient",92.65,2
+"City Hotel",0,1,2016,"August",35,26,1,2,1,0,0,"BB","Online TA","D","Transient",174,1
+"City Hotel",0,19,2016,"August",36,28,2,1,2,0,0,"SC","Online TA","A","Transient",113,2
+"City Hotel",0,22,2016,"August",36,30,0,2,2,1,0,"BB","Online TA","G","Group",199.82,1
+"City Hotel",0,0,2016,"August",36,30,0,2,2,0,0,"SC","Online TA","A","Transient",77.71,0
+"City Hotel",0,26,2016,"August",36,28,2,3,3,0,0,"BB","Direct","E","Transient",165.83,0
+"City Hotel",0,0,2016,"September",36,1,0,1,2,0,0,"SC","Online TA","A","Transient",99.63,0
+"City Hotel",0,28,2016,"September",36,1,0,1,2,0,0,"SC","Online TA","A","Transient",110,0
+"City Hotel",0,191,2016,"August",36,30,0,4,2,0,0,"BB","Online TA","D","Transient",84.43,1
+"City Hotel",0,191,2016,"August",36,30,0,4,1,0,0,"BB","Online TA","D","Transient",84.43,2
+"City Hotel",0,64,2016,"September",36,2,0,1,2,1,0,"BB","Online TA","A","Transient",145.5,2
+"City Hotel",0,3,2016,"September",36,2,0,1,2,0,0,"BB","Direct","D","Transient",140,1
+"City Hotel",0,0,2016,"September",36,2,0,1,2,0,0,"SC","Online TA","A","Transient",94.1,0
+"City Hotel",0,182,2016,"September",36,3,0,1,2,0,0,"BB","Online TA","A","Transient",97.71,1
+"City Hotel",0,62,2016,"September",36,3,0,1,2,0,0,"BB","Online TA","A","Transient",109.8,1
+"City Hotel",0,62,2016,"September",36,3,2,1,2,0,0,"BB","Online TA","A","Transient",109.8,2
+"City Hotel",0,23,2016,"September",37,5,1,0,2,0,0,"BB","Online TA","A","Transient",93.94,1
+"City Hotel",0,50,2016,"September",36,1,2,4,2,0,0,"SC","Direct","D","Transient",124.58,0
+"City Hotel",0,40,2016,"September",37,7,0,1,2,0,0,"BB","Direct","E","Transient",149.4,0
+"City Hotel",0,9,2016,"September",37,4,2,2,1,0,0,"BB","Online TA","D","Transient",94.86,1
+"City Hotel",0,12,2016,"September",37,8,0,1,2,0,0,"SC","Online TA","A","Transient",129,2
+"City Hotel",0,1,2016,"September",36,2,2,5,1,0,0,"BB","Aviation","A","Transient",110,0
+"City Hotel",0,32,2016,"September",36,2,2,5,3,1,0,"BB","Direct","G","Transient",232.59,0
+"City Hotel",0,40,2016,"September",37,7,0,2,2,0,0,"BB","Direct","E","Transient",158.4,0
+"City Hotel",0,52,2016,"September",37,7,0,2,3,0,0,"BB","Online TA","D","Transient",149.4,2
+"City Hotel",0,67,2016,"September",37,7,0,3,2,0,0,"BB","Online TA","D","Transient",114.34,1
+"City Hotel",0,80,2016,"September",37,4,2,4,1,0,0,"BB","Offline TA/TO","A","Transient-Party",85,0
+"City Hotel",0,88,2016,"September",36,3,2,5,1,0,0,"BB","Offline TA/TO","A","Transient-Party",85,1
+"City Hotel",0,0,2016,"September",37,4,2,4,1,0,0,"BB","Offline TA/TO","A","Transient-Party",85,1
+"City Hotel",0,23,2016,"September",37,8,0,2,2,0,0,"BB","Online TA","A","Transient",130,1
+"City Hotel",0,116,2017,"May",21,22,1,0,2,0,0,"BB","Direct","A","Transient",126,3
+"City Hotel",0,213,2016,"September",37,8,0,3,2,0,0,"BB","Online TA","D","Transient",117.11,1
+"City Hotel",0,39,2016,"September",38,12,1,5,1,0,0,"BB","Groups","A","Transient-Party",108,0
+"City Hotel",0,50,2016,"September",37,10,1,1,2,0,0,"BB","Direct","D","Transient",145.8,2
+"City Hotel",0,0,2016,"September",38,11,1,0,1,0,0,"SC","Online TA","A","Transient",85.03,0
+"City Hotel",0,2,2016,"September",38,11,1,0,2,0,0,"BB","Direct","D","Transient",145,1
+"City Hotel",0,14,2016,"September",38,11,1,0,1,0,0,"SC","Online TA","A","Transient",89,2
+"City Hotel",0,38,2016,"September",37,10,1,1,2,0,0,"BB","Direct","D","Transient",170.57,2
+"City Hotel",0,17,2016,"September",38,11,2,0,2,0,0,"SC","Direct","A","Transient",93.5,2
+"City Hotel",0,34,2016,"September",38,11,2,0,2,0,0,"SC","Online TA","A","Transient",125.1,2
+"City Hotel",0,40,2016,"September",38,13,0,4,1,0,0,"BB","Groups","A","Transient-Party",108,0
+"City Hotel",0,78,2016,"September",38,11,2,0,3,0,0,"BB","Online TA","F","Transient",160.08,1
+"City Hotel",0,5,2016,"September",38,12,1,0,2,0,0,"BB","Direct","A","Transient",121.63,2
+"City Hotel",0,94,2016,"September",38,11,2,1,2,0,0,"BB","Online TA","A","Transient",135.9,2
+"City Hotel",0,3,2016,"September",38,12,1,2,2,0,0,"BB","Offline TA/TO","A","Transient",95,0
+"City Hotel",0,121,2016,"September",37,9,2,4,2,1,0,"SC","Online TA","A","Transient",89.76,0
+"City Hotel",0,58,2016,"September",38,14,0,2,2,0,0,"BB","Online TA","D","Transient",124.04,1
+"City Hotel",0,8,2016,"September",38,15,0,1,2,0,0,"SC","Online TA","A","Transient",149,3
+"City Hotel",0,30,2016,"September",38,15,0,1,2,0,0,"SC","Online TA","A","Transient",125.1,2
+"City Hotel",0,0,2016,"September",38,15,0,1,2,0,0,"SC","Online TA","A","Transient",106.28,0
+"City Hotel",0,9,2016,"September",38,15,0,1,2,0,0,"SC","Online TA","A","Transient",149,3
+"City Hotel",0,31,2016,"September",38,16,0,1,2,0,0,"SC","Online TA","A","Transient",125.1,1
+"City Hotel",0,15,2016,"September",38,15,0,2,2,0,0,"BB","Online TA","D","Transient",141.68,1
+"City Hotel",0,40,2016,"September",38,13,0,4,1,0,0,"BB","Groups","A","Transient-Party",108,0
+"City Hotel",0,115,2016,"September",38,16,0,1,2,0,0,"SC","Online TA","A","Transient",118.8,2
+"City Hotel",0,40,2016,"September",38,13,0,5,1,0,0,"BB","Groups","A","Transient-Party",108,0
+"City Hotel",0,40,2016,"September",38,13,0,5,1,0,0,"BB","Groups","A","Transient-Party",108,0
+"City Hotel",0,197,2016,"September",38,15,0,3,2,0,0,"SC","Online TA","A","Transient",116.1,1
+"City Hotel",0,111,2016,"September",38,16,0,2,3,0,0,"BB","Online TA","D","Transient",168.3,3
+"City Hotel",0,1,2016,"September",38,17,1,1,2,0,0,"BB","Online TA","D","Transient",155.54,2
+"City Hotel",0,67,2016,"September",38,16,2,2,2,0,0,"BB","Direct","D","Transient",137.7,1
+"City Hotel",0,89,2016,"September",38,16,2,2,2,0,0,"BB","Online TA","D","Transient",149.4,1
+"City Hotel",0,88,2016,"September",38,15,2,3,2,0,0,"BB","Online TA","D","Transient",149.4,1
+"City Hotel",0,56,2016,"September",39,20,0,1,2,0,0,"BB","Offline TA/TO","A","Transient",85.5,0
+"City Hotel",0,57,2016,"September",39,21,0,1,2,0,0,"BB","Online TA","D","Transient",115.04,2
+"City Hotel",0,57,2016,"September",39,21,0,1,2,0,0,"BB","Online TA","D","Transient",115.04,2
+"City Hotel",0,20,2016,"September",39,19,1,3,1,0,0,"BB","Corporate","A","Transient",119,0
+"City Hotel",0,57,2016,"September",39,21,0,2,2,0,0,"BB","Offline TA/TO","A","Transient",101.52,0
+"City Hotel",0,1,2016,"September",39,22,0,1,2,0,0,"SC","Online TA","A","Transient",129.56,0
+"City Hotel",0,42,2016,"August",35,27,8,20,0,0,0,"BB","Online TA","D","Transient",0,1
+"City Hotel",0,123,2016,"September",39,23,0,2,2,0,0,"BB","Direct","E","Transient",162,0
+"City Hotel",0,154,2016,"September",40,25,1,0,2,0,0,"BB","Direct","A","Transient",127.8,0
+"City Hotel",0,0,2016,"September",40,25,1,0,2,0,0,"BB","Direct","A","Transient",130,0
+"City Hotel",0,22,2016,"September",39,24,2,1,2,0,0,"BB","Direct","A","Transient",139,2
+"City Hotel",0,36,2016,"September",40,25,2,0,2,0,0,"BB","Online TA","A","Transient",90.09,1
+"City Hotel",0,0,2016,"September",40,27,0,1,2,0,0,"SC","Online TA","A","Transient",100.37,0
+"City Hotel",0,11,2016,"September",40,25,2,1,2,0,0,"SC","Online TA","A","Transient",129,1
+"City Hotel",0,0,2016,"September",40,29,0,1,2,0,0,"SC","Online TA","A","Transient",106.65,0
+"City Hotel",0,76,2016,"September",40,27,0,3,1,0,0,"SC","Online TA","A","Transient",125.1,1
+"City Hotel",0,57,2016,"September",39,24,2,5,2,0,0,"BB","Online TA","D","Transient",146.96,1
+"City Hotel",0,64,2016,"September",40,28,0,3,2,0,0,"BB","Offline TA/TO","A","Transient",101.52,0
+"City Hotel",0,64,2016,"September",40,28,0,3,2,0,0,"BB","Offline TA/TO","A","Transient",101.52,0
+"City Hotel",0,78,2016,"September",40,29,0,3,2,0,0,"BB","Offline TA/TO","A","Transient",95,1
+"City Hotel",0,1,2016,"September",40,30,1,2,1,0,0,"BB","Direct","E","Transient",215,0
+"City Hotel",0,47,2016,"October",41,2,2,0,2,0,0,"SC","Online TA","A","Transient",83.16,2
+"City Hotel",0,9,2016,"October",40,1,2,1,2,3,0,"BB","Direct","G","Transient",278.33,0
+"City Hotel",0,33,2016,"October",41,3,1,0,1,0,0,"SC","Online TA","A","Transient",120.6,1
+"City Hotel",0,26,2016,"October",41,2,2,0,1,0,0,"SC","Online TA","A","Transient",134,1
+"City Hotel",0,0,2016,"October",40,1,2,1,1,0,0,"BB","Online TA","A","Transient",150,1
+"City Hotel",0,5,2016,"October",40,1,2,2,2,0,0,"BB","Online TA","G","Transient",221.38,2
+"City Hotel",0,12,2016,"October",41,2,2,1,1,0,0,"BB","Offline TA/TO","A","Transient",6,0
+"City Hotel",0,21,2016,"October",41,2,2,1,2,0,0,"BB","Direct","D","Transient",61.33,0
+"City Hotel",0,20,2016,"October",41,2,2,1,2,0,0,"BB","Online TA","D","Transient",164,0
+"City Hotel",0,1,2016,"October",41,2,2,1,1,0,0,"BB","Online TA","A","Transient",154,1
+"City Hotel",0,164,2016,"October",41,5,0,1,2,0,0,"BB","Direct","A","Transient",117,0
+"City Hotel",0,185,2016,"October",41,5,0,2,2,0,0,"BB","Online TA","D","Transient",122.4,1
+"City Hotel",0,45,2016,"October",41,4,0,3,2,0,0,"BB","Online TA","D","Transient",102.04,1
+"City Hotel",0,49,2016,"October",41,5,0,2,1,0,0,"BB","Online TA","A","Transient",113.4,2
+"City Hotel",0,0,2016,"October",41,6,0,1,1,0,0,"BB","Direct","A","Transient",158,0
+"City Hotel",0,40,2016,"October",41,3,1,4,2,0,0,"BB","Online TA","D","Transient",95.48,1
+"City Hotel",0,0,2016,"October",41,8,0,1,2,0,0,"SC","Direct","A","Transient",180,0
+"City Hotel",0,59,2016,"October",42,9,1,0,2,0,0,"SC","Online TA","A","Transient",108,1
+"City Hotel",0,59,2016,"October",42,9,1,0,2,0,0,"BB","Online TA","D","Transient",151.2,0
+"City Hotel",0,95,2016,"October",41,7,1,2,3,0,0,"BB","Online TA","D","Transient",151.2,2
+"City Hotel",0,163,2016,"October",41,8,1,1,1,0,0,"SC","Online TA","A","Transient",91.63,1
+"City Hotel",0,102,2016,"October",42,9,1,0,2,0,0,"SC","Online TA","A","Transient",108,1
+"City Hotel",0,36,2016,"October",42,13,0,1,1,0,0,"SC","Online TA","A","Group",102.6,2
+"City Hotel",0,0,2016,"October",41,8,1,1,2,0,0,"SC","Online TA","A","Transient",87.2,0
+"City Hotel",0,110,2016,"October",42,9,1,0,1,0,0,"BB","Offline TA/TO","A","Transient-Party",120,0
+"City Hotel",0,180,2016,"October",42,10,1,2,1,0,0,"BB","Offline TA/TO","A","Group",120,0
+"City Hotel",0,36,2016,"October",42,13,0,1,1,0,0,"SC","Online TA","A","Transient-Party",102.6,2
+"City Hotel",0,17,2016,"October",41,7,2,2,2,0,0,"BB","Online TA","A","Transient",117.04,1
+"City Hotel",0,0,2016,"October",42,10,1,0,1,0,0,"SC","Online TA","A","Transient",82.66,0
+"City Hotel",0,98,2016,"October",42,9,2,1,2,0,0,"SC","Online TA","A","Transient",108,3
+"City Hotel",0,13,2016,"October",42,10,1,2,2,0,0,"BB","Corporate","A","Transient",159,0
+"City Hotel",0,0,2016,"October",42,12,0,1,1,0,0,"SC","Direct","B","Transient",136,0
+"City Hotel",0,111,2016,"October",42,10,1,2,1,0,0,"BB","Offline TA/TO","A","Transient-Party",120,1
+"City Hotel",0,36,2016,"October",42,13,0,1,1,0,0,"SC","Online TA","A","Transient-Party",102.6,2
+"City Hotel",0,180,2016,"October",42,10,1,2,1,0,0,"BB","Offline TA/TO","A","Transient-Party",120,1
+"City Hotel",0,36,2016,"October",42,13,0,1,1,0,0,"SC","Online TA","A","Transient-Party",102.6,2
+"City Hotel",0,180,2016,"October",42,10,1,2,1,0,0,"BB","Offline TA/TO","A","Transient-Party",120,0
+"City Hotel",0,113,2016,"October",42,13,0,1,1,0,0,"SC","Online TA","A","Transient-Party",108,1
+"City Hotel",0,180,2016,"October",42,10,1,2,1,0,0,"BB","Offline TA/TO","A","Transient-Party",120,0
+"City Hotel",0,36,2016,"October",42,13,0,1,1,0,0,"SC","Online TA","A","Transient-Party",102.6,2
+"City Hotel",0,1,2016,"October",42,12,0,2,2,0,0,"SC","Online TA","A","Transient",100.1,1
+"City Hotel",0,0,2016,"October",42,14,0,1,1,0,0,"SC","Direct","A","Transient-Party",108,1
+"City Hotel",0,5,2016,"October",42,13,0,2,2,0,0,"BB","Online TA","G","Transient",215.6,1
+"City Hotel",0,99,2016,"October",42,12,0,4,1,0,0,"BB","Direct","E","Transient",152.78,0
+"City Hotel",0,99,2016,"October",42,12,0,4,2,0,0,"BB","Direct","E","Transient",152.78,0
+"City Hotel",0,100,2016,"October",42,13,0,3,2,0,0,"BB","Direct","E","Transient",152.46,0
+"City Hotel",0,53,2016,"October",41,8,3,6,2,0,0,"BB","Direct","G","Transient",223.2,1
+"City Hotel",0,0,2016,"October",42,13,1,3,2,0,0,"BB","Direct","F","Transient",12,0
+"City Hotel",0,0,2016,"October",42,15,1,1,1,0,0,"SC","Online TA","A","Transient",66.13,0
+"City Hotel",0,114,2016,"October",42,12,1,4,0,0,0,"BB","Direct","D","Transient",0,0
+"City Hotel",0,50,2016,"October",43,17,1,0,2,0,0,"SC","Online TA","A","Transient",108,1
+"City Hotel",0,57,2016,"October",42,13,2,4,1,0,0,"BB","Direct","D","Transient",128.7,0
+"City Hotel",0,57,2016,"October",42,13,2,4,1,0,0,"BB","Direct","D","Transient",128.7,0
+"City Hotel",0,28,2016,"October",43,19,0,1,1,0,0,"SC","Online TA","A","Transient",87.01,1
+"City Hotel",0,36,2016,"October",43,20,0,2,2,0,0,"SC","Online TA","A","Transient",119.5,2
+"City Hotel",0,0,2016,"October",43,22,0,1,2,0,0,"SC","Online TA","A","Transient",120,0
+"City Hotel",0,7,2016,"October",43,21,0,2,2,0,0,"SC","Online TA","A","Transient",116.8,1
+"City Hotel",0,193,2016,"October",43,19,0,4,1,0,0,"BB","Offline TA/TO","A","Transient",72.76,1
+"City Hotel",0,0,2016,"October",43,22,0,1,1,0,0,"SC","Online TA","A","Transient",75.28,0
+"City Hotel",0,220,2016,"October",43,20,1,3,2,0,0,"SC","Online TA","A","Transient",80.75,1
+"City Hotel",0,220,2016,"October",43,20,1,3,2,0,0,"SC","Online TA","A","Transient",80.75,1
+"City Hotel",0,3,2016,"October",44,25,0,1,1,0,0,"SC","Online TA","A","Transient",84.7,1
+"City Hotel",0,7,2016,"October",44,25,0,1,2,0,0,"SC","Online TA","A","Transient",120,1
+"City Hotel",0,69,2016,"October",44,28,0,1,1,0,0,"SC","Online TA","A","Transient",57.52,1
+"City Hotel",0,86,2016,"October",44,25,0,4,3,0,0,"BB","Online TA","D","Transient",123.3,1
+"City Hotel",0,2,2016,"October",44,27,0,2,1,0,0,"SC","Online TA","A","Transient",139,3
+"City Hotel",0,21,2016,"October",44,29,2,2,1,0,0,"SC","Online TA","A","Transient",109,1
+"City Hotel",0,88,2016,"October",45,30,2,1,2,0,0,"BB","Direct","A","Transient",75.4,3
+"City Hotel",0,71,2016,"November",45,3,0,1,2,0,0,"SC","Online TA","A","Transient",79.2,2
+"City Hotel",0,71,2016,"November",45,3,0,1,2,0,0,"SC","Online TA","A","Transient",79.2,2
+"City Hotel",0,95,2016,"October",45,30,2,4,2,0,0,"BB","Offline TA/TO","A","Transient",68,0
+"City Hotel",0,11,2016,"November",45,1,1,5,2,0,0,"BB","Corporate","C","Transient",110,1
+"City Hotel",0,94,2016,"November",45,3,1,3,2,0,0,"SC","Online TA","A","Transient",79.2,1
+"City Hotel",0,94,2016,"November",45,3,1,3,2,0,0,"SC","Online TA","A","Transient",79.2,1
+"City Hotel",0,46,2016,"November",46,6,1,0,1,0,0,"BB","Online TA","A","Transient",97.2,2
+"City Hotel",0,11,2016,"November",45,3,2,4,2,0,0,"SC","Online TA","A","Transient",96.41,1
+"City Hotel",0,145,2016,"November",46,7,1,3,2,0,0,"BB","Online TA","A","Transient",174.15,2
+"City Hotel",0,20,2016,"November",46,7,1,3,1,0,0,"SC","Online TA","A","Transient",171.13,2
+"City Hotel",0,72,2016,"November",46,9,0,2,2,0,0,"BB","Online TA","A","Transient",175.5,2
+"City Hotel",0,5,2016,"November",46,6,2,3,2,0,0,"SC","Online TA","A","Transient",106.68,1
+"City Hotel",0,17,2016,"November",46,9,0,4,2,0,0,"BB","Online TA","D","Transient",143.43,1
+"City Hotel",0,57,2016,"November",46,11,0,2,2,0,0,"SC","Online TA","A","Transient",79.2,1
+"City Hotel",0,33,2016,"November",46,11,0,2,1,0,0,"SC","Online TA","A","Transient",104,1
+"City Hotel",0,33,2016,"November",46,11,0,2,1,0,0,"SC","Online TA","A","Transient",110,1
+"City Hotel",0,28,2016,"November",46,8,1,5,1,0,0,"BB","Direct","D","Transient",147.15,0
+"City Hotel",0,92,2016,"November",46,11,1,2,2,0,0,"BB","Direct","A","Transient",106.5,1
+"City Hotel",0,71,2016,"November",46,8,1,5,2,1,0,"BB","Online TA","F","Transient",155.49,1
+"City Hotel",0,4,2016,"November",47,13,1,0,1,0,0,"SC","Online TA","A","Transient",65.46,1
+"City Hotel",0,53,2016,"November",46,11,1,2,2,0,0,"BB","Direct","A","Transient",79.2,0
+"City Hotel",0,104,2016,"November",46,12,2,3,2,0,0,"BB","Direct","E","Transient",108.43,2
+"City Hotel",0,5,2016,"November",47,13,2,3,1,0,0,"BB","Corporate","A","Transient-Party",84,0
+"City Hotel",0,8,2016,"November",47,15,0,4,1,0,0,"BB","Online TA","A","Transient",97,3
+"City Hotel",0,27,2016,"November",47,16,0,4,2,0,0,"BB","Online TA","A","Transient",88.4,2
+"City Hotel",0,77,2016,"November",47,19,1,1,2,0,0,"BB","Online TA","A","Transient",93.6,1
+"City Hotel",0,260,2016,"November",47,16,1,4,2,0,0,"BB","Online TA","A","Transient",56.94,1
+"City Hotel",0,54,2016,"November",47,18,2,2,2,0,0,"SC","Online TA","A","Transient",74.8,1
+"City Hotel",0,16,2016,"November",48,23,0,1,2,1,0,"SC","Online TA","A","Transient",70.41,0
+"City Hotel",0,19,2016,"November",48,26,4,7,0,0,0,"SC","Online TA","A","Group",6.4,0
+"City Hotel",0,29,2016,"November",48,24,0,3,3,0,0,"BB","Direct","D","Transient",124.5,0
+"City Hotel",0,30,2016,"November",48,25,1,2,2,0,0,"BB","Direct","D","Transient",94.5,0
+"City Hotel",0,143,2016,"November",48,24,1,3,2,2,0,"BB","Direct","E","Transient",122.1,0
+"City Hotel",0,0,2016,"November",48,26,2,3,2,0,0,"BB","Direct","F","Transient",169.75,0
+"City Hotel",0,73,2016,"December",49,3,0,1,2,0,0,"SC","Online TA","A","Transient",60.98,1
+"City Hotel",0,3,2016,"December",49,2,0,2,2,0,0,"BB","Online TA","D","Transient",117.5,2
+"City Hotel",0,42,2016,"November",49,30,2,4,1,0,0,"SC","Online TA","A","Transient",48.5,1
+"City Hotel",0,20,2016,"December",50,4,2,0,2,0,0,"SC","Online TA","A","Transient",88,1
+"City Hotel",0,103,2016,"December",50,9,0,2,2,0,0,"SC","Online TA","A","Transient",79.2,2
+"City Hotel",0,25,2016,"December",50,7,0,4,2,0,0,"BB","Online TA","A","Transient",88.4,1
+"City Hotel",0,55,2016,"December",50,9,1,2,2,0,0,"SC","Online TA","A","Transient",79.2,1
+"City Hotel",0,68,2016,"December",50,10,2,1,2,0,0,"BB","Direct","A","Transient",79.2,0
+"City Hotel",0,5,2016,"December",51,13,0,1,2,0,0,"BB","Online TA","A","Transient",96,1
+"City Hotel",0,34,2016,"December",51,17,1,1,1,0,0,"SC","Online TA","A","Transient",56.16,0
+"City Hotel",0,101,2016,"December",51,15,2,3,2,0,0,"BB","Direct","G","Transient",200,0
+"City Hotel",0,32,2016,"December",51,17,2,2,2,0,0,"SC","Online TA","A","Transient",66.59,1
+"City Hotel",0,26,2016,"December",52,21,0,1,2,0,0,"SC","Online TA","A","Transient",67.76,1
+"City Hotel",0,53,2016,"December",51,17,2,5,2,0,0,"SC","Online TA","A","Transient",74.8,2
+"City Hotel",0,53,2016,"December",51,17,2,5,2,0,0,"SC","Online TA","A","Transient",74.8,2
+"City Hotel",0,18,2016,"December",52,23,0,2,4,0,0,"BB","Online TA","G","Transient",199.43,2
+"City Hotel",0,89,2016,"December",52,22,2,3,2,2,0,"BB","Online TA","E","Transient",94.72,0
+"City Hotel",0,1,2016,"December",53,25,2,0,4,0,0,"BB","Online TA","F","Transient",120,2
+"City Hotel",0,87,2016,"December",53,25,2,0,2,0,0,"SC","Online TA","A","Transient",79.2,0
+"City Hotel",0,87,2016,"December",53,25,2,0,2,1,0,"BB","Online TA","A","Transient",131,0
+"City Hotel",0,11,2016,"December",53,27,0,1,2,2,0,"BB","Direct","F","Transient",209,0
+"City Hotel",0,163,2016,"December",53,26,1,2,3,0,0,"BB","Online TA","D","Transient",122.4,2
+"City Hotel",0,163,2016,"December",53,26,1,2,3,0,0,"BB","Online TA","D","Transient",122.4,2
+"City Hotel",0,1,2016,"December",53,29,0,2,3,0,0,"BB","Online TA","D","Transient",188,1
+"City Hotel",0,1,2016,"December",53,29,0,2,2,0,0,"SC","Online TA","A","Transient",120,1
+"City Hotel",0,36,2016,"December",53,30,0,1,2,2,0,"BB","Online TA","F","Transient",206,0
+"City Hotel",0,23,2016,"December",53,30,0,1,3,0,0,"BB","Online TA","D","Transient",188,2
+"City Hotel",0,23,2016,"December",53,30,0,2,2,0,0,"BB","Online TA","D","Transient",148,2
+"City Hotel",0,1,2016,"December",53,31,1,1,1,0,0,"BB","Direct","D","Transient",172.8,0
+"City Hotel",0,0,2017,"January",1,3,0,2,2,0,0,"BB","Direct","D","Transient",108,0
+"City Hotel",0,5,2017,"January",1,1,2,0,2,0,0,"BB","Direct","D","Transient",110.25,1
+"City Hotel",0,88,2017,"January",1,2,1,1,2,2,0,"BB","Online TA","G","Transient",168.33,1
+"City Hotel",0,50,2017,"January",1,3,0,1,2,0,0,"BB","Direct","A","Transient",79.2,0
+"City Hotel",0,42,2016,"December",53,29,2,5,2,0,0,"BB","Direct","E","Transient",146.29,0
+"City Hotel",0,0,2017,"January",1,2,1,2,1,0,0,"BB","Direct","D","Transient",109.33,0
+"City Hotel",0,40,2017,"January",1,3,0,3,2,0,0,"SC","Online TA","A","Transient",67.76,1
+"City Hotel",0,12,2017,"January",1,3,0,3,1,0,0,"BB","Online TA","A","Transient",90.1,1
+"City Hotel",0,3,2017,"January",1,5,0,3,1,0,0,"BB","Online TA","A","Transient",90.1,1
+"City Hotel",0,22,2017,"January",1,7,0,1,2,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,32,2017,"January",1,4,0,4,2,0,0,"BB","Online TA","A","Transient",68.07,1
+"City Hotel",0,21,2017,"January",1,6,0,2,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,75,2017,"January",2,8,2,1,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,75,2017,"January",2,8,2,1,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,75,2017,"January",2,8,2,1,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,75,2017,"January",2,8,2,1,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,75,2017,"January",2,8,2,1,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,0,2017,"January",2,9,1,1,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,10,2017,"January",2,8,2,1,1,0,0,"BB","Groups","D","Transient-Party",69,2
+"City Hotel",0,75,2017,"January",2,8,2,1,1,0,0,"BB","Groups","D","Transient-Party",67,0
+"City Hotel",0,10,2017,"January",2,8,2,1,1,0,0,"BB","Groups","D","Transient-Party",69,2
+"City Hotel",0,75,2017,"January",2,8,2,1,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,75,2017,"January",2,8,2,1,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,75,2017,"January",2,8,2,1,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,75,2017,"January",2,8,2,1,2,0,0,"BB","Groups","D","Transient-Party",78,2
+"City Hotel",0,75,2017,"January",2,8,2,1,2,0,0,"BB","Groups","D","Transient-Party",67,0
+"City Hotel",0,343,2017,"January",2,9,1,2,2,0,0,"SC","Online TA","A","Transient",71.1,3
+"City Hotel",0,74,2017,"January",1,7,2,3,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,27,2017,"January",2,12,0,2,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,74,2017,"January",1,7,2,3,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,0,2017,"January",2,9,1,2,1,0,0,"SC","Online TA","A","Transient",53.52,0
+"City Hotel",0,74,2017,"January",1,7,2,3,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,74,2017,"January",1,7,2,3,2,1,0,"BB","Groups","D","Transient-Party",108,3
+"City Hotel",0,74,2017,"January",1,7,2,3,1,0,0,"BB","Groups","D","Transient-Party",67,2
+"City Hotel",0,35,2017,"January",2,12,0,1,3,0,0,"SC","Online TA","A","Transient",100.4,1
+"City Hotel",0,87,2017,"January",2,12,0,1,2,0,0,"SC","Online TA","A","Transient",88.2,1
+"City Hotel",0,10,2017,"January",2,13,1,2,2,0,0,"BB","Online TA","A","Transient",85.29,0
+"City Hotel",0,1,2017,"January",2,14,2,1,1,0,0,"SC","Online TA","A","Transient",69.7,1
+"City Hotel",0,33,2017,"January",2,14,2,6,2,0,0,"BB","Online TA","D","Transient",72.12,1
+"City Hotel",0,34,2017,"January",2,14,3,6,1,0,0,"BB","Online TA","A","Transient",62.83,1
+"City Hotel",0,15,2017,"January",3,20,2,2,2,0,0,"SC","Online TA","A","Transient",64.31,1
+"City Hotel",0,9,2017,"January",3,21,2,2,1,0,0,"BB","Offline TA/TO","A","Transient-Party",65,0
+"City Hotel",0,9,2017,"January",3,21,2,2,1,0,0,"BB","Offline TA/TO","A","Transient-Party",65,0
+"City Hotel",0,9,2017,"January",3,21,2,2,1,0,0,"BB","Offline TA/TO","A","Transient-Party",65,0
+"City Hotel",0,8,2017,"January",4,27,0,1,1,0,0,"SC","Online TA","A","Transient",0,2
+"City Hotel",0,48,2017,"January",4,25,0,2,1,0,0,"SC","Online TA","A","Transient",54.05,1
+"City Hotel",0,7,2017,"January",4,26,0,3,1,0,0,"SC","Online TA","A","Transient",57.05,0
+"City Hotel",0,0,2017,"January",5,31,0,1,1,0,0,"BB","Direct","A","Transient",93,0
+"City Hotel",0,240,2017,"February",5,1,0,1,2,0,0,"SC","Online TA","A","Transient",79.2,2
+"City Hotel",0,2,2017,"February",5,1,0,1,1,0,0,"SC","Online TA","A","Transient",88,1
+"City Hotel",0,23,2017,"February",5,2,0,0,2,0,0,"BB","Online TA","A","Transient",0,1
+"City Hotel",0,13,2017,"February",6,7,0,2,2,0,0,"BB","Online TA","A","Transient",85.46,3
+"City Hotel",0,1,2017,"February",6,9,0,1,1,0,0,"SC","Online TA","A","Transient",57.06,1
+"City Hotel",0,23,2017,"January",5,29,4,9,1,0,0,"SC","Online TA","A","Transient",43.53,1
+"City Hotel",0,12,2017,"February",6,11,1,1,2,0,0,"BB","Online TA","A","Transient",108,2
+"City Hotel",0,22,2017,"February",7,13,1,0,2,0,0,"SC","Direct","A","Transient",88,0
+"City Hotel",0,15,2017,"February",7,13,1,3,2,0,0,"BB","Direct","G","Transient",223,1
+"City Hotel",0,32,2017,"February",7,14,0,4,2,0,1,"SC","Online TA","A","Transient",57.6,1
+"City Hotel",0,2,2017,"February",7,17,0,2,2,0,0,"SC","Online TA","A","Transient",99,0
+"City Hotel",0,10,2017,"February",7,12,3,5,2,0,0,"BB","Direct","G","Transient",222,0
+"City Hotel",0,50,2017,"February",7,16,1,3,2,0,0,"BB","Online TA","A","Transient",65.91,1
+"City Hotel",0,2,2017,"February",7,17,2,3,1,0,0,"SC","Online TA","A","Transient",78.54,0
+"City Hotel",0,2,2017,"February",7,18,2,2,2,0,0,"SC","Online TA","A","Transient",59.4,0
+"City Hotel",0,18,2017,"February",8,23,0,1,3,0,0,"BB","Online TA","D","Transient",158,0
+"City Hotel",0,0,2017,"February",8,23,0,1,1,0,0,"SC","Online TA","A","Transient",58.31,0
+"City Hotel",0,1,2017,"February",8,23,0,2,2,0,0,"SC","Online TA","A","Transient",83,0
+"City Hotel",0,1,2017,"February",8,24,0,1,2,0,0,"SC","Online TA","A","Transient",51.66,0
+"City Hotel",0,16,2017,"February",8,22,0,4,2,0,0,"BB","Online TA","D","Transient",100.73,1
+"City Hotel",0,0,2017,"February",8,25,0,1,2,0,0,"SC","Online TA","A","Transient",64.95,0
+"City Hotel",0,11,2017,"January",3,15,13,30,0,0,0,"SC","Online TA","A","Transient",0,0
+"City Hotel",0,3,2017,"February",9,27,1,0,1,0,0,"SC","Online TA","A","Transient",62.4,0
+"City Hotel",0,0,2017,"February",9,26,2,0,2,0,0,"SC","Online TA","A","Transient",58.31,0
+"City Hotel",0,154,2017,"March",9,1,0,1,2,0,0,"BB","Online TA","A","Transient",93.6,2
+"City Hotel",0,1,2017,"March",9,2,0,1,1,0,0,"SC","Direct","A","Transient",88,1
+"City Hotel",0,48,2017,"March",9,2,0,1,2,0,0,"BB","Direct","A","Transient",77,0
+"City Hotel",0,0,2017,"March",9,3,0,1,1,0,0,"SC","Direct","A","Transient",88,0
+"City Hotel",0,235,2017,"March",9,3,0,1,2,0,0,"SC","Online TA","A","Transient",60.98,1
+"City Hotel",0,23,2017,"March",9,2,0,3,1,0,0,"SC","Online TA","A","Transient",88,1
+"City Hotel",0,27,2017,"March",9,3,1,2,2,0,0,"BB","Online TA","A","Transient",108,0
+"City Hotel",0,15,2017,"March",9,2,1,3,1,0,0,"SC","Online TA","A","Transient",74.8,1
+"City Hotel",0,11,2017,"March",10,5,2,0,2,0,0,"BB","Online TA","A","Transient",95.4,0
+"City Hotel",0,286,2017,"March",9,4,2,1,2,0,0,"BB","Online TA","A","Transient",63.06,1
+"City Hotel",0,22,2017,"March",9,4,2,2,2,2,0,"BB","Direct","G","Transient",223,0
+"City Hotel",0,226,2017,"March",10,7,0,2,2,0,0,"BB","Offline TA/TO","A","Transient",72,0
+"City Hotel",0,103,2017,"March",10,5,2,2,2,0,0,"BB","Online TA","A","Transient",72.94,0
+"City Hotel",0,103,2017,"March",10,5,2,2,1,0,0,"BB","Online TA","A","Transient",64.14,0
+"City Hotel",0,0,2017,"March",10,8,0,1,1,0,0,"SC","Online TA","A","Transient",64.95,0
+"City Hotel",0,23,2017,"March",10,9,0,1,1,0,0,"SC","Online TA","A","Transient",88,0
+"City Hotel",0,22,2017,"March",10,11,0,1,1,0,0,"BB","Corporate","A","Transient",85,0
+"City Hotel",0,2,2017,"March",10,11,0,1,2,0,0,"SC","Online TA","A","Transient",78.4,0
+"City Hotel",0,0,2017,"March",10,7,0,5,1,0,0,"BB","Direct","D","Transient",90,0
+"City Hotel",0,7,2017,"March",10,6,1,5,2,0,0,"BB","Online TA","D","Transient",137.13,0
+"City Hotel",0,57,2017,"March",10,11,0,1,2,0,0,"BB","Online TA","A","Transient",108,0
+"City Hotel",0,49,2017,"March",10,10,1,2,2,0,0,"BB","Online TA","A","Transient",86.76,1
+"City Hotel",0,15,2017,"March",11,14,0,1,1,0,0,"BB","Online TA","D","Transient",90.4,0
+"City Hotel",0,52,2017,"March",11,12,2,2,2,0,0,"BB","Online TA","D","Transient",100.3,1
+"City Hotel",0,30,2017,"March",11,14,0,2,1,0,0,"BB","Online TA","E","Transient",153,0
+"City Hotel",0,38,2017,"March",11,16,0,1,1,1,0,"SC","Online TA","A","Transient",98,0
+"City Hotel",0,0,2017,"March",11,16,0,1,1,0,0,"BB","Direct","A","Transient",103,0
+"City Hotel",0,71,2017,"March",11,17,0,1,2,0,0,"SC","Online TA","A","Transient",60.98,1
+"City Hotel",0,72,2017,"March",11,15,0,3,2,0,0,"BB","Direct","A","Transient",79.2,2
+"City Hotel",0,1,2017,"March",11,16,0,2,2,0,0,"SC","Online TA","A","Transient",76.44,0
+"City Hotel",0,51,2017,"March",10,11,2,6,2,0,0,"SC","Online TA","A","Transient",57.6,0
+"City Hotel",0,6,2017,"March",11,18,0,1,2,0,0,"SC","Online TA","A","Transient",98,0
+"City Hotel",0,110,2017,"March",11,18,1,1,2,0,0,"BB","Online TA","D","Transient",106.2,2
+"City Hotel",0,25,2017,"March",12,19,2,0,2,0,0,"BB","Direct","E","Transient",143,0
+"City Hotel",0,51,2017,"March",12,19,2,0,2,0,0,"SC","Online TA","A","Transient",79.2,0
+"City Hotel",0,59,2017,"March",12,20,1,1,2,0,0,"BB","Online TA","D","Transient",106.2,2
+"City Hotel",0,43,2017,"March",12,20,1,1,2,0,0,"BB","Direct","D","Transient",141.7,1
+"City Hotel",0,25,2017,"March",12,19,2,2,2,0,0,"HB","Offline TA/TO","D","Transient",106.08,0
+"City Hotel",0,1,2017,"March",12,22,0,1,2,0,0,"SC","Online TA","A","Transient",65.6,0
+"City Hotel",0,93,2017,"March",12,21,0,4,2,0,0,"BB","Online TA","A","Transient",91.93,1
+"City Hotel",0,113,2017,"March",12,19,2,4,2,0,0,"BB","Online TA","A","Transient",70.68,1
+"City Hotel",0,0,2017,"March",13,28,0,1,1,0,0,"BB","Online TA","G","Transient",108,2
+"City Hotel",0,0,2017,"June",24,13,0,2,1,0,0,"BB","Online TA","D","Transient",150,1
+"City Hotel",1,31,2017,"July",29,16,2,0,1,0,0,"BB","Direct","A","Transient",135,2
+"City Hotel",0,112,2017,"March",13,26,2,1,2,0,0,"BB","Online TA","A","Transient",97.2,2
+"City Hotel",0,14,2017,"March",13,28,0,1,2,0,0,"BB","Online TA","D","Transient",128,0
+"City Hotel",0,88,2017,"March",13,31,0,1,2,0,0,"BB","Direct","A","Transient",88.2,1
+"City Hotel",0,116,2017,"March",13,30,0,2,3,0,0,"BB","Online TA","D","Transient",142.2,2
+"City Hotel",0,9,2017,"April",14,2,1,0,2,0,0,"SC","Online TA","A","Transient",100.2,0
+"City Hotel",0,159,2017,"March",13,31,2,2,2,0,0,"SC","Online TA","A","Transient",71.57,1
+"City Hotel",0,74,2017,"April",14,3,1,3,2,0,0,"BB","Online TA","D","Transient",97.02,0
+"City Hotel",0,74,2017,"April",14,3,1,3,2,0,0,"BB","Online TA","D","Transient",97.02,0
+"City Hotel",0,65,2017,"April",14,2,2,4,2,0,0,"SC","Online TA","A","Transient",76.23,1
+"City Hotel",0,14,2017,"April",14,7,0,1,2,0,0,"BB","Direct","A","Transient",138,0
+"City Hotel",0,91,2017,"April",14,5,0,4,1,0,0,"SC","Online TA","A","Transient",69.3,1
+"City Hotel",0,81,2017,"April",14,5,0,4,2,0,0,"BB","Online TA","D","Transient",127.8,1
+"City Hotel",0,1,2017,"April",14,7,1,2,2,0,0,"SC","Online TA","A","Transient",120,1
+"City Hotel",0,116,2017,"April",15,9,2,0,3,0,0,"BB","Online TA","D","Transient",166.5,3
+"City Hotel",0,30,2017,"April",14,8,2,1,2,0,0,"BB","Online TA","E","Transient",180,0
+"City Hotel",0,102,2017,"April",15,9,2,1,2,0,0,"BB","Online TA","A","Transient",117,0
+"City Hotel",0,202,2017,"April",15,9,2,1,3,0,0,"BB","Online TA","D","Transient",149.4,2
+"City Hotel",0,202,2017,"April",15,9,2,1,0,2,0,"BB","Online TA","B","Transient",103.05,1
+"City Hotel",0,202,2017,"April",15,9,2,1,3,0,0,"BB","Online TA","D","Transient",158.4,2
+"City Hotel",0,202,2017,"April",15,9,2,1,2,0,0,"BB","Online TA","B","Transient",215.1,1
+"City Hotel",0,0,2017,"April",15,10,1,2,2,0,0,"BB","Direct","A","Transient",162.67,1
+"City Hotel",0,50,2017,"April",15,13,0,1,2,0,0,"SC","Online TA","A","Transient",108,1
+"City Hotel",0,50,2017,"April",15,13,0,1,2,0,0,"SC","Online TA","A","Transient",108,1
+"City Hotel",0,66,2017,"April",15,11,0,3,3,0,0,"BB","Online TA","G","Transient",253.33,2
+"City Hotel",0,70,2017,"April",15,11,0,3,3,0,0,"HB","Online TA","E","Transient",192,3
+"City Hotel",0,9,2017,"April",15,13,0,3,2,0,0,"BB","Online TA","E","Transient",210,1
+"City Hotel",0,34,2017,"April",15,15,0,1,3,0,0,"BB","Direct","D","Transient",185,0
+"City Hotel",0,1,2017,"April",15,15,0,1,2,0,0,"SC","Online TA","A","Transient",121.59,1
+"City Hotel",0,34,2017,"April",15,15,1,1,2,0,0,"SC","Online TA","A","Transient",120,1
+"City Hotel",0,11,2017,"April",15,14,2,2,2,0,0,"SC","Online TA","A","Transient",106,1
+"City Hotel",0,177,2017,"April",15,15,2,1,2,0,0,"HB","Groups","A","Transient-Party",105.33,1
+"City Hotel",0,177,2017,"April",15,15,2,1,2,0,0,"HB","Groups","A","Transient-Party",105.33,1
+"City Hotel",0,83,2017,"April",16,18,0,1,2,0,0,"SC","Online TA","A","Transient",108,1
+"City Hotel",0,1,2017,"April",16,18,0,1,2,1,0,"BB","Online TA","A","Transient",160,1
+"City Hotel",0,64,2017,"April",16,17,1,2,2,0,0,"SC","Online TA","A","Transient",108,3
+"City Hotel",0,83,2017,"April",16,17,1,2,1,0,0,"SC","Online TA","A","Transient",72.42,0
+"City Hotel",0,71,2017,"April",16,17,1,2,3,0,0,"BB","Online TA","D","Transient",171,2
+"City Hotel",0,257,2017,"April",15,13,2,6,2,2,0,"BB","Online TA","B","Transient",201.66,1
+"City Hotel",0,255,2017,"April",15,13,2,6,0,2,0,"BB","Online TA","B","Transient",101.7,1
+"City Hotel",0,28,2017,"April",16,21,0,1,1,0,0,"BB","Direct","A","Transient",93.5,0
+"City Hotel",0,28,2017,"April",16,21,0,1,1,0,0,"BB","Direct","A","Transient",93.5,0
+"City Hotel",0,25,2017,"April",16,21,0,1,2,0,0,"BB","Direct","D","Transient",148,0
+"City Hotel",0,75,2017,"April",16,21,1,2,3,0,0,"BB","Online TA","D","Transient",171,1
+"City Hotel",0,130,2017,"April",16,22,2,2,2,0,0,"SC","Offline TA/TO","A","Transient",89,1
+"City Hotel",0,74,2017,"April",17,24,1,1,3,0,0,"BB","Online TA","D","Transient",171,0
+"City Hotel",0,130,2017,"April",16,22,2,2,2,0,0,"SC","Offline TA/TO","A","Transient",89,1
+"City Hotel",0,73,2017,"April",17,23,2,1,2,0,0,"BB","Direct","A","Transient",108,0
+"City Hotel",0,73,2017,"April",17,23,2,1,2,0,0,"BB","Direct","A","Transient",108,0
+"City Hotel",0,279,2017,"April",17,24,1,2,1,0,0,"BB","Online TA","A","Transient",109.8,1
+"City Hotel",0,40,2017,"April",17,26,0,2,2,0,0,"BB","Online TA","E","Transient",174,3
+"City Hotel",0,317,2017,"April",17,25,0,3,2,0,0,"BB","Online TA","A","Transient",118.8,2
+"City Hotel",0,26,2017,"April",17,27,0,1,1,0,0,"SC","Online TA","A","Transient",115,3
+"City Hotel",0,79,2017,"April",17,26,0,3,3,0,0,"BB","Online TA","D","Transient",171,0
+"City Hotel",0,153,2017,"April",17,27,0,2,2,0,0,"BB","Direct","A","Transient",96.25,0
+"City Hotel",0,21,2017,"April",17,29,0,1,2,0,0,"SC","Online TA","A","Transient",115,2
+"City Hotel",0,21,2017,"April",17,29,0,1,2,0,0,"SC","Online TA","A","Transient",115,2
+"City Hotel",0,128,2017,"April",18,30,1,0,2,0,0,"BB","Direct","F","Transient",200,0
+"City Hotel",0,134,2017,"April",18,30,1,0,2,0,0,"BB","Direct","E","Transient",144,0
+"City Hotel",0,325,2017,"May",18,1,1,0,1,0,0,"BB","Direct","A","Transient",93.5,1
+"City Hotel",0,327,2017,"May",18,2,0,2,1,0,0,"BB","Direct","A","Group",93.5,1
+"City Hotel",0,325,2017,"May",18,1,1,0,1,0,0,"BB","Direct","A","Transient",93.5,0
+"City Hotel",0,327,2017,"May",18,2,0,2,1,0,0,"BB","Direct","A","Group",93.5,0
+"City Hotel",0,166,2017,"May",18,1,1,1,2,0,0,"SC","Online TA","A","Transient",99,2
+"City Hotel",0,47,2017,"May",18,2,0,1,2,0,0,"SC","Offline TA/TO","A","Transient",80.1,0
+"City Hotel",0,256,2017,"May",18,2,0,1,2,0,0,"SC","Online TA","A","Transient",110,1
+"City Hotel",0,96,2017,"May",18,1,1,1,2,0,0,"BB","Direct","A","Transient",105,2
+"City Hotel",0,18,2017,"April",18,30,2,1,2,0,0,"BB","Direct","A","Transient",184,1
+"City Hotel",0,104,2017,"April",18,30,2,1,1,0,0,"BB","Online TA","A","Transient",105,0
+"City Hotel",0,104,2017,"April",18,30,2,1,2,0,0,"BB","Online TA","A","Transient",123,0
+"City Hotel",0,72,2017,"May",18,1,1,2,1,0,0,"SC","Online TA","A","Transient",79.2,0
+"City Hotel",0,0,2017,"May",18,2,0,2,1,0,0,"SC","Offline TA/TO","E","Transient",190,1
+"City Hotel",0,14,2017,"May",18,3,0,2,1,0,0,"BB","Online TA","A","Transient",140,2
+"City Hotel",0,8,2017,"May",18,2,0,3,2,0,0,"BB","Online TA","D","Transient",180,1
+"City Hotel",0,8,2017,"May",18,4,0,2,2,0,0,"BB","Online TA","G","Transient",290,1
+"City Hotel",0,82,2017,"May",18,3,0,3,2,0,0,"SC","Online TA","A","Transient",108,1
+"City Hotel",0,4,2017,"May",18,5,0,1,2,0,0,"BB","Online TA","G","Transient",232,1
+"City Hotel",0,82,2017,"May",18,3,0,3,2,0,0,"SC","Online TA","A","Transient",108,1
+"City Hotel",0,15,2017,"May",18,5,0,1,2,0,0,"SC","Online TA","A","Transient",120,1
+"City Hotel",0,83,2017,"May",18,3,0,4,2,0,0,"BB","Online TA","D","Transient",98.76,1
+"City Hotel",0,160,2017,"May",18,3,0,4,2,0,0,"BB","Direct","D","Transient",118.13,0
+"City Hotel",0,38,2017,"May",18,5,0,2,1,0,0,"BB","Online TA","D","Transient",179,1
+"City Hotel",0,38,2017,"May",18,5,0,2,2,0,0,"BB","Online TA","E","Transient",209,1
+"City Hotel",0,68,2017,"May",18,4,0,3,3,0,0,"BB","Online TA","E","Transient",216,1
+"City Hotel",0,340,2017,"May",18,6,2,1,2,0,0,"SC","Online TA","A","Transient",99,3
+"City Hotel",0,59,2017,"May",19,8,1,1,2,0,0,"SC","Online TA","A","Transient",125.8,1
+"City Hotel",0,1,2017,"May",19,9,0,1,2,0,0,"BB","Direct","A","Transient",130,0
+"City Hotel",0,112,2017,"May",19,11,0,1,2,0,0,"BB","Online TA","A","Transient",126,0
+"City Hotel",0,155,2017,"May",19,12,0,1,2,0,0,"BB","Online TA","A","Transient",144,1
+"City Hotel",0,161,2017,"May",19,7,2,4,2,0,0,"BB","Online TA","A","Transient",136.17,3
+"City Hotel",0,34,2017,"May",19,12,0,1,2,0,0,"SC","Online TA","A","Transient",180,2
+"City Hotel",0,34,2017,"May",19,12,0,1,2,0,0,"SC","Online TA","A","Transient",180,2
+"City Hotel",0,22,2017,"May",19,12,0,1,2,0,0,"HB","Direct","D","Transient",245,1
+"City Hotel",0,93,2017,"May",19,13,0,1,2,0,0,"BB","Direct","D","Transient",148.5,1
+"City Hotel",0,22,2017,"May",19,12,0,1,2,0,0,"HB","Direct","D","Transient",245,1
+"City Hotel",0,93,2017,"May",19,13,0,1,2,0,0,"BB","Direct","D","Transient",148.5,1
+"City Hotel",0,9,2017,"May",19,12,1,2,1,0,0,"SC","Online TA","A","Transient",160,1
+"City Hotel",0,90,2017,"May",20,14,2,0,2,0,0,"BB","Direct","A","Transient",117,0
+"City Hotel",0,23,2017,"May",19,13,2,1,2,0,0,"BB","Direct","A","Transient",138,0
+"City Hotel",0,90,2017,"May",20,14,2,0,2,0,0,"BB","Direct","A","Transient",117,0
+"City Hotel",0,13,2017,"May",20,15,1,0,1,0,0,"SC","Direct","A","Transient",120,0
+"City Hotel",0,0,2017,"May",20,15,1,0,1,0,0,"SC","Online TA","A","Transient",88.56,0
+"City Hotel",0,68,2017,"May",20,14,2,1,1,0,0,"BB","Groups","A","Transient-Party",110,0
+"City Hotel",0,68,2017,"May",20,14,2,1,1,0,0,"BB","Groups","A","Transient-Party",110,0
+"City Hotel",0,7,2017,"May",20,15,1,1,1,0,0,"BB","Groups","A","Transient-Party",110,0
+"City Hotel",0,123,2017,"May",20,15,1,2,3,0,0,"BB","Online TA","D","Transient",199.8,1
+"City Hotel",0,99,2017,"May",19,13,2,3,2,0,0,"BB","Online TA","A","Transient",140.4,1
+"City Hotel",0,103,2017,"May",20,16,0,2,3,0,0,"BB","Online TA","D","Transient",189,0
+"City Hotel",0,69,2017,"May",19,10,2,7,2,0,0,"BB","Online TA","E","Transient",186,3
+"City Hotel",0,167,2017,"May",20,18,0,1,2,0,0,"BB","Online TA","A","Transient",118.8,2
+"City Hotel",0,9,2017,"May",20,18,0,1,2,0,0,"BB","Online TA","D","Transient",136,1
+"City Hotel",0,91,2017,"May",20,18,0,2,2,0,0,"SC","Online TA","A","Transient",86.63,0
+"City Hotel",0,103,2017,"May",20,19,0,1,2,0,0,"BB","Online TA","A","Transient",144,2
+"City Hotel",0,91,2017,"May",20,18,0,2,2,0,0,"SC","Online TA","A","Transient",86.63,0
+"City Hotel",0,12,2017,"May",20,20,0,1,2,0,0,"SC","Online TA","A","Transient",112,1
+"City Hotel",0,105,2017,"May",20,18,0,3,2,0,0,"BB","Online TA","D","Transient",144,2
+"City Hotel",0,105,2017,"May",20,18,0,3,1,0,0,"BB","Online TA","D","Transient",144,2
+"City Hotel",0,9,2017,"May",20,19,1,2,2,0,0,"SC","Online TA","A","Transient",140,3
+"City Hotel",0,12,2017,"May",20,20,1,1,2,0,0,"BB","Online TA","D","Transient",170,1
+"City Hotel",0,19,2017,"May",21,22,1,0,1,0,0,"BB","Online TA","A","Transient",140,2
+"City Hotel",0,20,2017,"May",21,22,1,0,2,0,0,"SC","Online TA","A","Transient",130,1
+"City Hotel",0,59,2017,"May",20,20,2,1,2,0,0,"SC","Online TA","A","Transient",144,1
+"City Hotel",0,21,2017,"May",21,22,1,1,2,0,0,"BB","Online TA","A","Transient",140,2
+"City Hotel",0,11,2017,"May",21,21,2,1,2,0,0,"BB","Direct","A","Transient",120,0
+"City Hotel",0,11,2017,"May",21,21,2,1,2,0,0,"BB","Direct","A","Transient",120,0
+"City Hotel",0,20,2017,"May",21,21,2,1,2,0,0,"SC","Online TA","A","Transient",130,1
+"City Hotel",0,57,2017,"May",21,23,0,1,2,0,0,"BB","Offline TA/TO","A","Transient",89.1,0
+"City Hotel",0,18,2017,"May",21,23,0,1,2,0,0,"BB","Online TA","D","Transient",114,1
+"City Hotel",0,33,2017,"May",21,22,1,2,2,0,0,"SC","Online TA","A","Transient",160,1
+"City Hotel",0,13,2017,"May",21,24,0,1,3,0,0,"BB","Direct","D","Transient",205,2
+"City Hotel",0,31,2017,"May",21,22,1,2,1,0,0,"BB","Online TA","D","Transient",144.4,1
+"City Hotel",0,90,2017,"May",21,21,2,2,2,0,0,"SC","Online TA","A","Transient",119.25,1
+"City Hotel",0,28,2017,"May",21,24,0,2,2,0,0,"SC","Online TA","A","Transient",160,0
+"City Hotel",0,112,2017,"May",21,26,0,1,2,0,0,"SC","Online TA","A","Transient",126,0
+"City Hotel",0,112,2017,"May",21,26,0,1,2,0,0,"SC","Online TA","A","Transient",126,0
+"City Hotel",0,112,2017,"May",21,26,0,1,2,0,0,"SC","Online TA","A","Transient",126,0
+"City Hotel",0,14,2017,"May",21,26,0,1,2,0,0,"SC","Online TA","A","Transient",160,3
+"City Hotel",0,1,2017,"May",21,26,0,1,2,0,0,"SC","Online TA","A","Transient",106.28,0
+"City Hotel",0,97,2017,"May",22,28,1,0,2,0,0,"SC","Online TA","A","Transient",140,2
+"City Hotel",0,183,2017,"May",22,28,2,0,2,0,0,"BB","Online TA","D","Transient",139.5,1
+"City Hotel",0,183,2017,"May",22,28,2,0,2,0,0,"BB","Online TA","D","Transient-Party",139.5,1
+"City Hotel",0,183,2017,"May",22,28,2,0,2,0,0,"BB","Online TA","D","Transient",139.5,1
+"City Hotel",0,183,2017,"May",22,28,2,0,2,0,0,"BB","Online TA","D","Transient",139.5,1
+"City Hotel",0,183,2017,"May",22,28,2,0,2,0,0,"BB","Online TA","A","Transient",108,1
+"City Hotel",0,183,2017,"May",22,28,2,0,2,0,0,"BB","Online TA","D","Transient",139.5,1
+"City Hotel",0,183,2017,"May",22,28,2,0,2,0,0,"BB","Online TA","A","Transient",108,1
+"City Hotel",0,183,2017,"May",22,28,2,0,2,0,0,"BB","Online TA","D","Transient",139.5,1
+"City Hotel",0,183,2017,"May",22,28,2,0,2,0,0,"BB","Online TA","A","Transient",108,1
+"City Hotel",0,183,2017,"May",22,28,2,0,2,0,0,"BB","Online TA","D","Transient-Party",139.5,1
+"City Hotel",0,183,2017,"May",22,28,2,0,2,0,0,"BB","Online TA","A","Transient",108,1
+"City Hotel",0,0,2017,"May",22,29,1,0,3,0,0,"SC","Online TA","A","Transient",77.49,0
+"City Hotel",0,16,2017,"May",22,29,1,0,3,0,0,"BB","Online TA","E","Transient",220,1
+"City Hotel",0,19,2017,"May",22,29,1,0,2,0,0,"SC","Online TA","A","Transient",140,2
+"City Hotel",0,183,2017,"May",22,28,2,0,2,0,0,"BB","Online TA","A","Transient",108,1
+"City Hotel",0,14,2017,"May",22,30,0,1,1,0,0,"SC","Online TA","A","Transient",88,0
+"City Hotel",0,0,2017,"May",22,31,0,1,2,0,0,"BB","Online TA","A","Transient",180,0
+"City Hotel",0,0,2017,"May",22,30,0,2,2,0,0,"SC","Online TA","A","Transient",139.5,1
+"City Hotel",0,0,2017,"June",22,1,0,1,2,0,0,"SC","Online TA","A","Transient",92.98,0
+"City Hotel",0,108,2017,"June",22,1,0,1,2,0,0,"SC","Online TA","A","Transient",108,0
+"City Hotel",0,51,2017,"May",22,28,2,3,2,0,0,"BB","Direct","A","Transient",165.2,1
+"City Hotel",0,108,2017,"June",22,1,0,1,2,0,0,"SC","Online TA","A","Transient",108,0
+"City Hotel",0,17,2017,"June",22,1,0,1,3,0,0,"BB","Online TA","D","Transient",190,0
+"City Hotel",0,209,2017,"May",22,30,0,4,2,1,0,"BB","Online TA","A","Transient",153.79,2
+"City Hotel",0,0,2017,"June",22,3,0,1,1,0,0,"BB","Direct","A","Transient",130,0
+"City Hotel",0,0,2017,"June",22,3,0,1,2,0,0,"SC","Online TA","A","Transient",106.28,0
+"City Hotel",0,25,2017,"June",22,3,0,1,2,0,0,"SC","Online TA","A","Transient",140,0
+"City Hotel",0,125,2017,"June",22,2,1,2,3,0,0,"HB","Online TA","E","Transient",216,0
+"City Hotel",0,30,2017,"June",23,6,0,1,2,0,0,"SC","Online TA","A","Transient",96,1
+"City Hotel",0,18,2017,"June",23,5,1,2,2,0,0,"BB","Online TA","D","Transient",125.33,1
+"City Hotel",0,16,2017,"June",23,8,0,1,2,0,0,"SC","Online TA","A","Transient",120,1
+"City Hotel",0,29,2017,"June",23,7,0,2,3,0,0,"BB","Online TA","G","Transient",229.6,0
+"City Hotel",0,29,2017,"June",23,7,0,2,3,1,0,"BB","Online TA","D","Transient",139.4,1
+"City Hotel",0,131,2017,"June",23,8,0,3,2,0,0,"BB","Online TA","A","Transient",144,1
+"City Hotel",0,131,2017,"June",23,8,0,3,2,0,0,"BB","Online TA","A","Transient",144,1
+"City Hotel",0,36,2017,"June",23,8,0,3,1,0,0,"BB","Online TA","A","Transient",136.67,1
+"City Hotel",0,33,2017,"June",23,5,1,5,2,0,0,"BB","Direct","A","Transient",141.67,1
+"City Hotel",0,29,2017,"June",24,11,1,0,2,0,0,"SC","Online TA","A","Transient",120,1
+"City Hotel",0,32,2017,"June",23,7,2,4,3,0,0,"BB","Online TA","E","Transient",223.33,1
+"City Hotel",0,76,2017,"June",24,12,1,0,2,0,0,"BB","Online TA","A","Transient",146,0
+"City Hotel",0,231,2017,"June",24,13,0,1,2,2,0,"BB","Direct","F","Transient",175,0
+"City Hotel",0,21,2017,"June",24,12,1,1,1,0,0,"BB","Online TA","A","Transient",109,1
+"City Hotel",0,51,2017,"June",23,9,2,3,2,0,0,"BB","Direct","D","Transient",78,5
+"City Hotel",0,34,2017,"June",23,6,2,6,1,0,0,"SC","Online TA","A","Transient",125,1
+"City Hotel",0,32,2017,"June",24,12,1,1,2,0,0,"BB","Online TA","D","Transient",190,1
+"City Hotel",0,26,2017,"June",24,11,2,2,2,0,0,"BB","Online TA","D","Transient",139,1
+"City Hotel",0,46,2017,"June",24,13,0,2,2,0,0,"BB","Online TA","D","Transient",150,2
+"City Hotel",0,77,2017,"June",24,12,1,3,2,0,0,"BB","Offline TA/TO","D","Transient",98.1,0
+"City Hotel",0,79,2017,"June",24,15,0,1,2,0,0,"SC","Online TA","A","Transient",100.8,0
+"City Hotel",0,83,2017,"June",24,14,0,2,2,0,0,"BB","Direct","A","Transient",146,2
+"City Hotel",0,83,2017,"June",24,14,0,2,2,0,0,"BB","Direct","A","Transient",146,2
+"City Hotel",0,44,2017,"June",24,15,0,1,2,0,0,"BB","Online TA","D","Transient",150,1
+"City Hotel",0,0,2017,"June",24,16,0,1,1,0,0,"BB","Online TA","D","Transient",100.8,1
+"City Hotel",0,157,2017,"June",24,16,0,1,2,0,0,"SC","Online TA","A","Transient-Party",99,0
+"City Hotel",0,157,2017,"June",24,16,0,1,2,0,0,"BB","Online TA","D","Transient-Party",130.5,0
+"City Hotel",0,423,2017,"June",24,14,0,3,2,0,0,"BB","Groups","A","Transient-Party",112.67,1
+"City Hotel",0,3,2017,"June",24,16,0,2,1,0,0,"SC","Online TA","A","Transient",106.28,0
+"City Hotel",0,43,2017,"June",24,11,2,5,2,0,0,"BB","Online TA","A","Transient",145.71,1
+"City Hotel",0,147,2017,"June",24,16,1,2,2,0,0,"SC","Offline TA/TO","A","Transient",79.2,0
+"City Hotel",0,147,2017,"June",24,16,1,2,2,0,0,"SC","Offline TA/TO","A","Transient",79.2,0
+"City Hotel",0,53,2017,"June",24,16,1,2,2,0,0,"SC","Online TA","A","Transient",140,0
+"City Hotel",0,0,2017,"June",25,18,1,0,2,0,0,"BB","Online TA","D","Transient",12,0
+"City Hotel",0,3,2017,"June",25,19,1,0,2,0,0,"BB","Direct","D","Group",130,0
+"City Hotel",0,172,2017,"June",25,18,2,0,2,2,0,"BB","Online TA","G","Transient",219.46,1
+"City Hotel",0,50,2017,"June",25,19,1,1,2,0,0,"BB","Online TA","A","Transient",150,1
+"City Hotel",0,38,2017,"June",25,19,1,1,2,0,0,"BB","Online TA","A","Transient",165,2
+"City Hotel",0,1,2017,"June",25,21,0,1,2,0,0,"SC","Online TA","A","Group",128,2
+"City Hotel",0,197,2017,"June",25,21,0,1,2,2,0,"BB","Online TA","F","Transient",189,1
+"City Hotel",0,96,2017,"June",25,21,0,1,2,1,0,"BB","Online TA","A","Transient",162,2
+"City Hotel",0,293,2017,"June",25,18,2,3,3,0,0,"BB","Direct","D","Transient",141.36,2
+"City Hotel",0,148,2017,"June",25,22,0,1,2,0,0,"SC","Online TA","A","Transient",76.23,0
+"City Hotel",0,34,2017,"June",25,19,1,4,1,0,0,"SC","Direct","A","Transient",136,0
+"City Hotel",0,41,2017,"June",24,17,2,5,2,1,0,"BB","Online TA","A","Transient",194.29,2
+"City Hotel",0,166,2017,"June",25,22,0,2,2,2,0,"BB","Online TA","F","Transient",189,1
+"City Hotel",0,114,2017,"June",25,21,0,4,2,1,0,"BB","Online TA","A","Transient",144,2
+"City Hotel",0,56,2017,"June",25,22,0,3,2,0,0,"SC","Online TA","A","Transient",133.33,0
+"City Hotel",0,55,2017,"June",25,23,0,2,2,0,0,"SC","Online TA","A","Transient",96,1
+"City Hotel",0,149,2017,"June",25,24,0,1,2,0,0,"HB","Corporate","A","Transient-Party",154,1
+"City Hotel",0,149,2017,"June",25,24,0,1,2,0,0,"HB","Corporate","A","Transient-Party",154,0
+"City Hotel",0,149,2017,"June",25,24,0,1,2,0,0,"HB","Corporate","A","Transient-Party",154,1
+"City Hotel",0,149,2017,"June",25,24,0,1,2,0,0,"HB","Corporate","A","Transient-Party",154,0
+"City Hotel",0,149,2017,"June",25,24,0,1,2,0,0,"HB","Corporate","A","Transient-Party",154,1
+"City Hotel",0,149,2017,"June",25,24,0,1,2,0,0,"HB","Corporate","A","Transient-Party",154,1
+"City Hotel",0,121,2017,"June",25,24,0,1,2,1,0,"BB","Online TA","A","Transient",135,0
+"City Hotel",0,37,2017,"June",25,20,0,5,2,0,0,"BB","Online TA","D","Transient",170,1
+"City Hotel",0,37,2017,"June",25,24,1,1,1,0,0,"SC","Direct","A","Transient",160,0
+"City Hotel",0,43,2017,"June",25,20,1,5,1,0,0,"SC","Online TA","A","Transient",101.33,1
+"City Hotel",0,173,2017,"June",25,22,1,3,2,0,0,"BB","Direct","E","Transient",140,0
+"City Hotel",0,72,2017,"June",26,26,1,0,2,0,0,"BB","Direct","E","Transient",175,0
+"City Hotel",0,177,2017,"June",25,24,2,1,2,0,0,"BB","Online TA","D","Transient",130.5,3
+"City Hotel",0,130,2017,"June",25,24,2,1,2,0,0,"BB","Direct","D","Transient",130.5,4
+"City Hotel",0,177,2017,"June",25,24,2,1,3,0,0,"BB","Online TA","D","Transient",166.5,5
+"City Hotel",0,22,2017,"June",26,27,0,1,2,0,0,"SC","Offline TA/TO","A","Transient",89,0
+"City Hotel",0,207,2017,"June",25,24,2,2,2,0,0,"SC","Online TA","A","Transient",99,5
+"City Hotel",0,207,2017,"June",25,24,2,2,2,0,0,"SC","Online TA","A","Transient",99,4
+"City Hotel",0,2,2017,"June",26,28,0,1,2,0,0,"SC","Online TA","A","Transient",160,1
+"City Hotel",0,22,2017,"June",26,28,0,3,2,0,0,"BB","Groups","A","Transient-Party",112.67,1
+"City Hotel",0,108,2017,"June",26,26,1,4,2,0,0,"BB","Online TA","A","Transient",126,1
+"City Hotel",0,119,2017,"June",26,30,0,1,2,0,0,"SC","Online TA","A","Transient",108,0
+"City Hotel",0,0,2017,"June",26,30,0,1,3,0,0,"BB","Online TA","D","Transient",149.4,1
+"City Hotel",0,71,2017,"June",26,30,0,2,1,0,0,"SC","Online TA","A","Transient",110,1
+"City Hotel",0,176,2017,"June",26,30,0,2,3,0,0,"BB","Online TA","D","Transient",124.39,1
+"City Hotel",0,66,2017,"June",26,30,0,2,3,0,0,"BB","Online TA","D","Transient",190,2
+"City Hotel",0,158,2017,"June",26,29,0,3,2,0,0,"BB","Online TA","D","Transient",122.7,2
+"City Hotel",0,178,2017,"June",26,29,0,3,2,2,0,"BB","Online TA","G","Transient",216.64,2
+"City Hotel",0,1,2017,"June",26,29,0,3,2,0,0,"SC","Online TA","A","Transient",90.33,0
+"City Hotel",0,124,2017,"June",26,28,0,4,2,0,0,"BB","Direct","A","Transient",96.53,0
+"City Hotel",0,124,2017,"June",26,28,0,4,2,0,0,"BB","Direct","A","Transient",96.53,0
+"City Hotel",0,126,2017,"July",27,2,1,0,2,1,0,"BB","Online TA","D","Transient",133.6,0
+"City Hotel",0,0,2017,"July",27,3,1,0,2,1,0,"BB","Direct","A","Transient",118,0
+"City Hotel",0,18,2017,"July",27,2,1,0,2,0,0,"SC","Direct","A","Transient",160,2
+"City Hotel",0,42,2017,"July",27,3,1,0,2,1,0,"BB","Online TA","A","Transient",149,1
+"City Hotel",0,72,2017,"July",27,2,2,0,3,0,0,"HB","Online TA","D","Transient",247,1
+"City Hotel",0,462,2017,"July",26,1,2,1,2,0,0,"BB","Groups","A","Transient-Party",112.67,1
+"City Hotel",0,68,2017,"June",26,30,2,3,2,1,0,"BB","Online TA","D","Transient",133.48,1
+"City Hotel",0,82,2017,"July",27,2,2,1,2,0,0,"BB","Direct","D","Transient",130.5,1
+"City Hotel",0,16,2017,"July",27,5,0,1,3,1,0,"BB","Online TA","G","Transient",237.48,1
+"City Hotel",0,39,2017,"July",27,5,0,1,2,0,0,"SC","Online TA","A","Transient",160,1
+"City Hotel",0,170,2017,"July",27,8,0,1,2,0,0,"BB","Direct","A","Transient",89.1,1
+"City Hotel",0,1,2017,"July",27,6,0,3,2,0,0,"SC","Online TA","D","Transient",89.67,0
+"City Hotel",0,157,2017,"July",27,8,1,1,2,0,0,"BB","Direct","A","Transient",86.63,0
+"City Hotel",0,214,2017,"July",28,9,1,0,2,0,0,"SC","Online TA","A","Transient",89.1,3
+"City Hotel",0,214,2017,"July",28,9,1,0,2,0,0,"SC","Online TA","A","Transient",89.1,3
+"City Hotel",0,0,2017,"July",28,9,1,0,2,0,0,"SC","Online TA","A","Transient",140,1
+"City Hotel",0,1,2017,"July",28,10,1,0,2,3,0,"BB","Online TA","G","Transient",264.44,1
+"City Hotel",0,53,2017,"July",27,8,2,1,2,0,0,"BB","Online TA","A","Transient",160,1
+"City Hotel",0,48,2017,"July",28,11,0,1,2,0,0,"BB","Online TA","A","Transient",140,1
+"City Hotel",0,0,2017,"July",28,11,0,1,2,0,0,"SC","Online TA","A","Transient",92.98,0
+"City Hotel",0,21,2017,"July",28,12,0,1,1,0,0,"SC","Online TA","A","Transient",120,1
+"City Hotel",0,23,2017,"July",28,12,0,1,3,0,0,"BB","Online TA","E","Transient",220,0
+"City Hotel",0,50,2017,"July",27,8,2,3,2,0,0,"BB","Online TA","D","Transient",116.1,0
+"City Hotel",0,22,2017,"July",28,12,0,2,2,0,0,"SC","Online TA","A","Transient",139,1
+"City Hotel",0,451,2017,"July",28,12,0,3,2,0,0,"BB","Groups","A","Transient-Party",112.67,1
+"City Hotel",0,170,2017,"July",28,15,0,1,2,0,0,"BB","Online TA","D","Transient",116.1,0
+"City Hotel",0,7,2017,"July",29,16,2,0,2,0,0,"SC","Online TA","A","Transient",122.5,1
+"City Hotel",0,222,2017,"July",28,13,2,4,2,0,0,"BB","Online TA","A","Transient",107.1,0
+"City Hotel",0,147,2017,"July",29,16,2,1,2,2,0,"BB","Online TA","F","Transient",209,0
+"City Hotel",0,158,2017,"July",29,18,0,1,2,0,0,"SC","Online TA","A","Transient",68.61,0
+"City Hotel",0,277,2017,"July",29,17,1,2,3,0,0,"BB","Online TA","D","Transient-Party",139.5,0
+"City Hotel",0,277,2017,"July",29,17,1,2,3,0,0,"BB","Online TA","D","Transient-Party",139.5,0
+"City Hotel",0,277,2017,"July",29,17,1,2,2,1,0,"BB","Online TA","A","Transient-Party",123.3,1
+"City Hotel",0,14,2017,"July",29,19,0,1,2,2,0,"BB","Online TA","F","Transient",259,1
+"City Hotel",0,173,2017,"July",29,18,0,3,2,0,0,"BB","Online TA","A","Transient",89.1,1
+"City Hotel",0,81,2017,"July",29,18,0,3,2,0,0,"BB","Online TA","A","Transient",120,1
+"City Hotel",0,476,2017,"July",28,15,2,4,2,0,0,"BB","Offline TA/TO","A","Transient-Party",101.33,1
+"City Hotel",0,78,2017,"July",29,19,0,3,2,0,0,"SC","Online TA","A","Transient",91.2,1
+"City Hotel",0,241,2017,"July",29,21,0,1,2,0,0,"SC","Online TA","A","Transient",68.61,0
+"City Hotel",0,193,2017,"July",29,20,0,2,3,0,0,"HB","Online TA","E","Transient",188.1,2
+"City Hotel",0,12,2017,"July",29,20,0,2,2,1,0,"BB","Online TA","A","Transient",159,3
+"City Hotel",0,13,2017,"July",29,21,0,1,1,0,0,"SC","Direct","A","Transient",98,0
+"City Hotel",0,9,2017,"July",29,21,0,2,2,0,0,"SC","Online TA","A","Transient",95.2,1
+"City Hotel",0,129,2017,"July",29,22,1,1,2,0,0,"BB","Online TA","D","Transient",139.5,0
+"City Hotel",0,129,2017,"July",29,22,1,1,2,0,0,"BB","Online TA","E","Transient",166.5,0
+"City Hotel",0,48,2017,"July",29,19,1,4,2,2,0,"BB","Online TA","G","Transient",232.16,1
+"City Hotel",0,29,2017,"July",30,24,1,1,2,0,0,"SC","Online TA","A","Transient",140,1
+"City Hotel",0,67,2017,"July",30,24,1,1,2,0,0,"BB","Direct","A","Transient",122.6,0
+"City Hotel",0,70,2017,"July",29,22,2,2,3,0,0,"BB","Online TA","D","Transient",197.5,1
+"City Hotel",0,83,2017,"July",29,22,2,2,3,0,0,"BB","Online TA","D","Transient",190,1
+"City Hotel",0,143,2017,"July",30,23,2,1,3,0,0,"BB","Online TA","F","Transient",235,2
+"City Hotel",0,143,2017,"July",30,23,2,1,3,0,0,"BB","Online TA","F","Transient",235,2
+"City Hotel",0,67,2017,"July",30,24,1,1,1,1,0,"BB","Direct","A","Transient",122.6,0
+"City Hotel",0,68,2017,"July",30,24,1,1,2,0,0,"BB","Online TA","D","Transient",115.2,1
+"City Hotel",0,318,2017,"July",30,26,0,2,2,0,0,"BB","Online TA","D","Transient-Party",155,3
+"City Hotel",0,318,2017,"July",30,26,0,2,2,0,0,"BB","Online TA","D","Transient-Party",134,1
+"City Hotel",0,68,2017,"July",30,28,0,1,3,0,0,"BB","Online TA","E","Transient",230,1
+"City Hotel",0,89,2017,"July",30,27,0,2,2,0,0,"SC","Online TA","A","Transient",96,1
+"City Hotel",0,287,2017,"July",30,26,1,4,2,2,0,"BB","Online TA","F","Transient",179.1,0
+"City Hotel",0,34,2017,"July",30,29,1,1,2,2,0,"BB","Online TA","G","Transient",250.96,1
+"City Hotel",0,38,2017,"July",31,30,2,0,3,0,0,"BB","Online TA","D","Transient",210,0
+"City Hotel",0,0,2017,"July",31,31,1,0,2,0,0,"SC","Online TA","D","Transient",69.7,0
+"City Hotel",0,26,2017,"August",31,1,0,1,2,0,0,"SC","Direct","A","Transient",128,0
+"City Hotel",0,26,2017,"August",31,1,0,1,2,0,0,"SC","Direct","A","Transient",128,0
+"City Hotel",0,76,2017,"July",31,31,1,1,2,0,0,"BB","Online TA","A","Transient",150,1
+"City Hotel",0,142,2017,"July",31,31,1,2,2,1,0,"BB","Direct","D","Transient",164,1
+"City Hotel",0,24,2017,"July",31,31,1,2,2,2,0,"HB","Direct","E","Transient",266.2,1
+"City Hotel",0,0,2017,"August",31,3,0,1,2,0,0,"SC","Online TA","A","Transient",69.01,0
+"City Hotel",0,25,2017,"August",31,4,0,1,2,0,0,"BB","Online TA","A","Transient",89,0
+"City Hotel",0,39,2017,"August",31,2,0,3,2,0,0,"BB","Direct","A","Transient",153,3
+"City Hotel",0,39,2017,"August",31,2,0,3,2,0,0,"SC","Direct","A","Transient",150,3
+"City Hotel",0,56,2017,"August",31,5,0,1,2,1,0,"BB","Online TA","D","Transient",210,2
+"City Hotel",0,57,2017,"August",32,6,1,0,2,1,0,"BB","Online TA","A","Transient",165,0
+"City Hotel",0,122,2017,"August",31,5,2,1,2,0,0,"BB","Offline TA/TO","A","Transient",80.1,0
+"City Hotel",0,0,2017,"August",32,7,1,0,2,0,0,"BB","Direct","D","Transient",160,0
+"City Hotel",0,120,2017,"August",31,3,2,3,2,0,0,"BB","Offline TA/TO","A","Transient",80.1,0
+"City Hotel",0,0,2017,"August",32,7,1,0,2,0,0,"BB","Direct","D","Transient",160,0
+"City Hotel",0,190,2017,"August",32,6,2,2,2,0,0,"BB","Direct","A","Transient",112.5,3
+"City Hotel",0,1,2017,"August",32,8,0,3,2,0,0,"SC","Online TA","D","Transient",92.21,0
+"City Hotel",0,1,2017,"August",32,10,0,1,2,0,0,"SC","Direct","A","Transient",190,0
+"City Hotel",0,1,2017,"August",32,11,0,1,2,2,0,"BB","Direct","G","Transient",290,0
+"City Hotel",0,125,2017,"August",32,9,0,4,2,0,0,"BB","Direct","A","Transient-Party",112.5,2
+"City Hotel",0,125,2017,"August",32,9,0,4,2,0,0,"BB","Direct","A","Transient-Party",112.5,2
+"City Hotel",0,125,2017,"August",32,9,0,4,3,0,0,"BB","Direct","D","Transient-Party",175,3
+"City Hotel",0,125,2017,"August",32,9,0,4,2,2,0,"BB","Direct","E","Transient-Party",200,3
+"City Hotel",0,108,2017,"August",32,10,1,3,3,0,0,"BB","Online TA","D","Transient",195,2
+"City Hotel",0,141,2017,"August",32,12,2,1,2,0,0,"BB","Offline TA/TO","A","Transient-Party",106,0
+"City Hotel",0,504,2017,"August",32,12,2,1,2,0,0,"BB","Offline TA/TO","A","Transient-Party",112.67,1
+"City Hotel",0,504,2017,"August",32,12,2,1,2,0,0,"BB","Offline TA/TO","A","Transient-Party",112.67,1
+"City Hotel",0,141,2017,"August",32,12,2,1,2,0,0,"BB","Offline TA/TO","A","Transient-Party",106,0
+"City Hotel",0,504,2017,"August",32,12,2,1,2,0,0,"BB","Offline TA/TO","A","Transient-Party",112.67,1
+"City Hotel",0,504,2017,"August",32,12,2,1,2,0,0,"BB","Offline TA/TO","A","Transient-Party",112.67,1
+"City Hotel",0,504,2017,"August",32,12,2,1,2,0,0,"BB","Offline TA/TO","A","Transient-Party",112.67,1
+"City Hotel",0,504,2017,"August",32,12,2,1,2,0,0,"BB","Offline TA/TO","A","Transient-Party",112.67,1
+"City Hotel",0,504,2017,"August",32,12,2,1,2,0,0,"BB","Offline TA/TO","A","Transient-Party",112.67,1
+"City Hotel",0,504,2017,"August",32,12,2,1,2,0,0,"BB","Offline TA/TO","A","Transient-Party",112.67,1
+"City Hotel",0,504,2017,"August",32,12,2,1,2,0,0,"BB","Offline TA/TO","A","Transient-Party",112.67,1
+"City Hotel",0,127,2017,"August",33,14,1,1,2,2,0,"BB","Online TA","G","Transient",300,1
+"City Hotel",0,62,2017,"August",33,15,0,2,2,0,0,"BB","Direct","A","Transient",126,3
+"City Hotel",0,0,2017,"August",33,16,0,1,2,2,0,"BB","Direct","F","Transient",259,1
+"City Hotel",0,504,2017,"August",32,12,2,4,2,0,0,"BB","Offline TA/TO","A","Transient-Party",101.33,1
+"City Hotel",0,91,2017,"August",33,17,0,1,3,0,0,"BB","Online TA","E","Transient",230,2
+"City Hotel",0,36,2017,"August",33,15,0,3,3,0,0,"BB","Online TA","D","Transient",219,2
+"City Hotel",0,134,2017,"August",33,16,0,2,1,0,0,"SC","Offline TA/TO","A","Transient",71.1,0
+"City Hotel",0,10,2017,"August",33,18,0,1,2,1,0,"BB","Direct","F","Transient",260,1
+"City Hotel",0,35,2017,"August",33,17,0,2,2,0,0,"BB","Online TA","D","Transient",190,2
+"City Hotel",0,10,2017,"August",33,18,0,1,2,1,0,"BB","Direct","F","Transient",260,0
+"City Hotel",0,230,2017,"August",33,16,0,3,2,1,0,"BB","Online TA","A","Transient",148.5,2
+"City Hotel",0,112,2017,"August",34,20,2,0,2,0,0,"BB","Online TA","F","Transient",235,0
+"City Hotel",0,152,2017,"August",33,18,2,2,2,0,0,"BB","Online TA","D","Transient",139.5,0
+"City Hotel",0,6,2017,"August",34,21,1,0,2,3,0,"BB","Online TA","G","Transient",264.44,2
+"City Hotel",0,95,2017,"August",33,19,2,2,1,0,0,"BB","Offline TA/TO","A","Transient-Party",95,0
+"City Hotel",0,115,2017,"August",34,20,2,1,2,0,0,"BB","Offline TA/TO","A","Transient-Party",125,2
+"City Hotel",0,94,2017,"August",33,18,2,4,1,0,0,"BB","Offline TA/TO","A","Transient-Party",115,3
+"City Hotel",0,0,2017,"August",34,23,0,1,1,0,0,"BB","Offline TA/TO","D","Transient-Party",115,0
+"City Hotel",0,12,2017,"August",34,20,2,2,1,0,0,"BB","Groups","A","Transient-Party",115,0
+"City Hotel",0,204,2017,"August",34,21,1,3,2,0,0,"SC","Online TA","A","Transient",99,0
+"City Hotel",0,161,2017,"August",34,20,2,3,2,1,0,"BB","Online TA","G","Transient",282.5,2
+"City Hotel",0,120,2017,"August",34,23,0,2,1,0,0,"BB","Direct","E","Transient",180,2
+"City Hotel",0,141,2017,"August",34,23,0,2,2,0,0,"BB","Direct","D","Transient",150,2
+"City Hotel",0,142,2017,"August",34,24,0,1,2,0,0,"BB","Direct","D","Transient",150,2
+"City Hotel",0,141,2017,"August",34,23,0,2,2,0,0,"HB","Direct","D","Transient",186,2
+"City Hotel",0,141,2017,"August",34,23,0,2,2,0,0,"BB","Direct","D","Transient",150,2
+"City Hotel",0,142,2017,"August",34,24,0,1,2,0,0,"BB","Direct","D","Transient",150,2
+"City Hotel",0,142,2017,"August",34,24,0,1,2,0,0,"BB","Direct","D","Transient",150,2
+"City Hotel",0,141,2017,"August",34,23,0,2,2,0,0,"BB","Direct","D","Transient",150,2
+"City Hotel",0,63,2017,"August",34,23,0,2,2,0,0,"BB","Online TA","A","Transient",139,1
+"City Hotel",0,95,2017,"August",33,19,2,5,2,0,0,"BB","Offline TA/TO","A","Transient-Party",125,1
+"City Hotel",0,95,2017,"August",33,19,2,5,1,0,0,"BB","Offline TA/TO","A","Transient-Party",115,0
+"City Hotel",0,101,2017,"August",34,20,2,4,1,0,0,"BB","Online TA","A","Transient",135,1
+"City Hotel",0,97,2017,"August",34,21,1,5,2,0,0,"BB","Offline TA/TO","A","Transient-Party",125,0
+"City Hotel",0,12,2017,"August",34,26,0,1,3,0,0,"BB","Online TA","E","Transient",240,1
+"City Hotel",0,169,2017,"August",34,25,1,2,2,0,0,"BB","Online TA","D","Transient",139.5,1
+"City Hotel",0,101,2017,"August",35,27,1,0,2,0,0,"HB","Online TA","D","Transient",166,2
+"City Hotel",0,0,2017,"August",35,27,1,0,2,0,0,"SC","Online TA","A","Transient",75.24,1
+"City Hotel",0,98,2017,"August",35,27,1,0,2,0,0,"SC","Online TA","A","Transient",72.16,0
+"City Hotel",0,45,2017,"August",35,27,1,0,1,0,0,"BB","Groups","A","Transient-Party",115,0
+"City Hotel",0,62,2017,"August",35,27,1,0,1,0,0,"BB","Direct","A","Transient",95,0
+"City Hotel",0,101,2017,"August",35,27,1,0,2,0,0,"HB","Online TA","D","Transient",166,2
+"City Hotel",0,101,2017,"August",35,27,1,0,2,0,0,"HB","Online TA","D","Transient",166,2
+"City Hotel",0,88,2017,"August",34,26,1,1,2,0,0,"BB","Online TA","D","Transient",144,0
+"City Hotel",0,169,2017,"August",34,25,1,2,2,0,0,"BB","Online TA","D","Transient",139.5,1
+"City Hotel",0,60,2017,"August",35,27,1,0,1,0,0,"SC","Online TA","A","Transient",140,2
+"City Hotel",0,52,2017,"August",35,27,1,0,1,0,0,"SC","Online TA","A","Transient",140,1
+"City Hotel",0,15,2017,"August",34,25,2,2,2,0,0,"BB","Direct","D","Transient",132.53,2
+"City Hotel",0,83,2017,"August",35,28,1,3,1,0,0,"BB","Direct","D","Transient",147.68,0
+"City Hotel",0,189,2017,"August",35,29,0,3,2,0,0,"BB","Offline TA/TO","A","Transient",80.1,1
+"City Hotel",0,147,2017,"August",35,28,1,5,2,0,0,"BB","Direct","A","Transient",117,1
+"City Hotel",0,135,2017,"August",35,30,1,4,2,0,0,"BB","Direct","D","Transient",143.1,1
