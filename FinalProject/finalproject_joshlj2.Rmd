@@ -24,11 +24,12 @@ setwd("C:/Users/Josh/Google Drive/Spring 2020/STAT425/FinalProject")
 ```
 
 ```{r message=FALSE, warning=FALSE}
+#read in data
 hotel = read_csv('hotels.csv')
-
+#only keep city hotel observations
 city_hotel = hotel %>%
   filter(hotel %in% c("City Hotel"))
-
+#remove hotel variable
 rm(hotel)
 ```
 
@@ -69,13 +70,12 @@ With variables defined by type and meaning, we can begin analysis. The first var
 ### Section 2.1 - Categorical/Time Variables
 
 ```{r echo=FALSE}
+#create plot of mean average daily rate by month of arrival
 plot_data = city_hotel %>%
   select(arrival_date_month, adr) %>%
   group_by(arrival_date_month) %>%
   summarise(mean_adr = mean(adr)) %>%
   arrange(match(arrival_date_month, month.name))
-
-par(mfrow = c(2, 1))
 ggplot(data = plot_data, aes(x = arrival_date_month, y = mean_adr)) +
   geom_bar(stat = 'identity', fill = 'salmon') +
   geom_text(aes(label = scales::dollar(mean_adr)), hjust = -.2, size = 3.5, angle = 90) +
@@ -85,12 +85,11 @@ ggplot(data = plot_data, aes(x = arrival_date_month, y = mean_adr)) +
   theme(panel.background = element_blank(),
         axis.line = element_line(color = 'black'),
         axis.text.x = element_text(angle = 90)) -> month_plot
-
+#create plot of mean average daily rate by year of arrival
 plot_data = city_hotel %>%
   select(arrival_date_year, adr) %>%
   group_by(arrival_date_year) %>%
   summarise(mean_adr = mean(adr))
-
 ggplot(data = plot_data, aes(x = arrival_date_year, y = mean_adr)) +
   geom_bar(stat = 'identity', fill = 'darkgreen') +
   geom_text(aes(label = paste('$',round(mean_adr, 2))),
@@ -100,12 +99,11 @@ ggplot(data = plot_data, aes(x = arrival_date_year, y = mean_adr)) +
   labs(x = 'Year of Arrival', y = 'Mean Average Daily Rate') +
   theme(panel.background = element_blank(),
         axis.line = element_line(color = 'black')) -> year_plot
-
+#create plot of mean average daily rate by day of arrival
 plot_data = city_hotel %>%
   select(arrival_date_day_of_month, adr) %>%
   group_by(arrival_date_day_of_month) %>%
   summarise(mean_adr = mean(adr))
-
 ggplot(data = plot_data, aes(x = arrival_date_day_of_month, y = mean_adr)) +
   geom_bar(stat = 'identity', fill = 'steelblue2') +
   geom_text(aes(label = paste('$',round(mean_adr, 2))),
@@ -118,12 +116,11 @@ ggplot(data = plot_data, aes(x = arrival_date_day_of_month, y = mean_adr)) +
   theme(panel.background = element_blank(),
         axis.line = element_line(color = 'black'),
         plot.caption = element_text(hjust = 0.5)) -> day_plot
-
+#create plot of mean average daily rate by week of arrival
 plot_data = city_hotel %>%
   select(arrival_date_week_number, adr) %>%
   group_by(arrival_date_week_number) %>%
   summarise(mean_adr = mean(adr))
-
 ggplot(data = plot_data, aes(x = arrival_date_week_number, y = mean_adr)) +
   geom_line(lwd = 1.25) +
   geom_point(color = 'purple', size = 2) +
@@ -137,7 +134,7 @@ ggplot(data = plot_data, aes(x = arrival_date_week_number, y = mean_adr)) +
         axis.text.x = element_text(angle = 90),
         plot.caption = element_text(hjust = 0.5)) -> week_plot
 
-
+#display figure 1
 grid.arrange(year_plot, month_plot, nrow = 1,
                         bottom = textGrob("Figure 1: Mean Average Daily Rate by Year & Month of Arrival"))
 ```
@@ -149,6 +146,7 @@ For starters, it is useful to look at the average daily rates over the years. We
 Next up, I look at the month plot. The first three months of the year have the lowest daily rate which is most likely due to low travel during these times. The average daily rate is at it's highest during the spring/summer months, and then begins to decline during the beginning of winter.
 
 ```{r}
+#display figure 2
 day_plot
 ```
 
@@ -159,6 +157,7 @@ Using the plot above, I can see that there is not much association between day o
 Lastly, I want to look at the arrival week number. I believe I will see similar results to arrival month.
 
 ```{r}
+#display figure 3
 week_plot
 ```
 
@@ -171,6 +170,7 @@ Overall, through these plots I have determined that keeping both year and month 
 Next, I want to consider an interaction between month and year.
 
 ```{r}
+#create figure 4
 plot_data = city_hotel %>%
   select(adr, arrival_date_year, arrival_date_month) %>%
   group_by(arrival_date_year, arrival_date_month) %>%
@@ -202,6 +202,7 @@ Judging by the output, there does seem to be *some* interaction occuring between
 With time aside, I want to look more into the remaining variables.
 
 ```{r}
+#create figure 5
 city_hotel %>% select(is_canceled, adr) %>%
   group_by(is_canceled) %>%
   summarise(mean_adr = mean(adr)) %>%
@@ -222,6 +223,7 @@ Figure 5 above shows bar plots containing information on the mean average daily 
 Looking at the plot above, there does seem to be a sizeable difference between the mean average daily rate of those who cancelled versus those that did not. This tells me that people were more likely to cancel if the average daily rate was too high.
 
 ```{r}
+#create plot of mean average daily rate by total adults
 city_hotel %>% select(adults, adr) %>%
   group_by(adults) %>%
   summarise(mean_adr = mean(adr)) %>%
@@ -232,7 +234,7 @@ city_hotel %>% select(adults, adr) %>%
   scale_y_continuous(labels = scales::dollar) +
   theme(panel.background = element_blank(),
         axis.line = element_line(color = 'black')) -> adult_plot
-
+#create plot of mean average daily rate by total children
 city_hotel %>% select(children, adr) %>%
   group_by(children) %>%
   summarise(mean_adr = mean(adr)) %>%
@@ -243,7 +245,7 @@ city_hotel %>% select(children, adr) %>%
   scale_y_continuous(labels = scales::dollar) +
   theme(panel.background = element_blank(),
         axis.line = element_line(color = 'black')) -> child_plot
-
+#create plot of mean average daily rate by total babies
 city_hotel %>% select(babies, adr) %>%
   group_by(babies) %>%
   summarise(mean_adr = mean(adr)) %>%
@@ -254,7 +256,7 @@ city_hotel %>% select(babies, adr) %>%
   scale_y_continuous(labels = scales::dollar) +
   theme(panel.background = element_blank(),
         axis.line = element_line(color = 'black')) -> baby_plot
-
+#display figure 6
 gridExtra::grid.arrange(adult_plot, child_plot, baby_plot, nrow = 2,
                         bottom = textGrob("Figure 6: Mean Average Daily Rate by Number of Adults, Children, and Babies",
                                           gp = gpar(col = 'black', fontsize = 10)))
@@ -273,6 +275,7 @@ For babies, we see a decreasing linear trend such that having a baby in the hote
 I want to also look at a possible interaction between these variables.
 
 ```{r}
+#generate figure 7
 city_hotel %>% select(adults, children, babies, adr) %>%
   group_by(adults, children, babies) %>%
   summarise(mean_adr = mean(adr)) %>%
@@ -303,6 +306,7 @@ First thing that I notice is that there are almost no observations in the `1` ba
 For adults and children, there is definitely some interaction at play. There seems to be a trend that as number of adults increase, so does the mean average daily rate. This can also be said for the number of children. When looking at adults and children combined, there is a linear trend that as both increase so does the mean average daily rate.
 
 ```{r}
+#create plot of mean average daily rate by meal type requested
 city_hotel %>% select(meal, adr) %>%
   group_by(meal) %>%
   summarise(mean_adr = mean(adr)) %>%
@@ -313,7 +317,7 @@ city_hotel %>% select(meal, adr) %>%
   scale_y_continuous(labels = scales::dollar) +
   theme(panel.background = element_blank(),
         axis.line = element_line(color = 'black')) -> meal_plot
-
+#create plot of mean average daily rate by market segment
 city_hotel %>% select(market_segment, adr) %>%
   group_by(market_segment) %>%
   summarise(mean_adr = mean(adr)) %>%
@@ -324,7 +328,7 @@ city_hotel %>% select(market_segment, adr) %>%
   scale_y_continuous(labels = scales::dollar) +
   theme(panel.background = element_blank(), axis.text.x = element_text(angle = 90),
         axis.line = element_line(color = 'black')) -> market_plot
-
+#create plot of mean average daily rate by room type
 city_hotel %>% select(reserved_room_type, adr) %>%
   group_by(reserved_room_type) %>%
   summarise(mean_adr = mean(adr)) %>%
@@ -335,7 +339,7 @@ city_hotel %>% select(reserved_room_type, adr) %>%
   scale_y_continuous(labels = scales::dollar) +
   theme(panel.background = element_blank(),
         axis.line = element_line(color = 'black')) -> room_plot
-
+#create plot of mean average daily rate by customer type
 city_hotel %>% select(customer_type, adr) %>%
   group_by(customer_type) %>%
   summarise(mean_adr = mean(adr)) %>%
@@ -346,7 +350,7 @@ city_hotel %>% select(customer_type, adr) %>%
   scale_y_continuous(labels = scales::dollar) +
   theme(panel.background = element_blank(),
         axis.line = element_line(color = 'black')) -> customer_plot
-
+#create plot of mean average daily rate by total special requests
 city_hotel %>% select(total_of_special_requests, adr) %>%
   group_by(total_of_special_requests) %>%
   summarise(mean_adr = mean(adr)) %>%
@@ -358,6 +362,7 @@ city_hotel %>% select(total_of_special_requests, adr) %>%
   theme(panel.background = element_blank(),
         axis.line = element_line(color = 'black')) -> request_plot
 
+#display figure 8
 gridExtra::grid.arrange(meal_plot, room_plot,
                         customer_plot, nrow = 2,
                         bottom = textGrob("Figure 8: Mean Average Daily Rate by Type of Customer, Meal Booked, and Room Reserved",
@@ -380,6 +385,7 @@ I am not interested in interactions between these variables as they are not real
 gridExtra::grid.arrange(market_plot, request_plot, nrow = 1,
           bottom = textGrob("Figure 9: Mean Average Daily Rate by Market Segment and Number of Special Requests",
           gp = gpar(col = 'black', fontsize = 10)))
+#display figure 9
 ```
 
 Figure 9 above shows bar plots containing information on the mean average daily rate by market segment and number of special requests.
@@ -397,6 +403,7 @@ GGally::ggpairs(select(city_hotel, c(adr, stays_in_weekend_nights, stays_in_week
                 progress=FALSE) +
   labs(caption = 'Figure 10: Scatter Matrix of Numeric Variables') +
   theme(plot.caption = element_text(hjust = 0.5))
+#generate figure 10
 ```
 
 Figure 10 contains a scatter matrix on all numeric variables of the data.
@@ -411,6 +418,7 @@ GGally::ggpairs(select(city_hotel, c(adr, stays_total, lead_time)),
                 progress = FALSE) +
   labs(caption = 'Figure 11: Scatter Matrix of Numeric Variables - Combined Stays') +
   theme(plot.caption = element_text(hjust = 0.5))
+#generate figure 11
 ```
 
 Figure 11 contains a scatter matrix on numeric variables - with newly created `stays_total` variable.
@@ -463,16 +471,20 @@ city_hotel_final$adults = as.factor(city_hotel_final$adults)
 city_hotel_final$arrival_date_year = as.factor(city_hotel_final$arrival_date_year)
 city_hotel_final$total_of_special_requests = as.factor(city_hotel_final$total_of_special_requests)
 city_hotel_final$is_canceled = as.factor(city_hotel_final$is_canceled)
+#used to convert variables to factor type
 ```
 ```{r message=FALSE, warning=FALSE}
 ##generate models
-simple_model = lm(adr ~ . + arrival_date_month*arrival_date_year + children*adults, data = city_hotel_final) # generate simple model with all variables
-subset_model = regsubsets(adr ~ ., data = city_hotel_final) # generate subset model
+#generate simple model with all variables
+simple_model = lm(adr ~ . + arrival_date_month*arrival_date_year + children*adults, data = city_hotel_final)
+#generate subset model
+subset_model = regsubsets(adr ~ ., data = city_hotel_final)
 summary_subset = summary(subset_model)
+#generate quadratic model
 quadratic_model = step(lm(
   adr ~ . - lead_time + poly(lead_time, 2), data = city_hotel_final),
   k = log(nrow(city_hotel_final)), trace = FALSE
-) #generate quadratic model
+)
 n = nrow(city_hotel_final)
 models = data.frame('BIC' = c('Simple' = n*log(sum(simple_model$residuals^2)/n) + length(coef(simple_model))*log(n),
                               'Subset' = n*log(1407145/n) + 9*log(n),
@@ -482,6 +494,7 @@ models = data.frame('BIC' = c('Simple' = n*log(sum(simple_model$residuals^2)/n) 
                                       'Quadratic' = length(coef(quadratic_model))
                                       )
 )
+#calculate BIC/#params comparison table
 kable(models,
       caption = 'Comparison of Linear Regression Models')
 ```
@@ -506,8 +519,10 @@ So dropped variables were `market_segment` and `customer_type`. This is understa
 For this section, I will compute predictions on the linear regression model I selected.
 
 ```{r}
-predictions = predict(quadratic_model, newdata = select(city_hotel_final, -adr)) # generate all predictions
+predictions = predict(quadratic_model, newdata = select(city_hotel_final, -adr))
+#generate predictions on MLR model
 rmse_lr = sqrt(sum(quadratic_model$residuals^2)/n)
+#calculate rmse on MLR model
 ```
 
 We see an RMSE from this model of `r round(rmse_lr, 3)` which is quite good given a standard deviation of the average daily rate of `r round(sd(city_hotel_final$adr), 3)`.
@@ -518,6 +533,7 @@ One example that comes to mind is say you want to take advantage of a vacation a
 example = data.frame(is_canceled = '0', arrival_date_year = '2017', arrival_date_month = 'January', lead_time = 70,
                      adults = '2', children = '3', meal = 'HB', reserved_room_type = 'G', total_of_special_requests = '0')
 predicted = predict(quadratic_model, newdata = example)
+#predict on MLR model of scenario
 ```
 
 With this scenario, you can expect to pay an average daily rate of $`r round(predicted, 2)`.
@@ -531,6 +547,7 @@ I will be using 5000 trees in my model.
 ```{r}
 random_forest = ranger(adr ~ ., data = city_hotel_final, seed = 27,
                        num.trees = 5000, importance = 'impurity', num.threads = 4)
+#generate random forest model with 5000 trees
 ```
 
 With this tree, I get an Out-of-Bag Error (Mean-Squared-Error) estimate of `r round(random_forest$prediction.error, 3)`. Taking the square root (RMSE), I get `r round(sqrt(random_forest$prediction.error), 3)` which is slightly better than the best linear regression model.
@@ -539,6 +556,7 @@ It is also important to me to understand how this model is prioritizing variable
 
 ```{r}
 important = data.frame(gini_index = importance(random_forest))
+#calculate gini index on random forest model
 important$variable = row.names(important)
 ggplot(data = important, aes(x = variable, y = gini_index)) +
   geom_bar(fill = rainbow(11), stat = 'identity') +
@@ -548,6 +566,7 @@ ggplot(data = important, aes(x = variable, y = gini_index)) +
   theme(panel.background = element_blank(),
         axis.line = element_line(color = 'black'),
         plot.caption = element_text(hjust = 0.5))
+#generate figure 12 for variable importance 
 ```
 
 Figure 12 above holds information regarding variable importance in the random forest model.
@@ -557,8 +576,10 @@ Using the above plot, I am able to directly visualize the importance of each var
 ### Section 3.4 - Predict with Random Forest Model
 
 ```{r}
-predictions_rf = predict(random_forest, data = select(city_hotel_final, -adr))$predictions # generate all predictions
+predictions_rf = predict(random_forest, data = select(city_hotel_final, -adr))$predictions
+#generate predictions for random forest model
 rmse_rf = sqrt(sum((predictions_rf - city_hotel_final$adr)^2) / n)
+#calculate rmse for random forest model
 ```
 
 We see an RMSE from this model of `r round(rmse_rf, 3)` which is quite good given a standard deviation of the average daily rate of `r round(sd(city_hotel_final$adr), 3)`.
@@ -570,6 +591,7 @@ example = data.frame(is_canceled = '0', arrival_date_year = '2017', arrival_date
                      adults = '2', children = '3', meal = 'HB', reserved_room_type = 'G', total_of_special_requests = '0',
                      customer_type = 'Transient', market_segment = 'Online TA')
 prediction_rf = predict(random_forest, data = example)$predictions
+#predict on random forest model of scenario
 ```
 
 With this scenario, you can expect to pay an average daily rate of $`r round(prediction_rf, 2)`. Note this is much smaller than the prediction from the Linear Regression model. Given the lower OOB-Error than the Linear Regressions training error, this prediction seems more accurate to me.
